@@ -1,7 +1,5 @@
 <script setup lang="ts">
 // import FccButton from './components/FccButton.vue'
-import { FccButton } from 'test-component-lib'
-import "test-component-lib/style.css"
 </script>
 
 <template>

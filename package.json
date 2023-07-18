@@ -20,8 +20,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.47",
-    "test-component-lib": "file:../test-component-lib"
+    "vue": "^3.2.47"
   },
   "devDependencies": {
     "@types/node": "^20.2.5",
