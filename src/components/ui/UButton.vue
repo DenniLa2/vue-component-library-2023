@@ -26,6 +26,7 @@
 
 <script setup lang="ts">
 import { computed, useSlots } from 'vue'
+import { ElButton } from 'element-plus'
 import 'element-plus/dist/index.css'
 import { EButtonDesign, EButtonSize, EIconLocation } from './'
 
