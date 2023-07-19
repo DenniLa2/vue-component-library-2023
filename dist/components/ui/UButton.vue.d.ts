@@ -1,3 +1,4 @@
+import 'element-plus/dist/index.css'
 import { EButtonDesign, EButtonSize, EIconLocation } from './'
 
 interface Props {

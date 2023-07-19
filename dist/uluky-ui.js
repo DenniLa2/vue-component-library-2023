@@ -17,7 +17,7 @@ import {
 
 var d = /* @__PURE__ */ ((e) => (e.RoundedMain = 'btn-rounded-main', e.RoundedIconOnly = 'btn-rounded-icon-only', e.RoundedSecondary = 'btn-rounded-secondary', e.RoundedWarning = 'btn-rounded-warning', e.TextDefault = 'btn-text-default', e))(d || {}),
   l = /* @__PURE__ */ ((e) => (e.large = 'btn-rounded--large', e.medium = 'btn-rounded--medium', e.mini = 'btn-rounded--mini', e))(l || {})
-const T = /* @__PURE__ */ u({
+const S = /* @__PURE__ */ u({
   __name: 'UButton',
   props: {
     design: { default: d.RoundedMain },
@@ -57,10 +57,10 @@ const T = /* @__PURE__ */ u({
           ]),
           key: '1',
         } : void 0,
-      ]), 1040, ['class', 'disabled'])
-    }
-  },
-})
+      ]), 1040, ['class', 'disabled']);
+    };
+  }
+});
 export {
-  T as UButton,
+  S as UButton,
 }
