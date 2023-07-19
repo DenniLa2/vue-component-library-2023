@@ -10,12 +10,12 @@ defineProps<{ text: string }>()
 
 <style scoped>
 .btn-cta {
-  background-color: #d0d0d5;
+  background-color: #5f5fdc;
   border-width: 3px;
-  border-color: #1b1b32;
-  border-radius: 0;
+  border-color: #d3266f;
+  border-radius: 15px;
   border-style: solid;
-  color: #1b1b32;
+  color: #59de45;
   display: block;
   margin-bottom: 0;
   font-weight: normal;
@@ -32,10 +32,10 @@ defineProps<{ text: string }>()
 .btn-cta:active:hover,
 .btn-cta:focus,
 .btn-cta:hover {
-  background-color: #1b1b32;
+  background-color: #050572;
   border-width: 3px;
-  border-color: #000;
+  border-color: #500303;
   background-image: none;
-  color: #f5f6f7;
+  color: #1076dc;
 }
 </style>
