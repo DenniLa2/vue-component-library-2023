@@ -1,20 +1,20 @@
-import { defineComponent as _, openBlock as s, createElementBlock as r, toDisplayString as p } from 'vue'
+import { defineComponent as c, openBlock as s, createElementBlock as a, toDisplayString as r } from 'vue'
 
-const a = { class: 'btn-cta' }, u = /* @__PURE__ */ _({
-  __name: 'FccButton',
+const p = { class: 'btn-cta' }, u = /* @__PURE__ */ c({
+  __name: 'UButton',
   props: {
     text: {},
   },
   setup(t) {
-    return (e, o) => (s(), r('button', a, p(e.text), 1))
+    return (o, e) => (s(), a('button', p, r(o.text), 1))
   },
 })
-const l = (t, e) => {
-  const o = t.__vccOpts || t
-  for (const [c, n] of e)
-    o[c] = n
-  return o
-}, i = /* @__PURE__ */ l(u, [['__scopeId', 'data-v-52feeb12']])
+const l = (t, o) => {
+  const e = t.__vccOpts || t
+  for (const [n, _] of o)
+    e[n] = _
+  return e
+}, d = /* @__PURE__ */ l(u, [['__scopeId', 'data-v-9356a36a']])
 export {
-  i as FccButton,
+  d as FccButton,
 }

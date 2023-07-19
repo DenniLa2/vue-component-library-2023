@@ -1,3 +1,3 @@
-import FccButton from "./components/FccButton.vue";
+import FccButton from './components/UButton.vue'
 
 export { FccButton };

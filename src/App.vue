@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import FccButton from './components/FccButton.vue'
+import UButton from './components/UButton.vue'
 </script>
 
 <template>
-  <FccButton text="Run the Tests"/>
+  <UButton text="Run the Tests"/>
 </template>
 
 <style scoped>

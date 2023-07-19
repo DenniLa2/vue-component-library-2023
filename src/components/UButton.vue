@@ -1,21 +1,15 @@
+<template>
+  <button class="btn-cta">{{ text }}</button>
+</template>
+
 <script setup lang="ts">
 
 defineProps<{ text: string }>()
 
 </script>
 
-<template>
-  <button class="btn-cta">{{ text }}</button>
-</template>
-
 <style scoped>
 .btn-cta {
-  background-color: #5f5fdc;
-  border-width: 3px;
-  border-color: #d3266f;
-  border-radius: 15px;
-  border-style: solid;
-  color: #59de45;
   display: block;
   margin-bottom: 0;
   font-weight: normal;
