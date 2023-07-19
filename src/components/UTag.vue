@@ -3,6 +3,8 @@
 </template>
 
 <script setup lang="ts">
+import 'element-plus/dist/index.css'
+
 
 defineProps<{ text: string }>()
 

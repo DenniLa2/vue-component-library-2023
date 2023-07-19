@@ -42,7 +42,6 @@ function Rt(t) {
 }
 
 const zt = (t) => t === void 0, Tt = (t) => typeof t == 'number', Vt = (t) => L(t) ? !Number.isNaN(Number(t)) : !1
-
 class Ct extends Error {
   constructor(r) {
     super(r), this.name = 'ElementPlusError'
@@ -90,7 +89,7 @@ var Ft = (t, r) => {
   /* HOISTED */
 ), Ut = [
   Dt,
-]
+];
 
 function Kt(t, r, e, n, a, o) {
   return _(), I('svg', Gt, Ut)
@@ -230,8 +229,8 @@ const oe = gt({
     }, a.$attrs), [
       R(a.$slots, 'default'),
     ], 16))
-  },
-})
+  }
+});
 var ce = /* @__PURE__ */ W(ie, [['__file', '/home/runner/work/element-plus/element-plus/packages/components/icon/src/icon.vue']])
 const rt = pt(ce), J = Symbol('formContextKey'), bt = Symbol('formItemContextKey'), ue = (t, r = {}) => {
   const e = C(void 0), n = r.prop ? e : vt('size'), a = r.global ? e : re(),
@@ -335,38 +334,30 @@ const rt = pt(ce), J = Symbol('formContextKey'), bt = Symbol('formItemContextKey
   },
 }), ge = {
   click: (t) => t instanceof MouseEvent,
-}
-
+};
 function h(t, r) {
   pe(t) && (t = '100%')
   var e = ve(t)
   return t = r === 360 ? t : Math.min(r, Math.max(0, parseFloat(t))), e && (t = parseInt(String(t * r), 10) / 100), Math.abs(t - r) < 1e-6 ? 1 : (r === 360 ? t = (t < 0 ? t % r + r : t % r) / parseFloat(String(r)) : t = t % r / parseFloat(String(r)), t)
 }
-
 function z(t) {
   return Math.min(1, Math.max(0, t))
 }
-
 function pe(t) {
   return typeof t == 'string' && t.indexOf('.') !== -1 && parseFloat(t) === 1
 }
-
 function ve(t) {
   return typeof t == 'string' && t.indexOf('%') !== -1
 }
-
 function _t(t) {
   return t = parseFloat(t), (isNaN(t) || t < 0 || t > 1) && (t = 1), t
 }
-
 function T(t) {
   return t <= 1 ? ''.concat(Number(t) * 100, '%') : t
 }
-
 function A(t) {
   return t.length === 1 ? '0' + t : String(t)
 }
-
 function be(t, r, e) {
   return {
     r: h(t, 255) * 255,
@@ -374,7 +365,6 @@ function be(t, r, e) {
     b: h(e, 255) * 255,
   }
 }
-
 function nt(t, r, e) {
   t = h(t, 255), r = h(r, 255), e = h(e, 255)
   var n = Math.max(t, r, e), a = Math.min(t, r, e), o = 0, s = 0, c = (n + a) / 2
@@ -397,11 +387,9 @@ function nt(t, r, e) {
   }
   return { h: o, s, l: c }
 }
-
 function F(t, r, e) {
   return e < 0 && (e += 1), e > 1 && (e -= 1), e < 1 / 6 ? t + (r - t) * (6 * e) : e < 1 / 2 ? r : e < 2 / 3 ? t + (r - t) * (2 / 3 - e) * 6 : t
 }
-
 function me(t, r, e) {
   var n, a, o
   if (t = h(t, 360), r = h(r, 100), e = h(e, 100), r === 0)
@@ -412,7 +400,6 @@ function me(t, r, e) {
   }
   return { r: n * 255, g: a * 255, b: o * 255 }
 }
-
 function at(t, r, e) {
   t = h(t, 255), r = h(r, 255), e = h(e, 255)
   var n = Math.max(t, r, e), a = Math.min(t, r, e), o = 0, s = n, c = n - a, l = n === 0 ? 0 : c / n
@@ -434,14 +421,12 @@ function at(t, r, e) {
   }
   return { h: o, s: l, v: s }
 }
-
 function ye(t, r, e) {
   t = h(t, 360) * 6, r = h(r, 100), e = h(e, 100)
   var n = Math.floor(t), a = t - n, o = e * (1 - r), s = e * (1 - a * r), c = e * (1 - (1 - a) * r), l = n % 6,
     g = [e, s, o, o, c, e][l], b = [c, e, e, s, o, o][l], m = [o, o, c, e, e, s][l]
   return { r: g * 255, g: b * 255, b: m * 255 }
 }
-
 function ot(t, r, e, n) {
   var a = [
     A(Math.round(t).toString(16)),
@@ -450,7 +435,6 @@ function ot(t, r, e, n) {
   ]
   return n && a[0].startsWith(a[0].charAt(1)) && a[1].startsWith(a[1].charAt(1)) && a[2].startsWith(a[2].charAt(1)) ? a[0].charAt(0) + a[1].charAt(0) + a[2].charAt(0) : a.join('')
 }
-
 function _e(t, r, e, n, a) {
   var o = [
     A(Math.round(t).toString(16)),
@@ -460,19 +444,15 @@ function _e(t, r, e, n, a) {
   ]
   return a && o[0].startsWith(o[0].charAt(1)) && o[1].startsWith(o[1].charAt(1)) && o[2].startsWith(o[2].charAt(1)) && o[3].startsWith(o[3].charAt(1)) ? o[0].charAt(0) + o[1].charAt(0) + o[2].charAt(0) + o[3].charAt(0) : o.join('')
 }
-
 function Se(t) {
   return Math.round(parseFloat(t) * 255).toString(16)
 }
-
 function st(t) {
   return y(t) / 255
 }
-
 function y(t) {
   return parseInt(t, 16)
 }
-
 function ke(t) {
   return {
     r: t >> 16,
@@ -707,13 +687,11 @@ function $e(t) {
     g: y(e[2] + e[2]),
     b: y(e[3] + e[3]),
     format: r ? 'name' : 'hex',
-  } : !1)))))))))
+  } : !1)))))))));
 }
-
 function x(t) {
   return !!S.CSS_UNIT.exec(String(t))
 }
-
 var Ne = (
   /** @class */
   function () {
@@ -892,12 +870,10 @@ var Ne = (
       return this.toRgbString() === new t(r).toRgbString()
     }, t
   }()
-)
-
+);
 function M(t, r = 20) {
   return t.mix('#141414', r).toString()
 }
-
 function Be(t) {
   const r = mt(), e = P('button')
   return v(() => {
@@ -936,9 +912,8 @@ function Be(t) {
       }
     }
     return n
-  })
+  });
 }
-
 const Ae = N({
   name: 'ElButton',
 }), He = /* @__PURE__ */ N({
@@ -1006,9 +981,9 @@ const Ae = N({
         ], 2)) : Z('v-if', !0),
       ]),
       _: 3,
-    }, 16, ['class', 'style', 'onClick']))
-  },
-})
+    }, 16, ['class', 'style', 'onClick']));
+  }
+});
 var Ee = /* @__PURE__ */ W(He, [['__file', '/home/runner/work/element-plus/element-plus/packages/components/button/src/button.vue']])
 const Ie = {
   size: U.size,
@@ -1064,7 +1039,7 @@ const Pe = (t, r) => {
   for (const [n, a] of r)
     e[n] = a
   return e
-}, je = /* @__PURE__ */ Pe(Ce, [['__scopeId', 'data-v-7ff12b89']])
+}, je = /* @__PURE__ */ Pe(Ce, [['__scopeId', 'data-v-45169264']])
 export {
   Fe as UButton,
   je as UTag,

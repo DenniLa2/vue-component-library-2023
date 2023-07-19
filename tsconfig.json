@@ -14,9 +14,6 @@
     "jsx": "preserve",
     "outDir": "dist",
     "declaration": true,
-    "types": [
-      "element-plus/global"
-    ],
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
