@@ -1,1 +1,6 @@
-.btn-cta[data-v-9356a36a]{display:block;margin-bottom:0;font-weight:400;text-align:center;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;white-space:nowrap;padding:6px 12px;font-size:18px;line-height:1.42857143}.btn-cta[data-v-9356a36a]:active:hover,.btn-cta[data-v-9356a36a]:focus,.btn-cta[data-v-9356a36a]:hover{background-color:#050572;border-width:3px;border-color:#500303;background-image:none;color:#1076dc}.u-tag[data-v-7ff12b89]{border:1px dotted red;padding:2px 8px;border-radius:12px;color:red}
+.u-tag[data-v-7ff12b89] {
+  border: 1px dotted red;
+  padding: 2px 8px;
+  border-radius: 12px;
+  color: red
+}
