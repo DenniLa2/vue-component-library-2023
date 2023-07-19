@@ -1,4 +1,3 @@
-import UButton from './components/UButton.vue'
-import UTag from './components/UTag.vue'
+import UButton from './components/ui/UButton.vue'
 
-export { UButton, UTag }
+export { UButton }
