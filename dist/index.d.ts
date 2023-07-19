@@ -1,3 +1,4 @@
-import FccButton from './components/UButton.vue'
+import UButton from './components/UButton.vue'
+import UTag from './components/UTag.vue'
 
-export { FccButton }
+export { UButton, UTag }

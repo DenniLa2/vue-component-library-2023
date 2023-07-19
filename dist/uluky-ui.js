@@ -1,20 +1,30 @@
-import { defineComponent as c, openBlock as s, createElementBlock as a, toDisplayString as r } from 'vue'
+import { defineComponent as o, openBlock as n, createElementBlock as s, toDisplayString as c } from 'vue'
 
-const p = { class: 'btn-cta' }, u = /* @__PURE__ */ c({
+const u = { class: 'btn-cta' }, d = /* @__PURE__ */ o({
   __name: 'UButton',
   props: {
     text: {},
   },
-  setup(t) {
-    return (o, e) => (s(), a('button', p, r(o.text), 1))
+  setup(_) {
+    return (t, e) => (n(), s('button', u, c(t.text), 1))
   },
 })
-const l = (t, o) => {
-  const e = t.__vccOpts || t
-  for (const [n, _] of o)
-    e[n] = _
+const a = (_, t) => {
+  const e = _.__vccOpts || _
+  for (const [p, r] of t)
+    e[p] = r
   return e
-}, d = /* @__PURE__ */ l(u, [['__scopeId', 'data-v-9356a36a']])
+}, g = /* @__PURE__ */ a(d, [['__scopeId', 'data-v-9356a36a']]), l = { class: 'u-tag' }, f = /* @__PURE__ */ o({
+  __name: 'UTag',
+  props: {
+    text: {},
+  },
+  setup(_) {
+    return (t, e) => (n(), s('span', l, c(t.text), 1))
+  },
+})
+const m = /* @__PURE__ */ a(f, [['__scopeId', 'data-v-7ff12b89']])
 export {
-  d as FccButton,
+  g as UButton,
+  m as UTag,
 }
