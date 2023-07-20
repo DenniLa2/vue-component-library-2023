@@ -1,5 +1,2 @@
-import UButton from './components/ui/UButton.vue'
+export * from './components/ui'
 
-export {
-  UButton,
-}
