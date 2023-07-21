@@ -1,2 +1,2 @@
-export * from './components'
-export { EButtonDesign, EButtonSize } from './components/types.ts'
+export * from './components/ui'
+export { EButtonDesign, EButtonSize } from './components/ui/types.ts'
