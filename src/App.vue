@@ -1,5 +1,8 @@
 <template>
-  <UButton :design="EButtonDesign.RoundedMain" label="label"/>
+  <UButton
+    :design="EButtonDesign.RoundedMain"
+    label="label"
+  />
 </template>
 
 <script setup lang="ts">

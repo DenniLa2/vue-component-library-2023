@@ -1,4 +1,6 @@
 export * from './components'
-// export * from './components/types'
 
-export { EButtonDesign } from './components/types.ts'
+export {
+  EButtonDesign,
+  EButtonSize,
+} from './components/types.ts'
