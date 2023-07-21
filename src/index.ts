@@ -1,3 +1,9 @@
+// import UButton from './components/ui/UButton.vue'
+//
+// export {
+//   UButton
+// }
+
 export * from './components/ui'
 
 export {
