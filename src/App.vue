@@ -3,8 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { UButton } from './'
-import { EButtonDesign } from './components'
+import { EButtonDesign, UButton } from './'
 </script>
 
 <style scoped>

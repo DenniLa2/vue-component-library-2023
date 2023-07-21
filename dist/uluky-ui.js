@@ -1013,6 +1013,15 @@ const Vt = ve(It, {
   ButtonGroup: xe,
 })
 Ye(xe)
+var jt = /* @__PURE__ */ ((e) => (e.kyb = 'kyb', e.declined = 'declined', e.completed = 'completed', e.process = 'process', e.draft = 'draft', e.border = 'border', e))(jt || {}),
+  Gt = /* @__PURE__ */ ((e) => (e.active = '--ui-active', e.attention = '--ui-attention', e.warning = '--ui-warning', e.success = '--ui-success', e.tretiary = '--ui-tretiary', e))(Gt || {}),
+  Dt = /* @__PURE__ */ ((e) => (e.notStarted = 'notStarted', e.self_clientInProgress = 'self_clientInProgress', e.self_inCheck = 'self_inCheck', e.self_needInfo = 'self_needInfo', e.self_notConfirmed = 'self_notConfirmed', e.self_confirmed = 'self_confirmed', e.uid_clientInProgress = 'uid_clientInProgress', e.uid_inCheck = 'uid_inCheck', e.uid_notConfirmed = 'uid_notConfirmed', e.uid_confirmed = 'uid_confirmed', e.wrong = 'wrong', e))(Dt || {}),
+  Kt = /* @__PURE__ */ ((e) => (e.email = 'email', e.password = 'password', e.tel = 'tel', e.text = 'text', e.textarea = 'textarea', e.number = 'number', e))(Kt || {}),
+  Tt = /* @__PURE__ */ ((e) => (e.success = 'success', e.error = 'error', e.none = 'none', e))(Tt || {}),
+  L = /* @__PURE__ */ ((e) => (e.RoundedMain = 'btn-rounded-main', e.RoundedIconOnly = 'btn-rounded-icon-only', e.RoundedSecondary = 'btn-rounded-secondary', e.RoundedWarning = 'btn-rounded-warning', e.TextDefault = 'btn-text-default', e))(L || {}),
+  Wt = /* @__PURE__ */ ((e) => (e.leftAround = 'btn--left-around', e.leftBetween = 'btn--left-between', e.rightAround = 'btn--right-around', e.rightBetween = 'btn--right-between', e))(Wt || {}),
+  we = /* @__PURE__ */ ((e) => (e.large = 'btn-rounded--large', e.medium = 'btn-rounded--medium', e.mini = 'btn-rounded--mini', e))(we || {}),
+  Ut = /* @__PURE__ */ ((e) => (e.Main = 'Main', e.Secondary = 'Secondary', e.Warning = 'Warning', e.Default = 'Default', e))(Ut || {})
 const Lt = /* @__PURE__ */ B({
   __name: 'UButton',
   props: {
@@ -1054,15 +1063,6 @@ const Lt = /* @__PURE__ */ B({
     ]), 1040, ['class', 'disabled']));
   }
 });
-var jt = /* @__PURE__ */ ((e) => (e.kyb = 'kyb', e.declined = 'declined', e.completed = 'completed', e.process = 'process', e.draft = 'draft', e.border = 'border', e))(jt || {}),
-  Gt = /* @__PURE__ */ ((e) => (e.active = '--ui-active', e.attention = '--ui-attention', e.warning = '--ui-warning', e.success = '--ui-success', e.tretiary = '--ui-tretiary', e))(Gt || {}),
-  Dt = /* @__PURE__ */ ((e) => (e.notStarted = 'notStarted', e.self_clientInProgress = 'self_clientInProgress', e.self_inCheck = 'self_inCheck', e.self_needInfo = 'self_needInfo', e.self_notConfirmed = 'self_notConfirmed', e.self_confirmed = 'self_confirmed', e.uid_clientInProgress = 'uid_clientInProgress', e.uid_inCheck = 'uid_inCheck', e.uid_notConfirmed = 'uid_notConfirmed', e.uid_confirmed = 'uid_confirmed', e.wrong = 'wrong', e))(Dt || {}),
-  Kt = /* @__PURE__ */ ((e) => (e.email = 'email', e.password = 'password', e.tel = 'tel', e.text = 'text', e.textarea = 'textarea', e.number = 'number', e))(Kt || {}),
-  Tt = /* @__PURE__ */ ((e) => (e.success = 'success', e.error = 'error', e.none = 'none', e))(Tt || {}),
-  L = /* @__PURE__ */ ((e) => (e.RoundedMain = 'btn-rounded-main', e.RoundedIconOnly = 'btn-rounded-icon-only', e.RoundedSecondary = 'btn-rounded-secondary', e.RoundedWarning = 'btn-rounded-warning', e.TextDefault = 'btn-text-default', e))(L || {}),
-  Wt = /* @__PURE__ */ ((e) => (e.leftAround = 'btn--left-around', e.leftBetween = 'btn--left-between', e.rightAround = 'btn--right-around', e.rightBetween = 'btn--right-between', e))(Wt || {}),
-  we = /* @__PURE__ */ ((e) => (e.large = 'btn-rounded--large', e.medium = 'btn-rounded--medium', e.mini = 'btn-rounded--mini', e))(we || {}),
-  Ut = /* @__PURE__ */ ((e) => (e.Main = 'Main', e.Secondary = 'Secondary', e.Warning = 'Warning', e.Default = 'Default', e))(Ut || {})
 export {
   L as EButtonDesign,
   we as EButtonSize,

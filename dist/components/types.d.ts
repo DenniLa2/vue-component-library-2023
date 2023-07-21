@@ -7,7 +7,6 @@ export interface IRadio {
   value: string;
   border: boolean;
 }
-
 export interface Option {
   value: number | string;
   label: string;
