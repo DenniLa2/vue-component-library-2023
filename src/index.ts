@@ -1,4 +1,4 @@
 export * from './components'
-export * from './components/types.ts'
+// export * from './components/types'
 
 

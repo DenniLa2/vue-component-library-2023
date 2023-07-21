@@ -4,4 +4,5 @@
  */
 import UButton from './UButton.vue'
 
+export * from './types.ts'
 export { UButton }

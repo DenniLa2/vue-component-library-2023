@@ -3,5 +3,6 @@
  * on 03.06.2023
  */
 import UButton from './UButton.vue'
+export * from './types.ts'
 
 export { UButton }
