@@ -1,6 +1,6 @@
 import { StoryObj } from '@storybook/vue3'
 import UButton from './UButton.vue'
-import { EButtonDesign, EButtonSize, EIconLocation } from './'
+import { EButtonDesign, EButtonSize, EIconLocation } from './index.ts'
 
 declare const _default: {
   title: string;

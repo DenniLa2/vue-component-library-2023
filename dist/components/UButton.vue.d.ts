@@ -1,5 +1,5 @@
 import 'element-plus/dist/index.css'
-import { EButtonDesign, EButtonSize, EIconLocation } from './'
+import { EButtonDesign, EButtonSize, EIconLocation } from './index.ts'
 
 interface Props {
   design?: EButtonDesign;

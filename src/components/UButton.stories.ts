@@ -1,6 +1,6 @@
 import { StoryObj } from '@storybook/vue3'
 import UButton from './UButton.vue'
-import { EButtonDesign, EButtonSize, EIconLocation } from './'
+import { EButtonDesign, EButtonSize, EIconLocation } from './index.ts'
 // import '~/assets/style/base/baseButton.scss'
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction

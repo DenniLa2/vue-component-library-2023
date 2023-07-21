@@ -43,7 +43,6 @@ function Oe(e) {
 }
 
 const Fe = (e) => e === void 0, Ve = (e) => typeof e == 'number', je = (e) => E(e) ? !Number.isNaN(Number(e)) : !1
-
 class Ge extends Error {
   constructor(r) {
     super(r), this.name = 'ElementPlusError'
@@ -91,7 +90,7 @@ var Te = (e, r) => {
   /* HOISTED */
 ), Le = [
   qe,
-]
+];
 
 function Je(e, r, t, n, o, a) {
   return _(), I('svg', Ue, Le)
@@ -231,8 +230,8 @@ const ct = ge({
     }, o.$attrs), [
       z(o.$slots, 'default'),
     ], 16))
-  },
-})
+  }
+});
 var ft = /* @__PURE__ */ Y(lt, [['__file', '/home/runner/work/element-plus/element-plus/packages/components/icon/src/icon.vue']])
 const oe = ve(ft), Q = Symbol('formContextKey'), me = Symbol('formItemContextKey'), dt = (e, r = {}) => {
   const t = F(void 0), n = r.prop ? t : pe('size'), o = r.global ? t : at(),
@@ -333,41 +332,33 @@ const oe = ve(ft), Q = Symbol('formContextKey'), me = Symbol('formItemContextKey
   tag: {
     type: Z([String, Object]),
     default: 'button',
-  },
+  }
 }), pt = {
   click: (e) => e instanceof MouseEvent,
 };
-
 function h(e, r) {
   mt(e) && (e = '100%')
   var t = yt(e)
   return e = r === 360 ? e : Math.min(r, Math.max(0, parseFloat(e))), t && (e = parseInt(String(e * r), 10) / 100), Math.abs(e - r) < 1e-6 ? 1 : (r === 360 ? e = (e < 0 ? e % r + r : e % r) / parseFloat(String(r)) : e = e % r / parseFloat(String(r)), e)
 }
-
 function P(e) {
   return Math.min(1, Math.max(0, e))
 }
-
 function mt(e) {
   return typeof e == 'string' && e.indexOf('.') !== -1 && parseFloat(e) === 1
 }
-
 function yt(e) {
   return typeof e == 'string' && e.indexOf('%') !== -1
 }
-
 function _e(e) {
   return e = parseFloat(e), (isNaN(e) || e < 0 || e > 1) && (e = 1), e
 }
-
 function O(e) {
   return e <= 1 ? ''.concat(Number(e) * 100, '%') : e
 }
-
 function A(e) {
   return e.length === 1 ? '0' + e : String(e)
 }
-
 function kt(e, r, t) {
   return {
     r: h(e, 255) * 255,
@@ -375,7 +366,6 @@ function kt(e, r, t) {
     b: h(t, 255) * 255,
   }
 }
-
 function ae(e, r, t) {
   e = h(e, 255), r = h(r, 255), t = h(t, 255)
   var n = Math.max(e, r, t), o = Math.min(e, r, t), a = 0, s = 0, c = (n + o) / 2
@@ -398,11 +388,9 @@ function ae(e, r, t) {
   }
   return { h: a, s, l: c }
 }
-
 function G(e, r, t) {
   return t < 0 && (t += 1), t > 1 && (t -= 1), t < 1 / 6 ? e + (r - e) * (6 * t) : t < 1 / 2 ? r : t < 2 / 3 ? e + (r - e) * (2 / 3 - t) * 6 : e
 }
-
 function _t(e, r, t) {
   var n, o, a
   if (e = h(e, 360), r = h(r, 100), t = h(t, 100), r === 0)
@@ -413,7 +401,6 @@ function _t(e, r, t) {
   }
   return { r: n * 255, g: o * 255, b: a * 255 }
 }
-
 function se(e, r, t) {
   e = h(e, 255), r = h(r, 255), t = h(t, 255)
   var n = Math.max(e, r, t), o = Math.min(e, r, t), a = 0, s = n, c = n - o, f = n === 0 ? 0 : c / n
@@ -435,14 +422,12 @@ function se(e, r, t) {
   }
   return { h: a, s: f, v: s }
 }
-
 function xt(e, r, t) {
   e = h(e, 360) * 6, r = h(r, 100), t = h(t, 100)
   var n = Math.floor(e), o = e - n, a = t * (1 - r), s = t * (1 - o * r), c = t * (1 - (1 - o) * r), f = n % 6,
     g = [t, s, a, a, c, t][f], p = [c, t, t, s, a, a][f], m = [a, a, c, t, t, s][f]
   return { r: g * 255, g: p * 255, b: m * 255 }
 }
-
 function ie(e, r, t, n) {
   var o = [
     A(Math.round(e).toString(16)),
@@ -451,7 +436,6 @@ function ie(e, r, t, n) {
   ]
   return n && o[0].startsWith(o[0].charAt(1)) && o[1].startsWith(o[1].charAt(1)) && o[2].startsWith(o[2].charAt(1)) ? o[0].charAt(0) + o[1].charAt(0) + o[2].charAt(0) : o.join('')
 }
-
 function wt(e, r, t, n, o) {
   var a = [
     A(Math.round(e).toString(16)),
@@ -461,19 +445,15 @@ function wt(e, r, t, n, o) {
   ]
   return o && a[0].startsWith(a[0].charAt(1)) && a[1].startsWith(a[1].charAt(1)) && a[2].startsWith(a[2].charAt(1)) && a[3].startsWith(a[3].charAt(1)) ? a[0].charAt(0) + a[1].charAt(0) + a[2].charAt(0) + a[3].charAt(0) : a.join('')
 }
-
 function St(e) {
   return Math.round(parseFloat(e) * 255).toString(16)
 }
-
 function ce(e) {
   return y(e) / 255
 }
-
 function y(e) {
   return parseInt(e, 16)
 }
-
 function Mt(e) {
   return {
     r: e >> 16,
@@ -708,13 +688,11 @@ function Bt(e) {
     g: y(t[2] + t[2]),
     b: y(t[3] + t[3]),
     format: r ? 'name' : 'hex',
-  } : !1)))))))))
+  } : !1)))))))));
 }
-
 function w(e) {
   return !!k.CSS_UNIT.exec(String(e))
 }
-
 var Rt = (
   /** @class */
   function () {
@@ -893,12 +871,10 @@ var Rt = (
       return this.toRgbString() === new e(r).toRgbString()
     }, e
   }()
-)
-
+);
 function M(e, r = 20) {
   return e.mix('#141414', r).toString()
 }
-
 function Ht(e) {
   const r = ye(), t = V('button')
   return b(() => {
@@ -937,9 +913,8 @@ function Ht(e) {
       }
     }
     return n
-  })
+  });
 }
-
 const zt = B({
   name: 'ElButton',
 }), Ct = /* @__PURE__ */ B({
@@ -1076,9 +1051,9 @@ const Lt = /* @__PURE__ */ B({
         ]),
         key: '1',
       } : void 0,
-    ]), 1040, ['class', 'disabled']))
-  },
-})
+    ]), 1040, ['class', 'disabled']));
+  }
+});
 var jt = /* @__PURE__ */ ((e) => (e.kyb = 'kyb', e.declined = 'declined', e.completed = 'completed', e.process = 'process', e.draft = 'draft', e.border = 'border', e))(jt || {}),
   Gt = /* @__PURE__ */ ((e) => (e.active = '--ui-active', e.attention = '--ui-attention', e.warning = '--ui-warning', e.success = '--ui-success', e.tretiary = '--ui-tretiary', e))(Gt || {}),
   Dt = /* @__PURE__ */ ((e) => (e.notStarted = 'notStarted', e.self_clientInProgress = 'self_clientInProgress', e.self_inCheck = 'self_inCheck', e.self_needInfo = 'self_needInfo', e.self_notConfirmed = 'self_notConfirmed', e.self_confirmed = 'self_confirmed', e.uid_clientInProgress = 'uid_clientInProgress', e.uid_inCheck = 'uid_inCheck', e.uid_notConfirmed = 'uid_notConfirmed', e.uid_confirmed = 'uid_confirmed', e.wrong = 'wrong', e))(Dt || {}),

@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 import { UButton } from './'
-import { EButtonDesign } from './components/ui'
+import { EButtonDesign } from './components'
 </script>
 
 <style scoped>
