@@ -1,4 +1,4 @@
-export * from '@/components/ui'
+export * from './components/ui'
 export { EButtonDesign, EButtonSize } from './components/ui/types.ts'
 export * from './components/icon'
 export * from './components/icon/24'

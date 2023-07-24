@@ -6,7 +6,7 @@
 
 // NB! UI
 // NB! reexport components
-export * from '@/components/ui'
+export * from './components/ui'
 
 // NB! reexport types
 export {
