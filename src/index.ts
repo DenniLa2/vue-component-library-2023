@@ -17,6 +17,10 @@ export {
 // NB! ICONS
 // NB! components
 export * from '@/components/icon'
+export * from '@/components/icon/24'
+export * from '@/components/icon/24/32'
+export * from '@/components/icon/bg'
+export * from '@/components/icon/navbar'
 
 // NB! types
 export {
