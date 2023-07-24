@@ -43,7 +43,7 @@
  */
 import { computed } from 'vue'
 import { EMoneyDirection } from '@/types'
-import { EMoneyDirectionSize } from '../../'
+import { EMoneyDirectionSize } from '../../types.ts'
 
 interface Props {
   direction: EMoneyDirection

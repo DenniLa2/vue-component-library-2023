@@ -1,6 +1,6 @@
 import { StoryObj } from '@storybook/vue3'
 import Icon from '@/components/icon/24/32/DirectionArrow.vue'
-import { EDirectionArrow, EIconColor } from '@/components/icon'
+import { EDirectionArrow, EIconColor } from '@/components/icon/types.ts'
 import { colors } from '@/components/icon/constants.storybook'
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction

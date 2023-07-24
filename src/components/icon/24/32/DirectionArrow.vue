@@ -61,7 +61,7 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 26.05.2023
  */
-import { EDirectionArrow, EIconColor } from '../../'
+import { EDirectionArrow, EIconColor } from '../../types.ts'
 
 interface Props {
   direction: EDirectionArrow

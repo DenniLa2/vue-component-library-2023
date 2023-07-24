@@ -7,16 +7,16 @@ declare const _default: {
   title: string;
   component: import('vue').DefineComponent<{
     color: {
-      type: import('vue').PropType<import('../..').EIconColor>;
-      default: import('../..').EIconColor;
+      type: import('vue').PropType<import('../../types').EIconColor>;
+      default: import('../../types').EIconColor;
     };
   }, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
     color: {
-      type: import('vue').PropType<import('../..').EIconColor>;
-      default: import('../..').EIconColor;
+      type: import('vue').PropType<import('../../types').EIconColor>;
+      default: import('../../types').EIconColor;
     };
   }>>, {
-    color: import('../..').EIconColor;
+    color: import('../../types').EIconColor;
   }, {}>;
   tags: string[];
   argTypes: {
@@ -24,7 +24,7 @@ declare const _default: {
       control: {
         type: string;
       };
-      options: import('../..').EIconColor[];
+      options: import('../../types').EIconColor[];
     };
   };
 }

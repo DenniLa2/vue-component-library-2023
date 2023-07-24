@@ -30,4 +30,4 @@ export {
   EDirectionArrow,
   EIconColor,
   EXSize,
-} from './components/icon'
+} from './components/icon/types.ts'

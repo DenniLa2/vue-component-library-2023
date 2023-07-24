@@ -2,7 +2,7 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 01.07.2023
  */
-import { EDirectionArrow, EIconColor } from '@/components/icon'
+import { EDirectionArrow, EIconColor } from '@/components/icon/types.ts'
 import Calendar from '@/components/icon/24/Calendar.vue'
 import DirectionArrow from '@/components/icon/24/32/DirectionArrow.vue'
 import Download from '@/components/icon/24/Download.vue'

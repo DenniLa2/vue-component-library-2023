@@ -35,7 +35,7 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 05.06.2023
  */
-import { EIconColor } from '../'
+import { EIconColor } from '../types.ts'
 import { ESortDirection } from '@/components/table'
 
 interface Props {

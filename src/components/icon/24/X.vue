@@ -54,7 +54,7 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 21.05.2023
  */
-import { EIconColor, EXSize } from '../'
+import { EIconColor, EXSize } from '../types.ts'
 
 interface Props {
   color: EIconColor

@@ -1,6 +1,6 @@
 import { StoryObj } from '@storybook/vue3'
 import Icon from '@/components/icon/navbar/Drafts.vue'
-import { EIconColor } from '@/components/icon'
+import { EIconColor } from '@/components/icon/types.ts'
 
 declare const _default: {
   title: string;

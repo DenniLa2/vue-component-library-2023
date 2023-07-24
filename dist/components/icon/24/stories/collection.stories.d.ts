@@ -2,7 +2,7 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 01.07.2023
  */
-import { EDirectionArrow, EIconColor } from '@/components/icon'
+import { EDirectionArrow, EIconColor } from '@/components/icon/types.ts'
 import { EMoneyDirection } from '@/types'
 
 declare const _default: {
@@ -227,8 +227,8 @@ export declare const Collection: {
       }, {}>;
       MoneyDirection: import('vue').DefineComponent<{
         size: {
-          type: import('vue').PropType<import('@/components/icon').EMoneyDirectionSize>;
-          default: import('@/components/icon').EMoneyDirectionSize;
+          type: import('vue').PropType<import('@/components/icon/types.ts').EMoneyDirectionSize>;
+          default: import('@/components/icon/types.ts').EMoneyDirectionSize;
         };
         direction: {
           type: import('vue').PropType<EMoneyDirection>;
@@ -236,15 +236,15 @@ export declare const Collection: {
         };
       }, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
-          type: import('vue').PropType<import('@/components/icon').EMoneyDirectionSize>;
-          default: import('@/components/icon').EMoneyDirectionSize;
+          type: import('vue').PropType<import('@/components/icon/types.ts').EMoneyDirectionSize>;
+          default: import('@/components/icon/types.ts').EMoneyDirectionSize;
         };
         direction: {
           type: import('vue').PropType<EMoneyDirection>;
           required: true;
         };
       }>>, {
-        size: import('@/components/icon').EMoneyDirectionSize;
+        size: import('@/components/icon/types.ts').EMoneyDirectionSize;
       }, {}>;
       Plus: import('vue').DefineComponent<{
         color: {
@@ -345,9 +345,9 @@ export declare const Collection: {
       }, {}>;
       X: import('vue').DefineComponent<{
         size: {
-          type: import('vue').PropType<import('@/components/icon').EXSize>;
+          type: import('vue').PropType<import('@/components/icon/types.ts').EXSize>;
           required: true;
-          default: import('@/components/icon').EXSize;
+          default: import('@/components/icon/types.ts').EXSize;
         };
         color: {
           type: import('vue').PropType<EIconColor>;
@@ -355,16 +355,16 @@ export declare const Collection: {
         };
       }, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
-          type: import('vue').PropType<import('@/components/icon').EXSize>;
+          type: import('vue').PropType<import('@/components/icon/types.ts').EXSize>;
           required: true;
-          default: import('@/components/icon').EXSize;
+          default: import('@/components/icon/types.ts').EXSize;
         };
         color: {
           type: import('vue').PropType<EIconColor>;
           required: true;
         };
       }>>, {
-        size: import('@/components/icon').EXSize;
+        size: import('@/components/icon/types.ts').EXSize;
       }, {}>;
     };
     setup(): {

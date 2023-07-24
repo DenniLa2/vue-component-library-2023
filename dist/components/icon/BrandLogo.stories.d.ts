@@ -1,6 +1,6 @@
 import { StoryObj } from '@storybook/vue3'
 import Icon from '@/components/icon/BrandLogo.vue'
-import { ELogoSize } from '@/components/icon/index'
+import { ELogoSize } from '@/components/icon/types.ts'
 
 declare const _default: {
   title: string;

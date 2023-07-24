@@ -22,7 +22,7 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 22.05.2023
  */
-import { EIconColor } from '../'
+import { EIconColor } from '../types.ts'
 
 interface Props {
   color: EIconColor

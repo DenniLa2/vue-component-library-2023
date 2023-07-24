@@ -5,5 +5,4 @@
 import IBrandLogo from './BrandLogo.vue'
 import IError404 from './Error404.vue'
 
-export * from './types.ts'
 export { IBrandLogo, IError404 }

@@ -5,7 +5,7 @@ import Payments from '@/components/icon/navbar/Payments.vue'
 import Drafts from '@/components/icon/navbar/Drafts.vue'
 import Support from '@/components/icon/navbar/Support.vue'
 import Faq from '@/components/icon/navbar/Faq.vue'
-import { EIconColor } from '@/components/icon'
+import { EIconColor } from '@/components/icon/types.ts'
 import { colors } from '@/components/icon/constants.storybook'
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction

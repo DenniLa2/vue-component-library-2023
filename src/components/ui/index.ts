@@ -4,7 +4,6 @@
  */
 import UButton from './UButton.vue'
 import UTag from './UTag.vue'
-// export * from './types.ts'
 
 export {
   UButton,

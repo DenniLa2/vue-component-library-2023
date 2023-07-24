@@ -1,6 +1,6 @@
 import { StoryObj } from '@storybook/vue3'
 import Icon from '@/components/icon/BrandLogo.vue'
-import { ELogoSize } from '@/components/icon/index'
+import { ELogoSize } from '@/components/icon/types.ts'
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 

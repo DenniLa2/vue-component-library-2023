@@ -1,4 +1,4 @@
-import { EIconColor } from '../'
+import { EIconColor } from '../types.ts'
 
 interface Props {
   color?: EIconColor;

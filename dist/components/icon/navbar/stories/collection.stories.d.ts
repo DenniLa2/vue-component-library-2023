@@ -1,4 +1,4 @@
-import { EIconColor } from '@/components/icon'
+import { EIconColor } from '@/components/icon/types.ts'
 
 declare const _default: {
   computed: {

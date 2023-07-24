@@ -36,7 +36,7 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 01.06.2023
  */
-import { EIconColor } from '../'
+import { EIconColor } from '../types.ts'
 
 interface Props {
   color?: EIconColor

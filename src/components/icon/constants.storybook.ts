@@ -2,7 +2,7 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 29.06.2023
  */
-import { EIconColor } from './'
+import { EIconColor } from './types.ts'
 
 export const colors = [
   EIconColor.primary,
