@@ -10,12 +10,6 @@
  */
 import MoneyDirection from './MoneyDirection.vue'
 import { EMoneyDirection } from '@/types'
-
-interface Props {
-  direction: EMoneyDirection
-}
-
-defineProps<Props>()
 </script>
 
 
