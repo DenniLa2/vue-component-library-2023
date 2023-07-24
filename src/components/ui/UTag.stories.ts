@@ -1,5 +1,5 @@
 import { StoryObj } from '@storybook/vue3'
-import BaseTag from '@/components/ui/Tag.vue'
+import BaseTag from '@/components/ui/UTag.vue'
 import { ETagColor } from '@/components/ui/types.ts'
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction

@@ -3,5 +3,6 @@
  * on 03.06.2023
  */
 import UButton from './UButton.vue'
+import UTag from './UTag.vue'
 
-export { UButton }
+export { UButton, UTag }

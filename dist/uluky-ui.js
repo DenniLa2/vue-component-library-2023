@@ -1,38 +1,38 @@
 import {
-  openBlock as S,
+  openBlock as k,
   createElementBlock as z,
-  createElementVNode as wt,
-  warn as Mt,
-  watch as $t,
-  unref as c,
+  createElementVNode as $t,
+  warn as Nt,
+  watch as Bt,
+  unref as u,
   inject as w,
-  ref as O,
+  ref as C,
   computed as g,
-  getCurrentInstance as ct,
-  defineComponent as A,
+  getCurrentInstance as ut,
+  defineComponent as N,
   mergeProps as D,
   renderSlot as T,
   useSlots as lt,
-  Text as Nt,
-  createBlock as H,
-  resolveDynamicComponent as C,
+  Text as At,
+  createBlock as A,
+  resolveDynamicComponent as O,
   withCtx as V,
-  Fragment as Bt,
-  normalizeClass as K,
-  createCommentVNode as L,
-  provide as At,
-  reactive as Rt,
+  Fragment as Rt,
+  normalizeClass as F,
+  createCommentVNode as K,
+  provide as Ht,
+  reactive as Tt,
   toRef as X,
-  createSlots as Ht,
-  createTextVNode as Tt,
-  toDisplayString as Vt,
+  createSlots as Vt,
+  createTextVNode as ft,
+  toDisplayString as dt,
 } from 'vue'
 
 process.env.NODE_ENV !== 'production' && Object.freeze({})
 process.env.NODE_ENV !== 'production' && Object.freeze([])
 const zt = () => {
   }, It = Object.prototype.hasOwnProperty, tt = (t, r) => It.call(t, r), J = (t) => typeof t == 'string',
-  ft = (t) => t !== null && typeof t == 'object'
+  ht = (t) => t !== null && typeof t == 'object'
 
 function Pt(t) {
   for (var r = -1, e = t == null ? 0 : t.length, n = {}; ++r < e;) {
@@ -49,7 +49,7 @@ class Et extends Error {
   }
 }
 
-function dt(t, r) {
+function gt(t, r) {
   if (process.env.NODE_ENV !== 'production') {
     const e = J(t) ? new Et(`[${ t }] ${ r }`) : t
     console.warn(e)
@@ -65,21 +65,21 @@ function Gt(t, r = 'px') {
     return `${ t }${ r }`
   if (J(t))
     return t
-  dt(jt, 'binding value must be a string or number')
+  gt(jt, 'binding value must be a string or number')
 }
 
 /*! Element Plus Icons Vue v2.1.0 */
-var Kt = (t, r) => {
+var Ut = (t, r) => {
   let e = t.__vccOpts || t
   for (let [n, a] of r)
     e[n] = a
   return e
-}, Lt = {
+}, Kt = {
   name: 'Loading',
-}, Ut = {
+}, Lt = {
   xmlns: 'http://www.w3.org/2000/svg',
   viewBox: '0 0 1024 1024',
-}, Wt = /* @__PURE__ */ wt(
+}, Wt = /* @__PURE__ */ $t(
   'path',
   {
     fill: 'currentColor',
@@ -90,38 +90,38 @@ var Kt = (t, r) => {
   /* HOISTED */
 ), qt = [
   Wt,
-];
+]
 
 function Dt(t, r, e, n, a, o) {
-  return S(), z('svg', Ut, qt)
+  return k(), z('svg', Lt, qt)
 }
 
-var Jt = /* @__PURE__ */ Kt(Lt, [['render', Dt], ['__file', 'loading.vue']])
-const ht = '__epPropKey', Z = (t) => t, Zt = (t) => ft(t) && !!t[ht], gt = (t, r) => {
-    if (!ft(t) || Zt(t))
+var Jt = /* @__PURE__ */ Ut(Kt, [['render', Dt], ['__file', 'loading.vue']])
+const bt = '__epPropKey', Z = (t) => t, Zt = (t) => ht(t) && !!t[bt], pt = (t, r) => {
+    if (!ht(t) || Zt(t))
       return t
     const { values: e, required: n, default: a, type: o, validator: s } = t, f = {
       type: o,
       required: !!n,
-      validator: e || s ? (v) => {
-        let p = !1, m = []
-        if (e && (m = Array.from(e), tt(t, 'default') && m.push(a), p || (p = m.includes(v))), s && (p || (p = s(v))), !p && m.length > 0) {
-          const R = [...new Set(m)].map((d) => JSON.stringify(d)).join(', ')
-          Mt(`Invalid prop: validation failed${ r ? ` for prop "${ r }"` : '' }. Expected one of [${ R }], got value ${ JSON.stringify(v) }.`)
+      validator: e || s ? (b) => {
+        let v = !1, m = []
+        if (e && (m = Array.from(e), tt(t, 'default') && m.push(a), v || (v = m.includes(b))), s && (v || (v = s(b))), !v && m.length > 0) {
+          const H = [...new Set(m)].map((d) => JSON.stringify(d)).join(', ')
+          Nt(`Invalid prop: validation failed${ r ? ` for prop "${ r }"` : '' }. Expected one of [${ H }], got value ${ JSON.stringify(b) }.`)
         }
-        return p
+        return v
       } : void 0,
-      [ht]: !0,
+      [bt]: !0,
     }
     return tt(t, 'default') && (f.default = a), f
   }, vt = (t) => Pt(Object.entries(t).map(([r, e]) => [
     r,
-    gt(e, r),
+    pt(e, r),
   ])), et = Z([
     String,
     Object,
     Function,
-  ]), bt = (t, r) => {
+  ]), mt = (t, r) => {
     if (t.install = (e) => {
       for (const n of [t, ...Object.values(r ?? {})])
         e.component(n.name, n)
@@ -131,66 +131,66 @@ const ht = '__epPropKey', Z = (t) => t, Zt = (t) => ft(t) && !!t[ht], gt = (t, r
     return t
   }, Yt = (t) => (t.install = zt, t), Qt = ['', 'default', 'small', 'large'],
   Xt = ({ from: t, replacement: r, scope: e, version: n, ref: a, type: o = 'API' }, s) => {
-    $t(() => c(s), (u) => {
-      u && dt(e, `[${ o }] ${ t } is about to be deprecated in version ${ n }, please use ${ r } instead.
+    Bt(() => u(s), (c) => {
+      c && gt(e, `[${ o }] ${ t } is about to be deprecated in version ${ n }, please use ${ r } instead.
 For more detail, please visit: ${ a }
 `)
     }, {
       immediate: !0,
     })
-  }, rt = 'el', te = 'is-', N = (t, r, e, n, a) => {
+  }, rt = 'el', te = 'is-', B = (t, r, e, n, a) => {
     let o = `${ t }-${ r }`
     return e && (o += `-${ e }`), n && (o += `__${ n }`), a && (o += `--${ a }`), o
   }, ee = Symbol('namespaceContextKey'), re = (t) => {
-    const r = t || w(ee, O(rt))
-    return g(() => c(r) || rt)
-  }, F = (t, r) => {
+    const r = t || w(ee, C(rt))
+    return g(() => u(r) || rt)
+  }, E = (t, r) => {
     const e = re(r)
     return {
       namespace: e,
-      b: (i = '') => N(e.value, t, i, '', ''),
-      e: (i) => i ? N(e.value, t, '', i, '') : '',
-      m: (i) => i ? N(e.value, t, '', '', i) : '',
-      be: (i, l) => i && l ? N(e.value, t, i, l, '') : '',
-      em: (i, l) => i && l ? N(e.value, t, '', i, l) : '',
-      bm: (i, l) => i && l ? N(e.value, t, i, '', l) : '',
-      bem: (i, l, b) => i && l && b ? N(e.value, t, i, l, b) : '',
+      b: (i = '') => B(e.value, t, i, '', ''),
+      e: (i) => i ? B(e.value, t, '', i, '') : '',
+      m: (i) => i ? B(e.value, t, '', '', i) : '',
+      be: (i, l) => i && l ? B(e.value, t, i, l, '') : '',
+      em: (i, l) => i && l ? B(e.value, t, '', i, l) : '',
+      bm: (i, l) => i && l ? B(e.value, t, i, '', l) : '',
+      bem: (i, l, p) => i && l && p ? B(e.value, t, i, l, p) : '',
       is: (i, ...l) => {
-        const b = l.length >= 1 ? l[0] : !0
-        return i && b ? `${ te }${ i }` : ''
+        const p = l.length >= 1 ? l[0] : !0
+        return i && p ? `${ te }${ i }` : ''
       },
       cssVar: (i) => {
         const l = {}
-        for (const b in i)
-          i[b] && (l[`--${ e.value }-${ b }`] = i[b])
+        for (const p in i)
+          i[p] && (l[`--${ e.value }-${ p }`] = i[p])
         return l
       },
       cssVarName: (i) => `--${ e.value }-${ i }`,
       cssVarBlock: (i) => {
         const l = {}
-        for (const b in i)
-          i[b] && (l[`--${ e.value }-${ t }-${ b }`] = i[b])
+        for (const p in i)
+          i[p] && (l[`--${ e.value }-${ t }-${ p }`] = i[p])
         return l
       },
       cssVarBlockName: (i) => `--${ e.value }-${ t }-${ i }`,
     }
-  }, pt = (t) => {
-    const r = ct()
+  }, yt = (t) => {
+    const r = ut()
     return g(() => {
       var e, n
       return (n = (e = r == null ? void 0 : r.proxy) == null ? void 0 : e.$props) == null ? void 0 : n[t]
     })
-  }, ne = gt({
+  }, ne = pt({
     type: String,
     values: Qt,
     required: !1,
   }), ae = Symbol('size'), oe = () => {
     const t = w(ae, {})
-    return g(() => c(t.size) || '')
-  }, se = Symbol(), nt = O()
+    return g(() => u(t.size) || '')
+  }, se = Symbol(), nt = C()
 
 function ie(t, r = void 0) {
-  const e = ct() ? w(se, nt) : nt
+  const e = ut() ? w(se, nt) : nt
   return t ? g(() => {
     var n, a
     return (a = (n = e.value) == null ? void 0 : n[t]) != null ? a : r
@@ -203,50 +203,50 @@ var Y = (t, r) => {
     e[n] = a
   return e
 }
-const ue = vt({
+const ce = vt({
   size: {
     type: Z([Number, String]),
   },
   color: {
     type: String,
   },
-}), ce = A({
+}), ue = N({
   name: 'ElIcon',
   inheritAttrs: !1,
-}), le = /* @__PURE__ */ A({
-  ...ce,
-  props: ue,
+}), le = /* @__PURE__ */ N({
+  ...ue,
+  props: ce,
   setup(t) {
-    const r = t, e = F('icon'), n = g(() => {
+    const r = t, e = E('icon'), n = g(() => {
       const { size: a, color: o } = r
       return !a && !o ? {} : {
         fontSize: Ot(a) ? void 0 : Gt(a),
         '--color': o,
       }
     })
-    return (a, o) => (S(), z('i', D({
-      class: c(e).b(),
-      style: c(n),
+    return (a, o) => (k(), z('i', D({
+      class: u(e).b(),
+      style: u(n),
     }, a.$attrs), [
       T(a.$slots, 'default'),
     ], 16))
-  }
-});
+  },
+})
 var fe = /* @__PURE__ */ Y(le, [['__file', '/home/runner/work/element-plus/element-plus/packages/components/icon/src/icon.vue']])
-const at = bt(fe), Q = Symbol('formContextKey'), mt = Symbol('formItemContextKey'), de = (t, r = {}) => {
-  const e = O(void 0), n = r.prop ? e : pt('size'), a = r.global ? e : oe(),
-    o = r.form ? { size: void 0 } : w(Q, void 0), s = r.formItem ? { size: void 0 } : w(mt, void 0)
-  return g(() => n.value || c(t) || (s == null ? void 0 : s.size) || (o == null ? void 0 : o.size) || a.value || '')
-}, yt = (t) => {
-  const r = pt('disabled'), e = w(Q, void 0)
-  return g(() => r.value || c(t) || (e == null ? void 0 : e.disabled) || !1)
+const at = mt(fe), Q = Symbol('formContextKey'), kt = Symbol('formItemContextKey'), de = (t, r = {}) => {
+  const e = C(void 0), n = r.prop ? e : yt('size'), a = r.global ? e : oe(),
+    o = r.form ? { size: void 0 } : w(Q, void 0), s = r.formItem ? { size: void 0 } : w(kt, void 0)
+  return g(() => n.value || u(t) || (s == null ? void 0 : s.size) || (o == null ? void 0 : o.size) || a.value || '')
+}, _t = (t) => {
+  const r = yt('disabled'), e = w(Q, void 0)
+  return g(() => r.value || u(t) || (e == null ? void 0 : e.disabled) || !1)
 }, he = () => {
-  const t = w(Q, void 0), r = w(mt, void 0)
+  const t = w(Q, void 0), r = w(kt, void 0)
   return {
     form: t,
     formItem: r,
   }
-}, kt = Symbol('buttonGroupContextKey'), ge = (t, r) => {
+}, St = Symbol('buttonGroupContextKey'), ge = (t, r) => {
   Xt({
     from: 'type.text',
     replacement: 'link',
@@ -254,23 +254,23 @@ const at = bt(fe), Q = Symbol('formContextKey'), mt = Symbol('formItemContextKey
     scope: 'props',
     ref: 'https://element-plus.org/en-US/component/button.html#button-attributes',
   }, g(() => t.type === 'text'))
-  const e = w(kt, void 0), n = ie('button'), { form: a } = he(), o = de(g(() => e == null ? void 0 : e.size)), s = yt(),
-    u = O(), f = lt(), v = g(() => t.type || (e == null ? void 0 : e.type) || ''), p = g(() => {
-      var _, i, l
-      return (l = (i = t.autoInsertSpace) != null ? i : (_ = n.value) == null ? void 0 : _.autoInsertSpace) != null ? l : !1
+  const e = w(St, void 0), n = ie('button'), { form: a } = he(), o = de(g(() => e == null ? void 0 : e.size)), s = _t(),
+    c = C(), f = lt(), b = g(() => t.type || (e == null ? void 0 : e.type) || ''), v = g(() => {
+      var S, i, l
+      return (l = (i = t.autoInsertSpace) != null ? i : (S = n.value) == null ? void 0 : S.autoInsertSpace) != null ? l : !1
     }), m = g(() => t.tag === 'button' ? {
       ariaDisabled: s.value || t.loading,
       disabled: s.value || t.loading,
       autofocus: t.autofocus,
       type: t.nativeType,
-    } : {}), R = g(() => {
-      var _
-      const i = (_ = f.default) == null ? void 0 : _.call(f)
-      if (p.value && (i == null ? void 0 : i.length) === 1) {
+    } : {}), H = g(() => {
+      var S
+      const i = (S = f.default) == null ? void 0 : S.call(f)
+      if (v.value && (i == null ? void 0 : i.length) === 1) {
         const l = i[0]
-        if ((l == null ? void 0 : l.type) === Nt) {
-          const b = l.children
-          return /^\p{Unified_Ideograph}{2}$/u.test(b.trim())
+        if ((l == null ? void 0 : l.type) === At) {
+          const p = l.children
+          return /^\p{Unified_Ideograph}{2}$/u.test(p.trim())
         }
       }
       return !1
@@ -278,15 +278,15 @@ const at = bt(fe), Q = Symbol('formContextKey'), mt = Symbol('formItemContextKey
   return {
     _disabled: s,
     _size: o,
-    _type: v,
-    _ref: u,
+    _type: b,
+    _ref: c,
     _props: m,
-    shouldAddSpace: R,
-    handleClick: (_) => {
-      t.nativeType === 'reset' && (a == null || a.resetFields()), r('click', _)
+    shouldAddSpace: H,
+    handleClick: (S) => {
+      t.nativeType === 'reset' && (a == null || a.resetFields()), r('click', S)
     },
   }
-}, ve = [
+}, be = [
   'default',
   'primary',
   'success',
@@ -295,12 +295,12 @@ const at = bt(fe), Q = Symbol('formContextKey'), mt = Symbol('formItemContextKey
   'danger',
   'text',
   '',
-], be = ['button', 'submit', 'reset'], U = vt({
+], pe = ['button', 'submit', 'reset'], L = vt({
   size: ne,
   disabled: Boolean,
   type: {
     type: String,
-    values: ve,
+    values: be,
     default: '',
   },
   icon: {
@@ -308,7 +308,7 @@ const at = bt(fe), Q = Symbol('formContextKey'), mt = Symbol('formItemContextKey
   },
   nativeType: {
     type: String,
-    values: be,
+    values: pe,
     default: 'button',
   },
   loading: Boolean,
@@ -332,8 +332,8 @@ const at = bt(fe), Q = Symbol('formContextKey'), mt = Symbol('formItemContextKey
   tag: {
     type: Z([String, Object]),
     default: 'button',
-  }
-}), pe = {
+  },
+}), ve = {
   click: (t) => t instanceof MouseEvent,
 };
 function h(t, r) {
@@ -347,18 +347,23 @@ function I(t) {
 function me(t) {
   return typeof t == 'string' && t.indexOf('.') !== -1 && parseFloat(t) === 1
 }
+
 function ye(t) {
   return typeof t == 'string' && t.indexOf('%') !== -1
 }
-function St(t) {
+
+function xt(t) {
   return t = parseFloat(t), (isNaN(t) || t < 0 || t > 1) && (t = 1), t
 }
+
 function P(t) {
   return t <= 1 ? ''.concat(Number(t) * 100, '%') : t
 }
-function B(t) {
+
+function R(t) {
   return t.length === 1 ? '0' + t : String(t)
 }
+
 function ke(t, r, e) {
   return {
     r: h(t, 255) * 255,
@@ -368,12 +373,12 @@ function ke(t, r, e) {
 }
 function ot(t, r, e) {
   t = h(t, 255), r = h(r, 255), e = h(e, 255)
-  var n = Math.max(t, r, e), a = Math.min(t, r, e), o = 0, s = 0, u = (n + a) / 2
+  var n = Math.max(t, r, e), a = Math.min(t, r, e), o = 0, s = 0, c = (n + a) / 2
   if (n === a)
     s = 0, o = 0
   else {
     var f = n - a
-    switch (s = u > 0.5 ? f / (2 - n - a) : f / (n + a), n) {
+    switch (s = c > 0.5 ? f / (2 - n - a) : f / (n + a), n) {
       case t:
         o = (r - e) / f + (r < e ? 6 : 0)
         break
@@ -386,71 +391,79 @@ function ot(t, r, e) {
     }
     o /= 6
   }
-  return { h: o, s, l: u }
+  return { h: o, s, l: c }
 }
-function E(t, r, e) {
+
+function j(t, r, e) {
   return e < 0 && (e += 1), e > 1 && (e -= 1), e < 1 / 6 ? t + (r - t) * (6 * e) : e < 1 / 2 ? r : e < 2 / 3 ? t + (r - t) * (2 / 3 - e) * 6 : t
 }
-function Se(t, r, e) {
+
+function _e(t, r, e) {
   var n, a, o
   if (t = h(t, 360), r = h(r, 100), e = h(e, 100), r === 0)
     a = e, o = e, n = e
   else {
-    var s = e < 0.5 ? e * (1 + r) : e + r - e * r, u = 2 * e - s
-    n = E(u, s, t + 1 / 3), a = E(u, s, t), o = E(u, s, t - 1 / 3)
+    var s = e < 0.5 ? e * (1 + r) : e + r - e * r, c = 2 * e - s
+    n = j(c, s, t + 1 / 3), a = j(c, s, t), o = j(c, s, t - 1 / 3)
   }
   return { r: n * 255, g: a * 255, b: o * 255 }
 }
+
 function st(t, r, e) {
   t = h(t, 255), r = h(r, 255), e = h(e, 255)
-  var n = Math.max(t, r, e), a = Math.min(t, r, e), o = 0, s = n, u = n - a, f = n === 0 ? 0 : u / n
+  var n = Math.max(t, r, e), a = Math.min(t, r, e), o = 0, s = n, c = n - a, f = n === 0 ? 0 : c / n
   if (n === a)
     o = 0
   else {
     switch (n) {
       case t:
-        o = (r - e) / u + (r < e ? 6 : 0)
+        o = (r - e) / c + (r < e ? 6 : 0)
         break
       case r:
-        o = (e - t) / u + 2
+        o = (e - t) / c + 2
         break
       case e:
-        o = (t - r) / u + 4
+        o = (t - r) / c + 4
         break
     }
     o /= 6
   }
   return { h: o, s: f, v: s }
 }
-function _e(t, r, e) {
+
+function Se(t, r, e) {
   t = h(t, 360) * 6, r = h(r, 100), e = h(e, 100)
-  var n = Math.floor(t), a = t - n, o = e * (1 - r), s = e * (1 - a * r), u = e * (1 - (1 - a) * r), f = n % 6,
-    v = [e, s, o, o, u, e][f], p = [u, e, e, s, o, o][f], m = [o, o, u, e, e, s][f]
-  return { r: v * 255, g: p * 255, b: m * 255 }
+  var n = Math.floor(t), a = t - n, o = e * (1 - r), s = e * (1 - a * r), c = e * (1 - (1 - a) * r), f = n % 6,
+    b = [e, s, o, o, c, e][f], v = [c, e, e, s, o, o][f], m = [o, o, c, e, e, s][f]
+  return { r: b * 255, g: v * 255, b: m * 255 }
 }
+
 function it(t, r, e, n) {
   var a = [
-    B(Math.round(t).toString(16)),
-    B(Math.round(r).toString(16)),
-    B(Math.round(e).toString(16)),
+    R(Math.round(t).toString(16)),
+    R(Math.round(r).toString(16)),
+    R(Math.round(e).toString(16)),
   ]
   return n && a[0].startsWith(a[0].charAt(1)) && a[1].startsWith(a[1].charAt(1)) && a[2].startsWith(a[2].charAt(1)) ? a[0].charAt(0) + a[1].charAt(0) + a[2].charAt(0) : a.join('')
 }
 function xe(t, r, e, n, a) {
   var o = [
-    B(Math.round(t).toString(16)),
-    B(Math.round(r).toString(16)),
-    B(Math.round(e).toString(16)),
-    B(we(n)),
+    R(Math.round(t).toString(16)),
+    R(Math.round(r).toString(16)),
+    R(Math.round(e).toString(16)),
+    R(we(n)),
   ]
   return a && o[0].startsWith(o[0].charAt(1)) && o[1].startsWith(o[1].charAt(1)) && o[2].startsWith(o[2].charAt(1)) && o[3].startsWith(o[3].charAt(1)) ? o[0].charAt(0) + o[1].charAt(0) + o[2].charAt(0) + o[3].charAt(0) : o.join('')
 }
+
 function we(t) {
   return Math.round(parseFloat(t) * 255).toString(16)
 }
-function ut(t) {
+
+function ct(t) {
   return y(t) / 255
 }
+
 function y(t) {
   return parseInt(t, 16)
 }
@@ -614,10 +627,10 @@ var W = {
 }
 
 function $e(t) {
-  var r = { r: 0, g: 0, b: 0 }, e = 1, n = null, a = null, o = null, s = !1, u = !1
-  return typeof t == 'string' && (t = Ae(t)), typeof t == 'object' && (x(t.r) && x(t.g) && x(t.b) ? (r = ke(t.r, t.g, t.b), s = !0, u = String(t.r).substr(-1) === '%' ? 'prgb' : 'rgb') : x(t.h) && x(t.s) && x(t.v) ? (n = P(t.s), a = P(t.v), r = _e(t.h, n, a), s = !0, u = 'hsv') : x(t.h) && x(t.s) && x(t.l) && (n = P(t.s), o = P(t.l), r = Se(t.h, n, o), s = !0, u = 'hsl'), Object.prototype.hasOwnProperty.call(t, 'a') && (e = t.a)), e = St(e), {
+  var r = { r: 0, g: 0, b: 0 }, e = 1, n = null, a = null, o = null, s = !1, c = !1
+  return typeof t == 'string' && (t = Ae(t)), typeof t == 'object' && (x(t.r) && x(t.g) && x(t.b) ? (r = ke(t.r, t.g, t.b), s = !0, c = String(t.r).substr(-1) === '%' ? 'prgb' : 'rgb') : x(t.h) && x(t.s) && x(t.v) ? (n = P(t.s), a = P(t.v), r = Se(t.h, n, a), s = !0, c = 'hsv') : x(t.h) && x(t.s) && x(t.l) && (n = P(t.s), o = P(t.l), r = _e(t.h, n, o), s = !0, c = 'hsl'), Object.prototype.hasOwnProperty.call(t, 'a') && (e = t.a)), e = xt(e), {
     ok: s,
-    format: t.format || u,
+    format: t.format || c,
     r: Math.min(255, Math.max(r.r, 0)),
     g: Math.min(255, Math.max(r.g, 0)),
     b: Math.min(255, Math.max(r.b, 0)),
@@ -626,16 +639,16 @@ function $e(t) {
 }
 
 var Ne = '[-\\+]?\\d+%?', Be = '[-\\+]?\\d*\\.\\d+%?', $ = '(?:'.concat(Be, ')|(?:').concat(Ne, ')'),
-  j = '[\\s|\\(]+('.concat($, ')[,|\\s]+(').concat($, ')[,|\\s]+(').concat($, ')\\s*\\)?'),
-  G = '[\\s|\\(]+('.concat($, ')[,|\\s]+(').concat($, ')[,|\\s]+(').concat($, ')[,|\\s]+(').concat($, ')\\s*\\)?'),
-  k = {
+  G = '[\\s|\\(]+('.concat($, ')[,|\\s]+(').concat($, ')[,|\\s]+(').concat($, ')\\s*\\)?'),
+  U = '[\\s|\\(]+('.concat($, ')[,|\\s]+(').concat($, ')[,|\\s]+(').concat($, ')[,|\\s]+(').concat($, ')\\s*\\)?'),
+  _ = {
     CSS_UNIT: new RegExp($),
-    rgb: new RegExp('rgb' + j),
-    rgba: new RegExp('rgba' + G),
-    hsl: new RegExp('hsl' + j),
-    hsla: new RegExp('hsla' + G),
-    hsv: new RegExp('hsv' + j),
-    hsva: new RegExp('hsva' + G),
+    rgb: new RegExp('rgb' + G),
+    rgba: new RegExp('rgba' + U),
+    hsl: new RegExp('hsl' + G),
+    hsla: new RegExp('hsla' + U),
+    hsv: new RegExp('hsv' + G),
+    hsva: new RegExp('hsva' + U),
     hex3: /^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
     hex6: /^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/,
     hex4: /^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
@@ -650,40 +663,40 @@ function Ae(t) {
     t = W[t], r = !0
   else if (t === 'transparent')
     return { r: 0, g: 0, b: 0, a: 0, format: 'name' }
-  var e = k.rgb.exec(t)
-  return e ? { r: e[1], g: e[2], b: e[3] } : (e = k.rgba.exec(t), e ? {
+  var e = _.rgb.exec(t)
+  return e ? { r: e[1], g: e[2], b: e[3] } : (e = _.rgba.exec(t), e ? {
     r: e[1],
     g: e[2],
     b: e[3],
     a: e[4],
-  } : (e = k.hsl.exec(t), e ? { h: e[1], s: e[2], l: e[3] } : (e = k.hsla.exec(t), e ? {
+  } : (e = _.hsl.exec(t), e ? { h: e[1], s: e[2], l: e[3] } : (e = _.hsla.exec(t), e ? {
     h: e[1],
     s: e[2],
     l: e[3],
     a: e[4],
-  } : (e = k.hsv.exec(t), e ? { h: e[1], s: e[2], v: e[3] } : (e = k.hsva.exec(t), e ? {
+  } : (e = _.hsv.exec(t), e ? { h: e[1], s: e[2], v: e[3] } : (e = _.hsva.exec(t), e ? {
     h: e[1],
     s: e[2],
     v: e[3],
     a: e[4],
-  } : (e = k.hex8.exec(t), e ? {
+  } : (e = _.hex8.exec(t), e ? {
     r: y(e[1]),
     g: y(e[2]),
     b: y(e[3]),
-    a: ut(e[4]),
+    a: ct(e[4]),
     format: r ? 'name' : 'hex8',
-  } : (e = k.hex6.exec(t), e ? {
+  } : (e = _.hex6.exec(t), e ? {
     r: y(e[1]),
     g: y(e[2]),
     b: y(e[3]),
     format: r ? 'name' : 'hex',
-  } : (e = k.hex4.exec(t), e ? {
+  } : (e = _.hex4.exec(t), e ? {
     r: y(e[1] + e[1]),
     g: y(e[2] + e[2]),
     b: y(e[3] + e[3]),
-    a: ut(e[4] + e[4]),
+    a: ct(e[4] + e[4]),
     format: r ? 'name' : 'hex8',
-  } : (e = k.hex3.exec(t), e ? {
+  } : (e = _.hex3.exec(t), e ? {
     r: y(e[1] + e[1]),
     g: y(e[2] + e[2]),
     b: y(e[3] + e[3]),
@@ -691,7 +704,7 @@ function Ae(t) {
   } : !1)))))))));
 }
 function x(t) {
-  return !!k.CSS_UNIT.exec(String(t))
+  return !!_.CSS_UNIT.exec(String(t))
 }
 var Re = (
   /** @class */
@@ -714,12 +727,12 @@ var Re = (
       var r = this.toRgb()
       return (r.r * 299 + r.g * 587 + r.b * 114) / 1e3
     }, t.prototype.getLuminance = function () {
-      var r = this.toRgb(), e, n, a, o = r.r / 255, s = r.g / 255, u = r.b / 255
-      return o <= 0.03928 ? e = o / 12.92 : e = Math.pow((o + 0.055) / 1.055, 2.4), s <= 0.03928 ? n = s / 12.92 : n = Math.pow((s + 0.055) / 1.055, 2.4), u <= 0.03928 ? a = u / 12.92 : a = Math.pow((u + 0.055) / 1.055, 2.4), 0.2126 * e + 0.7152 * n + 0.0722 * a
+      var r = this.toRgb(), e, n, a, o = r.r / 255, s = r.g / 255, c = r.b / 255
+      return o <= 0.03928 ? e = o / 12.92 : e = Math.pow((o + 0.055) / 1.055, 2.4), s <= 0.03928 ? n = s / 12.92 : n = Math.pow((s + 0.055) / 1.055, 2.4), c <= 0.03928 ? a = c / 12.92 : a = Math.pow((c + 0.055) / 1.055, 2.4), 0.2126 * e + 0.7152 * n + 0.0722 * a
     }, t.prototype.getAlpha = function () {
       return this.a
     }, t.prototype.setAlpha = function (r) {
-      return this.a = St(r), this.roundA = Math.round(100 * this.a) / 100, this
+      return this.a = xt(r), this.roundA = Math.round(100 * this.a) / 100, this
     }, t.prototype.isMonochrome = function () {
       var r = this.toHsl().s
       return r === 0
@@ -841,8 +854,8 @@ var Re = (
       return r.h = (r.h + 180) % 360, new t(r)
     }, t.prototype.monochromatic = function (r) {
       r === void 0 && (r = 6)
-      for (var e = this.toHsv(), n = e.h, a = e.s, o = e.v, s = [], u = 1 / r; r--;)
-        s.push(new t({ h: n, s: a, v: o })), o = (o + u) % 1
+      for (var e = this.toHsv(), n = e.h, a = e.s, o = e.v, s = [], c = 1 / r; r--;)
+        s.push(new t({ h: n, s: a, v: o })), o = (o + c) % 1
       return s
     }, t.prototype.splitcomplement = function () {
       var r = this.toHsl(), e = r.h
@@ -876,7 +889,7 @@ function M(t, r = 20) {
   return t.mix('#141414', r).toString()
 }
 function He(t) {
-  const r = yt(), e = F('button')
+  const r = _t(), e = E('button')
   return g(() => {
     let n = {}
     const a = t.color
@@ -895,91 +908,92 @@ function He(t) {
           'active-border-color': s,
         }), r.value && (n[e.cssVarBlockName('disabled-bg-color')] = t.dark ? M(o, 90) : o.tint(90).toString(), n[e.cssVarBlockName('disabled-text-color')] = t.dark ? M(o, 50) : o.tint(50).toString(), n[e.cssVarBlockName('disabled-border-color')] = t.dark ? M(o, 80) : o.tint(80).toString())
       else {
-        const u = t.dark ? M(o, 30) : o.tint(30).toString(),
+        const c = t.dark ? M(o, 30) : o.tint(30).toString(),
           f = o.isDark() ? `var(${ e.cssVarName('color-white') })` : `var(${ e.cssVarName('color-black') })`
         if (n = e.cssVarBlock({
           'bg-color': a,
           'text-color': f,
           'border-color': a,
-          'hover-bg-color': u,
+          'hover-bg-color': c,
           'hover-text-color': f,
-          'hover-border-color': u,
+          'hover-border-color': c,
           'active-bg-color': s,
           'active-border-color': s,
         }), r.value) {
-          const v = t.dark ? M(o, 50) : o.tint(50).toString()
-          n[e.cssVarBlockName('disabled-bg-color')] = v, n[e.cssVarBlockName('disabled-text-color')] = t.dark ? 'rgba(255, 255, 255, 0.5)' : `var(${ e.cssVarName('color-white') })`, n[e.cssVarBlockName('disabled-border-color')] = v
+          const b = t.dark ? M(o, 50) : o.tint(50).toString()
+          n[e.cssVarBlockName('disabled-bg-color')] = b, n[e.cssVarBlockName('disabled-text-color')] = t.dark ? 'rgba(255, 255, 255, 0.5)' : `var(${ e.cssVarName('color-white') })`, n[e.cssVarBlockName('disabled-border-color')] = b
         }
       }
     }
     return n
   });
 }
-const Te = A({
+
+const Te = N({
   name: 'ElButton',
-}), Ve = /* @__PURE__ */ A({
+}), Ve = /* @__PURE__ */ N({
   ...Te,
-  props: U,
-  emits: pe,
+  props: L,
+  emits: ve,
   setup(t, { expose: r, emit: e }) {
-    const n = t, a = He(n), o = F('button'), {
+    const n = t, a = He(n), o = E('button'), {
       _ref: s,
-      _size: u,
+      _size: c,
       _type: f,
-      _disabled: v,
-      _props: p,
+      _disabled: b,
+      _props: v,
       shouldAddSpace: m,
-      handleClick: R,
+      handleClick: H,
     } = ge(n, e)
     return r({
       ref: s,
-      size: u,
+      size: c,
       type: f,
-      disabled: v,
+      disabled: b,
       shouldAddSpace: m,
-    }), (d, _) => (S(), H(C(d.tag), D({
+    }), (d, S) => (k(), A(O(d.tag), D({
       ref_key: '_ref',
       ref: s,
-    }, c(p), {
+    }, u(v), {
       class: [
-        c(o).b(),
-        c(o).m(c(f)),
-        c(o).m(c(u)),
-        c(o).is('disabled', c(v)),
-        c(o).is('loading', d.loading),
-        c(o).is('plain', d.plain),
-        c(o).is('round', d.round),
-        c(o).is('circle', d.circle),
-        c(o).is('text', d.text),
-        c(o).is('link', d.link),
-        c(o).is('has-bg', d.bg),
+        u(o).b(),
+        u(o).m(u(f)),
+        u(o).m(u(c)),
+        u(o).is('disabled', u(b)),
+        u(o).is('loading', d.loading),
+        u(o).is('plain', d.plain),
+        u(o).is('round', d.round),
+        u(o).is('circle', d.circle),
+        u(o).is('text', d.text),
+        u(o).is('link', d.link),
+        u(o).is('has-bg', d.bg),
       ],
-      style: c(a),
-      onClick: c(R),
+      style: u(a),
+      onClick: u(H),
     }), {
       default: V(() => [
-        d.loading ? (S(), z(Bt, { key: 0 }, [
-          d.$slots.loading ? T(d.$slots, 'loading', { key: 0 }) : (S(), H(c(at), {
+        d.loading ? (k(), z(Rt, { key: 0 }, [
+          d.$slots.loading ? T(d.$slots, 'loading', { key: 0 }) : (k(), A(u(at), {
             key: 1,
-            class: K(c(o).is('loading')),
+            class: F(u(o).is('loading')),
           }, {
             default: V(() => [
-              (S(), H(C(d.loadingIcon))),
+              (k(), A(O(d.loadingIcon))),
             ]),
             _: 1,
           }, 8, ['class'])),
-        ], 64)) : d.icon || d.$slots.icon ? (S(), H(c(at), { key: 1 }, {
+        ], 64)) : d.icon || d.$slots.icon ? (k(), A(u(at), { key: 1 }, {
           default: V(() => [
-            d.icon ? (S(), H(C(d.icon), { key: 0 })) : T(d.$slots, 'icon', { key: 1 }),
+            d.icon ? (k(), A(O(d.icon), { key: 0 })) : T(d.$slots, 'icon', { key: 1 }),
           ]),
           _: 3,
-        })) : L('v-if', !0),
-        d.$slots.default ? (S(), z('span', {
+        })) : K('v-if', !0),
+        d.$slots.default ? (k(), z('span', {
           key: 2,
-          class: K({ [c(o).em('text', 'expand')]: c(m) }),
+          class: F({ [u(o).em('text', 'expand')]: u(m) }),
         }, [
           T(d.$slots, 'default'),
-        ], 2)) : L('v-if', !0),
+        ], 2)) : K('v-if', !0),
       ]),
       _: 3,
     }, 16, ['class', 'style', 'onClick']));
@@ -987,35 +1001,35 @@ const Te = A({
 });
 var ze = /* @__PURE__ */ Y(Ve, [['__file', '/home/runner/work/element-plus/element-plus/packages/components/button/src/button.vue']])
 const Ie = {
-  size: U.size,
-  type: U.type,
-}, Pe = A({
+  size: L.size,
+  type: L.type,
+}, Pe = N({
   name: 'ElButtonGroup',
-}), Oe = /* @__PURE__ */ A({
+}), Oe = /* @__PURE__ */ N({
   ...Pe,
   props: Ie,
   setup(t) {
     const r = t
-    At(kt, Rt({
+    Ht(St, Tt({
       size: X(r, 'size'),
       type: X(r, 'type'),
     }))
-    const e = F('button')
-    return (n, a) => (S(), z('div', {
-      class: K(`${ c(e).b('group') }`),
+    const e = E('button')
+    return (n, a) => (k(), z('div', {
+      class: F(`${ u(e).b('group') }`),
     }, [
       T(n.$slots, 'default'),
     ], 2))
   },
 })
-var _t = /* @__PURE__ */ Y(Oe, [['__file', '/home/runner/work/element-plus/element-plus/packages/components/button/src/button-group.vue']])
-const Fe = bt(ze, {
-  ButtonGroup: _t,
+var wt = /* @__PURE__ */ Y(Oe, [['__file', '/home/runner/work/element-plus/element-plus/packages/components/button/src/button-group.vue']])
+const Fe = mt(ze, {
+  ButtonGroup: wt,
 })
-Yt(_t)
+Yt(wt)
 var q = /* @__PURE__ */ ((t) => (t.RoundedMain = 'btn-rounded-main', t.RoundedIconOnly = 'btn-rounded-icon-only', t.RoundedSecondary = 'btn-rounded-secondary', t.RoundedWarning = 'btn-rounded-warning', t.TextDefault = 'btn-text-default', t))(q || {}),
-  xt = /* @__PURE__ */ ((t) => (t.large = 'btn-rounded--large', t.medium = 'btn-rounded--medium', t.mini = 'btn-rounded--mini', t))(xt || {})
-const We = /* @__PURE__ */ A({
+  Mt = /* @__PURE__ */ ((t) => (t.large = 'btn-rounded--large', t.medium = 'btn-rounded--medium', t.mini = 'btn-rounded--mini', t))(Mt || {})
+const We = /* @__PURE__ */ N({
   __name: 'UButton',
   props: {
     design: { default: q.RoundedMain },
@@ -1025,7 +1039,7 @@ const We = /* @__PURE__ */ A({
     size: {
       default: (t) => {
         if (t.design !== q.TextDefault)
-          return t.size ?? xt.large
+          return t.size ?? Mt.large
       },
     },
   },
@@ -1035,41 +1049,67 @@ const We = /* @__PURE__ */ A({
       r.iconLocation ?? '',
       r.size ?? '',
     ])
-    return (a, o) => (S(), H(c(Fe), D({
+    return (a, o) => (k(), A(u(Fe), D({
       class: ['btn', n.value],
       disabled: !!a.disabled,
-    }, a.$attrs), Ht({ _: 2 }, [
+    }, a.$attrs), Vt({ _: 2 }, [
       a.label ? {
         name: 'default',
         fn: V(() => [
-          Tt(Vt(a.label), 1),
+          ft(dt(a.label), 1),
         ]),
         key: '0',
       } : void 0,
-      c(e).icon ? {
+      u(e).icon ? {
         name: 'icon',
         fn: V(() => [
-          c(e).icon ? T(a.$slots, 'icon', { key: 0 }) : L('', !0),
+          u(e).icon ? T(a.$slots, 'icon', { key: 0 }) : K('', !0),
         ]),
         key: '1',
       } : void 0,
-    ]), 1040, ['class', 'disabled']));
+    ]), 1040, ['class', 'disabled']))
   }
+}), qe = /* @__PURE__ */ N({
+  __name: 'UTag',
+  props: {
+    color: {},
+    label: {},
+    clickable: { type: Boolean, default: !1 },
+  },
+  emits: ['tag'],
+  setup(t, { emit: r }) {
+    const e = t, n = g(() => [
+      e.clickable ? 'base-tag-button' : 'base-tag-span',
+      `base-tag${ e.color }`,
+    ]), a = () => {
+      e.clickable && r('tag')
+    }
+    return (o, s) => (k(), A(O(o.clickable ? 'button' : 'span'), {
+      class: F(['base-tag', n.value]),
+      onClick: a,
+    }, {
+      default: V(() => [
+        ft(dt(o.label), 1),
+      ]),
+      _: 1,
+    }, 8, ['class']))
+  },
 });
 var Ce = /* @__PURE__ */ ((t) => (t.left = 'left', t.right = 'right', t.up = 'up', t.down = 'down', t))(Ce || {}),
   Ee = /* @__PURE__ */ ((t) => (t.s24 = 's24', t.s32 = 's32', t))(Ee || {}),
   je = /* @__PURE__ */ ((t) => (t.s_32_27 = 's_32_27', t.s_42_36 = 's_42_36', t))(je || {}),
   Ge = /* @__PURE__ */ ((t) => (t.Back = 'Back', t.Forward = 'Forward', t))(Ge || {}),
-  Ke = /* @__PURE__ */ ((t) => (t.primary = 'primary', t.secondary = 'secondary', t.allusion = 'allusion', t.contrast = 'contrast', t.warning = 'warning', t.success = 'success', t.hint = 'hint', t.search = 'search', t))(Ke || {}),
-  Le = /* @__PURE__ */ ((t) => (t.s10 = 's10', t.s6 = 's6', t))(Le || {})
+  Ue = /* @__PURE__ */ ((t) => (t.primary = 'primary', t.secondary = 'secondary', t.allusion = 'allusion', t.contrast = 'contrast', t.warning = 'warning', t.success = 'success', t.hint = 'hint', t.search = 'search', t))(Ue || {}),
+  Ke = /* @__PURE__ */ ((t) => (t.s10 = 's10', t.s6 = 's6', t))(Ke || {})
 export {
   q as EButtonDesign,
-  xt as EButtonSize,
+  Mt as EButtonSize,
   Ge as EDirectionArrow,
   Ce as EDirection_x4,
-  Ke as EIconColor,
+  Ue as EIconColor,
   je as ELogoSize,
   Ee as EMoneyDirectionSize,
-  Le as EXSize,
+  Ke as EXSize,
   We as UButton,
+  qe as UTag,
 }
