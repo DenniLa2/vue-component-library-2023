@@ -30,8 +30,8 @@ declare const _default: {
       type: import('vue').PropType<boolean>;
       default: boolean;
     };
-    }>>, {
-        clickable: boolean;
+  }>>, {
+    clickable: boolean;
   }, {}>;
   tags: string[];
   argTypes: {
@@ -42,7 +42,7 @@ declare const _default: {
       options: ETagColor[];
     };
   };
-};
+}
 export default _default
 type Story = StoryObj<typeof BaseTag>;
 export declare const Attention_Clickable: Story

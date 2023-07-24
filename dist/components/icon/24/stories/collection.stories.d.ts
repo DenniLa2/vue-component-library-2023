@@ -171,8 +171,28 @@ export declare const Collection: {
       }>>, {
         color: EIconColor;
       }, {}>;
-      TransactionReceive: import('vue').DefineComponent<{}, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{}>>, {}, {}>;
-      TransactionSend: import('vue').DefineComponent<{}, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{}>>, {}, {}>;
+      TransactionReceive: import('vue').DefineComponent<{
+        direction: {
+          type: import('vue').PropType<EMoneyDirection>;
+          required: true;
+        };
+      }, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+        direction: {
+          type: import('vue').PropType<EMoneyDirection>;
+          required: true;
+        };
+      }>>, {}, {}>;
+      TransactionSend: import('vue').DefineComponent<{
+        direction: {
+          type: import('vue').PropType<EMoneyDirection>;
+          required: true;
+        };
+      }, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+        direction: {
+          type: import('vue').PropType<EMoneyDirection>;
+          required: true;
+        };
+      }>>, {}, {}>;
       Info: import('vue').DefineComponent<{
         color: {
           type: import('vue').PropType<EIconColor>;
