@@ -1,0 +1,112 @@
+:root {
+  --font-family: "HelveticaNeue", sans-serif;
+
+  // BG
+  --bg-secondary: #F1F2F4;
+  --bg-primary: rgb(246 247 248);
+  --bg-tretiary: #E7E8Eb;
+  --bg-card: rgb(255 255 255);
+  --bg-notification--success: #F5F9F1;
+  --bg-notification--error: #FBEFEF;
+  --bg-notification--warning: #FEF7EA;
+  --bg-warning: rgb(216 100 98 / 10%);
+  --bg-success: rgb(154 199 119 / 10%);
+  --bg-navbar-profile-tmp-003: rgb(7 24 50 / 3%);
+  --bg-swiper-point: #E7E8EB;
+  --bg-btn-warning: #D86462;
+  --bg-btn-warning-disabled: rgb(7 24 50 / 10%);
+  --bg-btn-secondary-focus: rgb(7 24 50 / 5%);
+  --bg-ui-warning: rgb(216 100 98 / 30%);
+  --bg-attention: rgb(245 180 47 / 30%);
+  --bg-active: rgba(56 52 241 / 30%);
+  --bg-ui-success: rgb(154 199 119 / 30%);
+  --bg-ui-tretiary: rgb(231 232 235 / 1%);
+  --bg-completed: rgb(154 199 119 / 30%);
+  --bg-disabled: rgb(7 24 50 / 2%);
+
+  // added to element with no bg on user interaction
+  --bg-on-hover: rgb(24 38 58 / 5%);
+  --bg-on-click: rgb(24 38 58 / 12%);
+  --bg-overlay: rgb(24 38 58 / 65%);
+
+  // TEXT
+  --text-primary: rgb(7 24 50 / 80%);
+  --text-secondary: rgb(7 24 50 / 40%);
+  --text-hint: rgb(7 24 50 / 30%);
+  --text-disabled: rgb(7 24 50 / 20%);
+  --text-contrast: rgb(255 255 255);
+  --text-dark: #000;
+
+  // UI
+  --ui-attention: #F5B42F;
+  --ui-success: #9AC777;
+  --ui-active: #3834F1;
+  --ui-focus: #0804BA;
+  --ui-disabled: #AAA9FF;
+  --ui-warning: #D86462;
+  --ui-kyb: #FF9B8D;
+  --ui-completed: #B8F2C5;
+  --ui-declined: #F4CACA;
+  --ui-process: #CFE7F9;
+  --ui-selected: #F6F7F8;
+  --ui-btn-blue: #00F;
+  --ui-btn-disabled: #DEDEDE;
+  --ui-btn-circle: #F7F7F7;
+  --ui-radio-hover: rgb(154 199 119 / 10%);
+  --ui-pagination-focus: rgb(24 38 58 / 12%);
+  --ui-dp-date-hover: #E7E7FF;
+
+  // ICON
+  --icon-primary: #39465B;
+  --icon-secondary: #9CA3AD;
+  --icon-contrast: rgb(255 255 255);
+  --icon-hint: #BBC1D0;
+  --icon-info: #071832;
+  --icon-search: rgb(156 163 173);
+
+  // SHADOWS
+  --shadow-card: 0px 4px 60px rgba(35 54 102 / 5%);
+  --shadow-tooltip: 0px 4px 36px rgba(35 54 102 / 10%);
+  --shadows-main: 0 5px 9px rgb(108 162 242 / 30%);
+  --shadows-modal: 0 4px 60px rgb(35 54 102 / 5%);
+  --shadows-border-default: 0 0 0 1px rgb(7 24 50 / 10%);
+  --shadows-border-hover: 0 0 0 1px rgb(7 24 50 / 20%);
+  --shadows-border-active: 0 0 0 2px var(--ui-active);
+  --shadows-border-worning: 0 0 0 2px var(--ui-warning);
+  --shadows-border-success: 0 0 0 2px var(--ui-success);
+  --shadows-notification-success: 0 0 0 1px rgb(154 199 119 / 40%);
+  --shadows-notification-error: 0 0 0 1px rgb(216 100 98 / 40%);
+  --shadows-notification-warning: 0 0 0 1px rgb(245 180 47 / 40%);
+  --shadow-filter-popper: drop-shadow(0 8px 16px rgba(0 0 0 / 5%));
+  --shadow-btn-warning: 0 5px 9px rgb(216 100 98 / 20%);
+
+  // BORDER
+  --border-default: 1px solid rgb(7 24 50 / 10%);
+  --border-hover: 1px solid rgb(7 24 50 / 30%);
+  --border-active: 2px solid var(--ui-active);
+  --border-worning: 1px solid rgb(216 100 98 / 40%);
+  --border-success: 1px solid rgb(154 199 119 / 40%);
+  --border-dashed: 1px dashed rgb(7 24 50 / 10%);
+  --border-navigational-number: 1px solid rgb(255 255 255 / 20%);
+  --border-filter-date: 2px solid rgb(7 24 50 / 10%);
+
+  // BUTTON
+  --button-disabled: rgb(7 24 50 / 10%);
+  --button-disabled-2: rgb(7 24 50 / 20%);
+
+  // GRADIENT
+  --gradient-btn-warning: linear-gradient(0deg, rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)), #D86462;
+  --gradient-btn-warning-focus: linear-gradient(0deg, rgb(0 0 0 / 20%), rgb(0 0 0 / 20%)), #D86462;
+
+
+  // BRAND
+  --brand-gradient: linear-gradient(316.61deg, #6CA2F2 -20.66%, #2CBC9A 113.59%);
+  --brand-gradient-hover: linear-gradient(0deg, rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)), linear-gradient(316.61deg, #6CA2F2 -20.66%, #2CBC9A 113.59%);
+  --brand-gradient-active: linear-gradient(0deg, rgb(0 0 0 / 20%), rgb(0 0 0 / 20%)), linear-gradient(316.61deg, #6CA2F2 -20.66%, #2CBC9A 113.59%);
+  --brand-color1: #6CA2F2;
+  --brand-color2: #2CBC9A;
+  --brand-color3: #18263A;
+
+  // OPACITY
+  --opacity-05: 0.5;
+}

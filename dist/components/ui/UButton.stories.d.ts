@@ -9,11 +9,9 @@ declare const _default: {
       $: import('vue').ComponentInternalInstance;
       $data: {};
       $props: {
+        size?: EButtonSize | undefined;
         design?: EButtonDesign | undefined;
         disabled?: boolean | undefined;
-        size?: EButtonSize | undefined;
-        readonly label?: string | undefined;
-        readonly iconLocation?: EIconLocation | undefined;
         key?: string | number | symbol | undefined;
         ref?: import('vue').VNodeRef | undefined;
         ref_for?: boolean | undefined;
@@ -58,6 +56,8 @@ declare const _default: {
         }>) => void)[] | undefined;
         class?: unknown;
         style?: unknown;
+        readonly label?: string | undefined;
+        readonly iconLocation?: EIconLocation | undefined;
       };
       $attrs: {
         [x: string]: unknown;
@@ -73,12 +73,16 @@ declare const _default: {
       $emit: (event: string, ...args: any[]) => void;
       $el: any;
       $options: import('vue').ComponentOptionsBase<Readonly<import('vue').ExtractPropTypes<{
-        design: {
-          type: import('vue').PropType<EButtonDesign>;
-          default: EButtonDesign;
+        size: {
+          type: import('vue').PropType<EButtonSize>;
+          default: (rawProps: any) => EButtonSize | undefined;
         };
         label: {
           type: import('vue').PropType<string>;
+        };
+        design: {
+          type: import('vue').PropType<EButtonDesign>;
+          default: EButtonDesign;
         };
         disabled: {
           type: import('vue').PropType<boolean>;
@@ -87,14 +91,10 @@ declare const _default: {
         iconLocation: {
           type: import('vue').PropType<EIconLocation>;
         };
-        size: {
-          type: import('vue').PropType<EButtonSize>;
-          default: (rawProps: any) => EButtonSize | undefined;
-        };
       }>>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, {
+        size: EButtonSize;
         design: EButtonDesign;
         disabled: boolean;
-        size: EButtonSize;
       }, {}, string, {}> & {
         beforeCreate?: ((() => void) | (() => void)[]) | undefined;
         created?: ((() => void) | (() => void)[]) | undefined;
@@ -116,12 +116,16 @@ declare const _default: {
       $nextTick: typeof import('vue').nextTick;
       $watch<T extends string | ((...args: any) => any)>(source: T, cb: T extends (...args: any) => infer R ? (args_0: R, args_1: R) => any : (...args: any) => any, options?: import('vue').WatchOptions<boolean> | undefined): import('vue').WatchStopHandle;
     } & Readonly<import('vue').ExtractPropTypes<{
-      design: {
-        type: import('vue').PropType<EButtonDesign>;
-        default: EButtonDesign;
+      size: {
+        type: import('vue').PropType<EButtonSize>;
+        default: (rawProps: any) => EButtonSize | undefined;
       };
       label: {
         type: import('vue').PropType<string>;
+      };
+      design: {
+        type: import('vue').PropType<EButtonDesign>;
+        default: EButtonDesign;
       };
       disabled: {
         type: import('vue').PropType<boolean>;
@@ -130,21 +134,21 @@ declare const _default: {
       iconLocation: {
         type: import('vue').PropType<EIconLocation>;
       };
-      size: {
-        type: import('vue').PropType<EButtonSize>;
-        default: (rawProps: any) => EButtonSize | undefined;
-      };
     }>> & import('vue').ShallowUnwrapRef<{}> & {} & import('vue').ComponentCustomProperties & {};
     __isFragment?: undefined;
     __isTeleport?: undefined;
     __isSuspense?: undefined;
   } & import('vue').ComponentOptionsBase<Readonly<import('vue').ExtractPropTypes<{
-    design: {
-      type: import('vue').PropType<EButtonDesign>;
-      default: EButtonDesign;
+    size: {
+      type: import('vue').PropType<EButtonSize>;
+      default: (rawProps: any) => EButtonSize | undefined;
     };
     label: {
       type: import('vue').PropType<string>;
+    };
+    design: {
+      type: import('vue').PropType<EButtonDesign>;
+      default: EButtonDesign;
     };
     disabled: {
       type: import('vue').PropType<boolean>;
@@ -153,14 +157,10 @@ declare const _default: {
     iconLocation: {
       type: import('vue').PropType<EIconLocation>;
     };
-    size: {
-      type: import('vue').PropType<EButtonSize>;
-      default: (rawProps: any) => EButtonSize | undefined;
-    };
   }>>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, {
+    size: EButtonSize;
     design: EButtonDesign;
     disabled: boolean;
-    size: EButtonSize;
   }, {}, string, {}> & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps & (new () => {
     $slots: {
       icon?(_: {}): any;

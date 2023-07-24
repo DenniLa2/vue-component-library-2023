@@ -18,9 +18,9 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
   design: EButtonDesign;
   size: (rawProps: any) => EButtonSize | undefined;
 }>>>, {
+  size: EButtonSize;
   design: EButtonDesign;
   disabled: boolean;
-  size: EButtonSize;
 }, {}>, {
   icon?(_: {}): any;
 }>
