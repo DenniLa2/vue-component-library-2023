@@ -46,7 +46,6 @@ function Xe(e) {
 }
 
 const Ye = (e) => e === void 0, Qe = (e) => typeof e == 'number', et = (e) => ie(e) ? !Number.isNaN(Number(e)) : !1
-
 class tt extends Error {
   constructor(t) {
     super(t), this.name = 'ElementPlusError'
@@ -94,7 +93,7 @@ var nt = (e, t) => {
   /* HOISTED */
 ), lt = [
   at,
-]
+];
 
 function ct(e, t, o, r, n, s) {
   return l(), d('svg', it, lt)
@@ -234,8 +233,8 @@ const $t = He({
     }, n.$attrs), [
       z(n.$slots, 'default'),
     ], 16))
-  },
-})
+  }
+});
 var xt = /* @__PURE__ */ le(Mt, [['__file', '/home/runner/work/element-plus/element-plus/packages/components/icon/src/icon.vue']])
 const ge = Be(xt), ce = Symbol('formContextKey'), Ve = Symbol('formItemContextKey'), St = (e, t = {}) => {
   const o = K(void 0), r = t.prop ? o : Ie('size'), n = t.global ? o : mt(),
@@ -336,41 +335,33 @@ const ge = Be(xt), ce = Symbol('formContextKey'), Ve = Symbol('formItemContextKe
   tag: {
     type: ae([String, Object]),
     default: 'button',
-  },
+  }
 }), Vt = {
   click: (e) => e instanceof MouseEvent,
 };
-
 function m(e, t) {
   Lt(e) && (e = '100%')
   var o = At(e)
   return e = t === 360 ? e : Math.min(t, Math.max(0, parseFloat(e))), o && (e = parseInt(String(e * t), 10) / 100), Math.abs(e - t) < 1e-6 ? 1 : (t === 360 ? e = (e < 0 ? e % t + t : e % t) / parseFloat(String(t)) : e = e % t / parseFloat(String(t)), e)
 }
-
 function Z(e) {
   return Math.min(1, Math.max(0, e))
 }
-
 function Lt(e) {
   return typeof e == 'string' && e.indexOf('.') !== -1 && parseFloat(e) === 1
 }
-
 function At(e) {
   return typeof e == 'string' && e.indexOf('%') !== -1
 }
-
 function Ne(e) {
   return e = parseFloat(e), (isNaN(e) || e < 0 || e > 1) && (e = 1), e
 }
-
 function D(e) {
   return e <= 1 ? ''.concat(Number(e) * 100, '%') : e
 }
-
 function N(e) {
   return e.length === 1 ? '0' + e : String(e)
 }
-
 function Nt(e, t, o) {
   return {
     r: m(e, 255) * 255,
@@ -378,7 +369,6 @@ function Nt(e, t, o) {
     b: m(o, 255) * 255,
   }
 }
-
 function ve(e, t, o) {
   e = m(e, 255), t = m(t, 255), o = m(o, 255)
   var r = Math.max(e, t, o), n = Math.min(e, t, o), s = 0, c = 0, f = (r + n) / 2
@@ -401,11 +391,9 @@ function ve(e, t, o) {
   }
   return { h: s, s: c, l: f }
 }
-
 function Y(e, t, o) {
   return o < 0 && (o += 1), o > 1 && (o -= 1), o < 1 / 6 ? e + (t - e) * (6 * o) : o < 1 / 2 ? t : o < 2 / 3 ? e + (t - e) * (2 / 3 - o) * 6 : e
 }
-
 function Tt(e, t, o) {
   var r, n, s
   if (e = m(e, 360), t = m(t, 100), o = m(o, 100), t === 0)
@@ -416,7 +404,6 @@ function Tt(e, t, o) {
   }
   return { r: r * 255, g: n * 255, b: s * 255 }
 }
-
 function ke(e, t, o) {
   e = m(e, 255), t = m(t, 255), o = m(o, 255)
   var r = Math.max(e, t, o), n = Math.min(e, t, o), s = 0, c = r, f = r - n, g = r === 0 ? 0 : f / r
@@ -438,14 +425,12 @@ function ke(e, t, o) {
   }
   return { h: s, s: g, v: c }
 }
-
 function zt(e, t, o) {
   e = m(e, 360) * 6, t = m(t, 100), o = m(o, 100)
   var r = Math.floor(e), n = e - r, s = o * (1 - t), c = o * (1 - n * t), f = o * (1 - (1 - n) * t), g = r % 6,
     b = [o, c, s, s, f, o][g], $ = [f, o, o, c, s, s][g], C = [s, s, f, o, o, c][g]
   return { r: b * 255, g: $ * 255, b: C * 255 }
 }
-
 function we(e, t, o, r) {
   var n = [
     N(Math.round(e).toString(16)),
@@ -454,7 +439,6 @@ function we(e, t, o, r) {
   ]
   return r && n[0].startsWith(n[0].charAt(1)) && n[1].startsWith(n[1].charAt(1)) && n[2].startsWith(n[2].charAt(1)) ? n[0].charAt(0) + n[1].charAt(0) + n[2].charAt(0) : n.join('')
 }
-
 function Ft(e, t, o, r, n) {
   var s = [
     N(Math.round(e).toString(16)),
@@ -464,19 +448,15 @@ function Ft(e, t, o, r, n) {
   ]
   return n && s[0].startsWith(s[0].charAt(1)) && s[1].startsWith(s[1].charAt(1)) && s[2].startsWith(s[2].charAt(1)) && s[3].startsWith(s[3].charAt(1)) ? s[0].charAt(0) + s[1].charAt(0) + s[2].charAt(0) + s[3].charAt(0) : s.join('')
 }
-
 function Rt(e) {
   return Math.round(parseFloat(e) * 255).toString(16)
 }
-
 function me(e) {
   return M(e) / 255
 }
-
 function M(e) {
   return parseInt(e, 16)
 }
-
 function Pt(e) {
   return {
     r: e >> 16,
@@ -716,7 +696,6 @@ function Dt(e) {
 function H(e) {
   return !!S.CSS_UNIT.exec(String(e))
 }
-
 var Gt = (
   /** @class */
   function () {
@@ -896,11 +875,9 @@ var Gt = (
     }, e
   }()
 );
-
 function V(e, t = 20) {
   return e.mix('#141414', t).toString()
 }
-
 function Ut(e) {
   const t = Le(), o = W('button')
   return w(() => {
@@ -941,7 +918,6 @@ function Ut(e) {
     return r
   });
 }
-
 const qt = u({
   name: 'ElButton',
 }), Kt = /* @__PURE__ */ u({
@@ -1080,7 +1056,7 @@ const zr = /* @__PURE__ */ u({
         ]),
         key: '1',
       } : void 0,
-    ]), 1040, ['class', 'disabled']))
+    ]), 1040, ['class', 'disabled']));
   }
 }), Fr = /* @__PURE__ */ u({
   __name: 'UTag',
@@ -1170,7 +1146,6 @@ const x = (e, t) => {
   io,
   ao,
 ]
-
 function co(e, t) {
   return l(), d('svg', so, lo)
 }
@@ -1247,7 +1222,7 @@ const uo = {
       }, null, 2),
     ], 2))
   },
-})
+});
 const Er = /* @__PURE__ */ x(ho, [['__scopeId', 'data-v-2b73248f']]), po = {
   width: '24',
   height: '24',
@@ -1341,7 +1316,7 @@ const Er = /* @__PURE__ */ x(ho, [['__scopeId', 'data-v-2b73248f']]), po = {
       }, null, 2),
     ]))
   },
-})
+});
 const Ur = /* @__PURE__ */ x($o, [['__scopeId', 'data-v-8bc84df9']]), Co = {
   width: '24',
   height: '24',
@@ -1459,7 +1434,7 @@ const Ur = /* @__PURE__ */ x($o, [['__scopeId', 'data-v-8bc84df9']]), Co = {
       }, null, 2),
     ]))
   },
-})
+});
 const Jr = /* @__PURE__ */ x(jo, [['__scopeId', 'data-v-a6477cdd']]), Ho = {
   width: '24',
   height: '24',
@@ -1587,7 +1562,7 @@ const Jr = /* @__PURE__ */ x(jo, [['__scopeId', 'data-v-a6477cdd']]), Ho = {
       }, null, 2),
     ]))
   },
-})
+});
 const en = /* @__PURE__ */ x(To, [['__scopeId', 'data-v-4a655dcb']]), zo = {
   width: '24',
   height: '24',
@@ -1881,7 +1856,7 @@ const en = /* @__PURE__ */ x(To, [['__scopeId', 'data-v-4a655dcb']]), zo = {
       ])),
     ], 2))
   },
-})
+});
 const cn = /* @__PURE__ */ x(Go, [['__scopeId', 'data-v-afc92281']]), Uo = { class: 'size-24' }, qo = {
   width: '24',
   height: '24',
@@ -2057,7 +2032,7 @@ const un = /* @__PURE__ */ x(Jo, [['__scopeId', 'data-v-20104c56']]), Xo = {
       ])) : R('', !0),
     ], 2))
   },
-})
+});
 const pn = /* @__PURE__ */ x(tr, [['__scopeId', 'data-v-1dc4da26']])
 var P = /* @__PURE__ */ ((e) => (e.send = 'send', e.receive = 'receive', e))(P || {})
 const de = (e) => (O('data-v-724636db'), e = e(), E(), e), or = ['width', 'height'],
@@ -2500,4 +2475,4 @@ export {
   hn as IX,
   zr as UButton,
   Fr as UTag,
-}
+};
