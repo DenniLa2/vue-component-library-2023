@@ -1,5 +1,5 @@
 import { StoryObj } from '@storybook/vue3'
-import Icon from '@/components/icon/navbar/Drafts.vue'
+import Icon from '@/components/icon/24/ISmDrafts.vue'
 import { EIconColor } from '@/components/icon/types.ts'
 
 declare const _default: {

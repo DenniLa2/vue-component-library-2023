@@ -1,8 +1,7 @@
 import { StoryObj } from '@storybook/vue3'
-import Calendar from '@/components/icon/24/Calendar.vue'
+import Calendar from '@/components/icon/24/ISmCalendar.vue'
 import '@/assets/style/color.scss'
 import '@/assets/style/color-classes.scss'
-
 declare const _default: {
   title: string;
   component: import('vue').DefineComponent<{
@@ -27,7 +26,7 @@ declare const _default: {
       options: import('../../types').EIconColor[];
     };
   };
-}
+};
 export default _default
 type Story = StoryObj<typeof Calendar>;
 export declare const Default: Story

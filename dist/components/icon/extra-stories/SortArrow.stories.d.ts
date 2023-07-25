@@ -1,8 +1,7 @@
 import { StoryObj } from '@storybook/vue3'
-import Icon from '@/components/icon/24/SortArrow.vue'
+import Icon from '@/components/icon/24/ISmSortArrow.vue'
 import { EIconColor } from '@/components/icon/types.ts'
 import { ESortDirection } from '@/components/table'
-
 declare const _default: {
   title: string;
   component: import('vue').DefineComponent<{
@@ -39,7 +38,7 @@ declare const _default: {
       options: ESortDirection[];
     };
   };
-}
+};
 export default _default
 type Story = StoryObj<typeof Icon>;
 export declare const Default: Story

@@ -1,7 +1,6 @@
 import { StoryObj } from '@storybook/vue3'
 import Icon from '@/components/icon/BrandLogo.vue'
 import { ELogoSize } from '@/components/icon/types.ts'
-
 declare const _default: {
   title: string;
   component: import('vue').DefineComponent<{
@@ -26,7 +25,7 @@ declare const _default: {
       options: ELogoSize[];
     };
   };
-}
+};
 export default _default
 type Story = StoryObj<typeof Icon>;
 export declare const BrandLogo: Story

@@ -1,5 +1,5 @@
 import { StoryObj } from '@storybook/vue3'
-import Icon from '@/components/icon/24/HintSuccess.vue'
+import Icon from '@/components/icon/24/ISmHintSuccess.vue'
 import { EIconColor } from '@/components/icon/types.ts'
 import { colors } from '@/components/icon/constants.storybook'
 

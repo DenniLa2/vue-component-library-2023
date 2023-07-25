@@ -1,6 +1,6 @@
 import { StoryObj } from '@storybook/vue3'
-import Icon from '@/components/icon/24/32/DirectionArrow.vue'
-import { EDirectionArrow, EIconColor } from '@/components/icon/types.ts'
+import Icon from '@/components/icon/24/32/ISmMdDirectionArrow.vue'
+import { EDirectionArrow, EIconColor, EIconSize } from '@/components/icon/types.ts'
 import { colors } from '@/components/icon/constants.storybook'
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
@@ -26,7 +26,7 @@ export default {
       control: {
         type: 'select',
       },
-      options: [undefined, 24, 32],
+      options: [undefined, EIconSize.s24, EIconSize.s32],
       defaultValue: undefined,
     },
   },
@@ -46,6 +46,6 @@ export const DirectionArrow_32: Story = {
   args: {
     direction: EDirectionArrow.Back,
     color: EIconColor.secondary,
-    size: 32,
+    size: EIconSize.s32,
   },
 }

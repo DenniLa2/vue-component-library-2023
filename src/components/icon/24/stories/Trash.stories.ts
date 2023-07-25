@@ -1,5 +1,5 @@
 import { StoryObj } from '@storybook/vue3'
-import Icon from '@/components/icon/24/Trash.vue'
+import Icon from '@/components/icon/24/ISmTrash.vue'
 import { colors } from '@/components/icon/constants.storybook'
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction

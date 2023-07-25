@@ -1,6 +1,5 @@
 import { StoryObj } from '@storybook/vue3'
-import Icon from '@/components/icon/24/Download.vue'
-
+import Icon from '@/components/icon/24/ISmDownload.vue'
 declare const _default: {
   title: string;
   component: import('vue').DefineComponent<{
@@ -25,7 +24,7 @@ declare const _default: {
       options: import('../../types').EIconColor[];
     };
   };
-}
+};
 export default _default
 type Story = StoryObj<typeof Icon>;
 export declare const Default: Story

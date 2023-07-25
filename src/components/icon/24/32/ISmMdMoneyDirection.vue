@@ -43,21 +43,21 @@
  */
 import { computed } from 'vue'
 import { EMoneyDirection } from '@/types'
-import { EMoneyDirectionSize } from '../../types.ts'
+import { EIconSize } from '../../types.ts'
 
 interface Props {
   direction: EMoneyDirection
-  size?: EMoneyDirectionSize
+  size?: EIconSize
 }
 
-const props = withDefaults(defineProps<Props>(), { size: EMoneyDirectionSize.s24 })
+const props = withDefaults(defineProps<Props>(), { size: EIconSize.s24 })
 
 const s = computed<number>(() => {
   switch (props.size) {
-    case EMoneyDirectionSize.s24:
+    case EIconSize.s24:
       return 24
 
-    case EMoneyDirectionSize.s32:
+    case EIconSize.s32:
       return 32
 
     default:

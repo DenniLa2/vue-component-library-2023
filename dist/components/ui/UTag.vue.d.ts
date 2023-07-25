@@ -1,5 +1,4 @@
 import { ETagColor } from '@/components/ui/types'
-
 interface Props {
   color: ETagColor;
   label: string;
@@ -12,7 +11,7 @@ declare const _default: import('vue').DefineComponent<__VLS_WithDefaults<__VLS_T
   clickable: boolean;
 }>>>, {
   clickable: boolean;
-}, {}>
+}, {}>;
 export default _default
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
 type __VLS_TypePropsToRuntimeProps<T> = {

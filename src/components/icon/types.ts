@@ -9,7 +9,7 @@ export enum EDirection_x4 {
   down = 'down',
 }
 
-export enum EMoneyDirectionSize {
+export enum EIconSize {
   s24 = 's24',
   s32 = 's32',
 }

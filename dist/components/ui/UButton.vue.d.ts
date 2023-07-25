@@ -1,6 +1,5 @@
 import 'element-plus/dist/index.css'
 import { EButtonDesign, EButtonSize, EIconLocation } from './types.ts'
-
 interface Props {
   design?: EButtonDesign;
   label?: string;
@@ -23,7 +22,7 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__
   disabled: boolean;
 }, {}>, {
   icon?(_: {}): any;
-}>
+}>;
 export default _default
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
 type __VLS_TypePropsToRuntimeProps<T> = {

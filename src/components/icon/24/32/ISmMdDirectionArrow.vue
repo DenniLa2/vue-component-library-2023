@@ -3,11 +3,11 @@
     class="direction-arrow__wrapper"
     :class="[
       (direction ?? '').toLowerCase(),
-      `direction-arrow__wrapper_size-${size}`
+      `direction-arrow__wrapper_size-${iconSize}`
     ]"
   >
     <svg
-      v-if="size === 24"
+      v-if="size === EIconSize.s24"
       width="24"
       height="24"
       viewBox="0 0 24 24"
@@ -31,7 +31,7 @@
     </svg>
 
     <svg
-      v-else-if="size === 32"
+      v-else-if="size === EIconSize.s32"
       width="33"
       height="32"
       viewBox="0 0 33 32"
@@ -61,21 +61,24 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 26.05.2023
  */
-import { EDirectionArrow, EIconColor } from '../../types.ts'
+import { EDirectionArrow, EIconColor, EIconSize } from '../../types.ts'
+import { computed } from 'vue'
 
 interface Props {
   direction: EDirectionArrow
   color?: EIconColor
-  size?: 24 | 32
+  size?: EIconSize
 }
 
-withDefaults(
+const props = withDefaults(
   defineProps<Props>(),
   {
     color: EIconColor.secondary,
-    size: 24,
+    size: EIconSize.s24,
   },
 )
+
+const iconSize = computed<string>(() => props.size.split('s')[0])
 
 </script>
 

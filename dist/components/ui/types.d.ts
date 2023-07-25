@@ -19,7 +19,6 @@ export declare enum ETagStatus {
   draft = 'draft',
   border = 'border'
 }
-
 export declare enum ETagColor {
   active = '--ui-active',
   attention = '--ui-attention',
@@ -27,7 +26,6 @@ export declare enum ETagColor {
   success = '--ui-success',
   tretiary = '--ui-tretiary'
 }
-
 export declare enum EVerificationTagStatus {
   notStarted = 'notStarted',
   self_clientInProgress = 'self_clientInProgress',
@@ -41,7 +39,6 @@ export declare enum EVerificationTagStatus {
   uid_confirmed = 'uid_confirmed',
   wrong = 'wrong'
 }
-
 export declare enum EInputType {
   email = 'email',
   password = 'password',
@@ -50,13 +47,11 @@ export declare enum EInputType {
   textarea = 'textarea',
   number = 'number'
 }
-
 export declare enum EValidationState {
   success = 'success',
   error = 'error',
   none = 'none'
 }
-
 export declare enum EButtonDesign {
   RoundedMain = 'btn-rounded-main',
   RoundedIconOnly = 'btn-rounded-icon-only',
@@ -64,20 +59,17 @@ export declare enum EButtonDesign {
   RoundedWarning = 'btn-rounded-warning',
   TextDefault = 'btn-text-default'
 }
-
 export declare enum EIconLocation {
   leftAround = 'btn--left-around',
   leftBetween = 'btn--left-between',
   rightAround = 'btn--right-around',
   rightBetween = 'btn--right-between'
 }
-
 export declare enum EButtonSize {
   large = 'btn-rounded--large',
   medium = 'btn-rounded--medium',
   mini = 'btn-rounded--mini'
 }
-
 export declare enum EVariant {
   Main = 'Main',
   Secondary = 'Secondary',

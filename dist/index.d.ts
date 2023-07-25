@@ -4,7 +4,4 @@ export * from './components/icon'
 export * from './components/icon/24'
 export * from './components/icon/24/32'
 export * from './components/icon/bg'
-export * from './components/icon/navbar'
-export {
-  EDirection_x4, EMoneyDirectionSize, ELogoSize, EDirectionArrow, EIconColor, EXSize,
-} from './components/icon/types.ts'
+export { EDirection_x4, EIconSize, ELogoSize, EDirectionArrow, EIconColor, EXSize } from './components/icon/types.ts'

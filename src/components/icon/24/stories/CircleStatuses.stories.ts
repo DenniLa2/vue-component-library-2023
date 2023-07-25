@@ -1,6 +1,6 @@
-import CircleEmpty from '../CircleEmpty.vue'
-import CircleSuccess from '../CircleSuccess.vue'
-import CircleError from '../CircleError.vue'
+import CircleEmpty from '../ISmCircleEmpty.vue'
+import CircleSuccess from '../ISmCircleSuccess.vue'
+import CircleError from '../ISmCircleError.vue'
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 

@@ -1,5 +1,5 @@
 import { StoryObj } from '@storybook/vue3'
-import Icon from '@/components/icon/24/Info.vue'
+import Icon from '@/components/icon/24/ISmInfo.vue'
 import { EIconColor } from '@/components/icon/types.ts'
 import { colors } from '@/components/icon/constants.storybook'
 

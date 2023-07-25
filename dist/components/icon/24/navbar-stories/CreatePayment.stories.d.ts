@@ -1,5 +1,5 @@
 import { StoryObj } from '@storybook/vue3'
-import Icon from '@/components/icon/navbar/CreatePayment.vue'
+import Icon from '@/components/icon/24/ISmCreatePayment.vue'
 
 declare const _default: {
   title: string;

@@ -1,17 +1,17 @@
 import { EMoneyDirection } from '@/types'
-import { EMoneyDirectionSize } from '../../types.ts'
+import { EIconSize } from '../../types.ts'
 
 interface Props {
   direction: EMoneyDirection;
-  size?: EMoneyDirectionSize;
+  size?: EIconSize;
 }
 
 declare const _default: import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
-  size: EMoneyDirectionSize;
+  size: EIconSize;
 }>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
-  size: EMoneyDirectionSize;
+  size: EIconSize;
 }>>>, {
-  size: EMoneyDirectionSize;
+  size: EIconSize;
 }, {}>
 export default _default
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;

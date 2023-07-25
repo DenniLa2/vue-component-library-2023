@@ -2,56 +2,76 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 24.07.2023
  */
-import ICalendar24 from './Calendar.vue'
-import IChevron24 from './Chevron.vue'
-import ICircleEmpty24 from './CircleEmpty.vue'
-import ICircleError24 from './CircleError.vue'
-import ICircleSuccess24 from './CircleSuccess.vue'
-import IDownload24 from './Download.vue'
-import IExclamation24 from './Exclamation.vue'
-import IEyeClosed24 from './EyeClosed.vue'
-import IEyeOpened24 from './EyeOpened.vue'
-import IFile24 from './File.vue'
-import IFilter24 from './Filter.vue'
-import IFilterActive24 from './FilterActive.vue'
-import IHintSuccess24 from './HintSuccess.vue'
-import IInfo24 from './Info.vue'
-import IList24 from './List.vue'
-import IMail24 from './Mail.vue'
-import IMinus24 from './Minus.vue'
-import IPlus24 from './Plus.vue'
-import IPrinter24 from './Printer.vue'
-import IRefresh24 from './Refresh.vue'
-import ISearch24 from './Search.vue'
-import ISortArrow24 from './SortArrow.vue'
-import ITrash24 from './Trash.vue'
-import ITriplet24 from './Triplet.vue'
-import IX24 from './X.vue'
+import ISmCreatePayment from './ISmCreatePayment.vue'
+import ISmDrafts from './ISmDrafts.vue'
+import ISmFaq from './ISmFaq.vue'
+import ISmHome from './ISmHome.vue'
+import ISmPayments from './ISmPayments.vue'
+import ISmPeople from './ISmPeople.vue'
+import ISmSupport from './ISmSupport.vue'
+
+import ISmCalendar from './ISmCalendar.vue'
+import ISmChevron from './ISmChevron.vue'
+import ISmCircleEmpty from './ISmCircleEmpty.vue'
+import ISmCircleError from './ISmCircleError.vue'
+import ISmCircleSuccess from './ISmCircleSuccess.vue'
+import ISmDownload from './ISmDownload.vue'
+import ISmExclamation from './ISmExclamation.vue'
+import ISmEyeClosed from './ISmEyeClosed.vue'
+import ISmEyeOpened from './ISmEyeOpened.vue'
+import ISmFile from './ISmFile.vue'
+import ISmFilter from './ISmFilter.vue'
+import ISmFilterActive from './ISmFilterActive.vue'
+import ISmHintSuccess from './ISmHintSuccess.vue'
+import ISmInfo from './ISmInfo.vue'
+import ISmList from './ISmList.vue'
+import ISmMail from './ISmMail.vue'
+import ISmMinus from './ISmMinus.vue'
+import ISmPlus from './ISmPlus.vue'
+import ISmPrinter from './ISmPrinter.vue'
+import ISmRefresh from './ISmRefresh.vue'
+import ISmSearch from './ISmSearch.vue'
+import ISmSortArrow from './ISmSortArrow.vue'
+import ISmTrash from './ISmTrash.vue'
+import ISmTriplet from './ISmTriplet.vue'
+import ISmX from './ISmX.vue'
 
 export {
-  ICalendar24,
-  IChevron24,
-  ICircleEmpty24,
-  ICircleError24,
-  ICircleSuccess24,
-  IDownload24,
-  IExclamation24,
-  IEyeClosed24,
-  IEyeOpened24,
-  IFile24,
-  IFilter24,
-  IFilterActive24,
-  IHintSuccess24,
-  IInfo24,
-  IList24,
-  IMail24,
-  IMinus24,
-  IPlus24,
-  IPrinter24,
-  IRefresh24,
-  ISearch24,
-  ISortArrow24,
-  ITrash24,
-  ITriplet24,
-  IX24,
+  // NB! for navigation
+  ISmCreatePayment,
+  ISmDrafts,
+  ISmFaq,
+  ISmHome,
+  ISmPayments,
+  ISmPeople,
+  ISmSupport,
+
+  // NB! rest
+  ISmCalendar,
+  ISmChevron,
+  ISmCircleEmpty,
+  ISmCircleError,
+  ISmCircleSuccess,
+  ISmDownload,
+  ISmExclamation,
+  ISmEyeClosed,
+  ISmEyeOpened,
+  ISmFile,
+  ISmFilter,
+  ISmFilterActive,
+  ISmHintSuccess,
+  ISmInfo,
+  ISmList,
+  ISmMail,
+  ISmMinus,
+  ISmPlus,
+  ISmPrinter,
+  ISmRefresh,
+  ISmSearch,
+  ISmSortArrow,
+  ISmTrash,
+  ISmTriplet,
+  ISmX,
+
+
 }

@@ -4,7 +4,6 @@
  */
 import { EDirectionArrow, EIconColor } from '@/components/icon/types.ts'
 import { EMoneyDirection } from '@/types'
-
 declare const _default: {
   computed: {
     EMoneyDirection(): typeof EMoneyDirection;
@@ -21,7 +20,7 @@ declare const _default: {
       options: EIconColor[];
     };
   };
-}
+};
 export default _default
 export declare const Collection: {
   render: (args: {
@@ -43,8 +42,8 @@ export declare const Collection: {
       }, {}>;
       DirectionArrow: import('vue').DefineComponent<{
         size: {
-          type: import('vue').PropType<24 | 32>;
-          default: number;
+          type: import('vue').PropType<import('@/components/icon/types.ts').EIconSize>;
+          default: import('@/components/icon/types.ts').EIconSize;
         };
         color: {
           type: import('vue').PropType<EIconColor>;
@@ -56,8 +55,8 @@ export declare const Collection: {
         };
       }, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
-          type: import('vue').PropType<24 | 32>;
-          default: number;
+          type: import('vue').PropType<import('@/components/icon/types.ts').EIconSize>;
+          default: import('@/components/icon/types.ts').EIconSize;
         };
         color: {
           type: import('vue').PropType<EIconColor>;
@@ -68,7 +67,7 @@ export declare const Collection: {
           required: true;
         };
       }>>, {
-        size: 24 | 32;
+        size: import('@/components/icon/types.ts').EIconSize;
         color: EIconColor;
       }, {}>;
       Download: import('vue').DefineComponent<{
@@ -227,8 +226,8 @@ export declare const Collection: {
       }, {}>;
       MoneyDirection: import('vue').DefineComponent<{
         size: {
-          type: import('vue').PropType<import('@/components/icon/types.ts').EMoneyDirectionSize>;
-          default: import('@/components/icon/types.ts').EMoneyDirectionSize;
+          type: import('vue').PropType<import('@/components/icon/types.ts').EIconSize>;
+          default: import('@/components/icon/types.ts').EIconSize;
         };
         direction: {
           type: import('vue').PropType<EMoneyDirection>;
@@ -236,15 +235,15 @@ export declare const Collection: {
         };
       }, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
-          type: import('vue').PropType<import('@/components/icon/types.ts').EMoneyDirectionSize>;
-          default: import('@/components/icon/types.ts').EMoneyDirectionSize;
+          type: import('vue').PropType<import('@/components/icon/types.ts').EIconSize>;
+          default: import('@/components/icon/types.ts').EIconSize;
         };
         direction: {
           type: import('vue').PropType<EMoneyDirection>;
           required: true;
         };
       }>>, {
-        size: import('@/components/icon/types.ts').EMoneyDirectionSize;
+        size: import('@/components/icon/types.ts').EIconSize;
       }, {}>;
       Plus: import('vue').DefineComponent<{
         color: {
@@ -375,4 +374,4 @@ export declare const Collection: {
   args: {
     color: undefined;
   };
-}
+};

@@ -1,7 +1,6 @@
 import { StoryObj } from '@storybook/vue3'
-import Icon from '@/components/icon/24/Chevron.vue'
+import Icon from '@/components/icon/24/ISmChevron.vue'
 import { EDirection_x4, EIconColor } from '@/components/icon/types.ts'
-
 declare const _default: {
   title: string;
   component: import('vue').DefineComponent<{
@@ -40,7 +39,7 @@ declare const _default: {
       options: EIconColor[];
     };
   };
-}
+};
 export default _default
 type Story = StoryObj<typeof Icon>;
 export declare const Chevron: Story

@@ -1,5 +1,5 @@
 import { StoryObj } from '@storybook/vue3'
-import Icon from '@/components/icon/24/SortArrow.vue'
+import Icon from '@/components/icon/24/ISmSortArrow.vue'
 import { EIconColor } from '@/components/icon/types.ts'
 import { ESortDirection } from '@/components/table'
 import { colors } from '@/components/icon/constants.storybook'
