@@ -1,3 +1,5 @@
+import path from 'path'
+const pathSrc = path.resolve(__dirname, './src')
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 import vue from '@vitejs/plugin-vue'
@@ -6,6 +8,13 @@ import { fileURLToPath } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "${pathSrc}/assets/style/index";`,
+      },
+    },
+  },
   plugins: [vue()],
   resolve: {
     alias: {
@@ -31,14 +40,14 @@ export default defineConfig({
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library
-      external: ["vue"],
+      external: ['vue'],
       output: {
         // Provide global variables to use in the UMD build
         // for externalized deps
         globals: {
-          vue: "Vue",
+          vue: 'Vue',
         },
       },
     },
   },
-});
+})

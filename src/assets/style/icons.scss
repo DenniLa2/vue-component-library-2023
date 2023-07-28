@@ -1,0 +1,59 @@
+.stroke--primary {
+  stroke: var(--icon-primary);
+}
+
+.fill--primary {
+  fill: var(--icon-primary);
+}
+
+.stroke--secondary {
+  stroke: var(--icon-secondary);
+}
+
+.fill--secondary {
+  fill: var(--icon-secondary);
+}
+
+.stroke--allusion {
+  stroke: var(--bg-secondary);
+}
+
+.fill--allusion {
+  fill: var(--bg-secondary);
+}
+
+.stroke--contrast {
+  stroke: var(--text-contrast);
+}
+
+.fill--contrast {
+  fill: var(--text-contrast);
+}
+
+.stroke--warning {
+  stroke: var(--ui-warning);
+}
+
+.fill--warning {
+  fill: var(--ui-warning);
+}
+
+.stroke--success {
+  stroke: var(--ui-success);
+}
+
+.fill--success {
+  fill: var(--ui-success);
+}
+
+.stroke--hint {
+  stroke: var(--ui-hint);
+}
+
+.fill--hint {
+  fill: var(--ui-hint);
+}
+
+.stroke--search {
+  stroke: var(--icon-search);
+}
