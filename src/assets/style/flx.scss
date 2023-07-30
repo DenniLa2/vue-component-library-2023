@@ -1,0 +1,37 @@
+.flx {
+  display: flex;
+}
+
+.flx-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flx-align-center {
+  align-items: center;
+}
+
+.flx-align-start {
+  align-items: start;
+}
+
+.flx-align-end {
+  align-items: end;
+}
+
+.flx-justify-center {
+  justify-content: center;
+}
+
+.flx-justify-space-between {
+  justify-content: space-between;
+}
+
+.flx-cormorant {
+  flex-grow: 1;
+}
+
+.flx-shy {
+  flex-shrink: 0;
+}
+

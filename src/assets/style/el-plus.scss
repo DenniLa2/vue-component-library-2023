@@ -1,0 +1,167 @@
+input.el-input__inner,
+input.el-textarea__inner,
+input.el-switch__label,
+input.el-checkbox__label,
+input.el-input__inner:hover,
+input.el-input__inner:focus,
+input.el-textarea__inner:hover,
+input.el-textarea__inner:focus,
+input.el-switch__label:hover,
+input.el-switch__label:focus,
+input.el-select__input,
+input.el-select__input:hover,
+input.el-select__input:focus {
+  box-shadow: none !important;
+  user-select: text !important;
+}
+
+.el-form {
+  & &-item {
+    margin-bottom: 0;
+
+    &__content .el-form-item__error {
+      margin-top: 8px;
+      margin-left: 24px;
+      font-family: var(--font-family);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--ui-warning);
+    }
+  }
+
+  &-item.is-error .c-field__content .el-input__wrapper {
+    box-shadow: var(--shadows-border-worning);
+  }
+}
+
+.el-button [class*='el-icon'] svg {
+  width: 20px;
+  height: 22px;
+}
+
+.el-message {
+  --el-message-padding: 26px 19px !important;
+
+  & .el-message__content {
+    min-width: 543px;
+    width: 100%;
+
+    @extend %fv-med;
+  }
+
+  & .el-message__icon {
+    position: relative;
+    width: 24px;
+    margin-right: 8px;
+
+    & svg {
+      display: none;
+    }
+  }
+
+  &.el-message--success, {
+    background: var(--bg-notification--success);
+    border: none;
+    box-shadow: var(--shadows-notification-success);
+    border-radius: 8px;
+
+    & .el-message__content, {
+      color: inherit;
+    }
+
+    & .el-message__icon::after {
+      content: '';
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      background: url("/assets/icons/i-plus--success.svg") no-repeat;
+    }
+  }
+
+  &.el-message--error {
+    background: var(--bg-notification--error);
+    border: none;
+    box-shadow: var(--shadows-notification-error);
+    border-radius: 8px;
+
+    & .el-message__content, {
+      color: inherit;
+    }
+
+    & .el-message__icon::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -44%);
+      width: 24px;
+      height: 24px;
+      background: url("/assets/icons/i-plus--error.svg") no-repeat;
+    }
+  }
+
+  &.el-message--warning {
+    background: var(--bg-notification--warning);
+    border: none;
+    box-shadow: var(--shadows-notification-warning);
+    border-radius: 8px;
+
+    & .el-message__content, {
+      color: inherit;
+    }
+
+    & .el-message__icon::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -44%);
+      width: 24px;
+      height: 24px;
+      background: url("/assets/icons/i-plus--warning.svg") no-repeat;
+    }
+  }
+}
+
+.el-table {
+  background-color: var(--bg-primary) !important;
+
+  & tr,
+  & th.el-table__cell {
+    background-color: var(--bg-primary) !important;
+  }
+
+  &--enable-row-transition &__body td.el-table__cell {
+    transition: none !important;
+  }
+
+  & td.el-table__cell div,
+  & th.el-table__cell div {
+    max-height: 24px;
+    padding: 0;
+    background-color: var(--bg-primary);
+    box-sizing: border-box;
+
+    @extend %fv-med;
+
+    & .field-label {
+      padding-right: 9px;
+      color: var(--text-secondary);
+    }
+  }
+
+  & .el-table__cell {
+    padding: 16px 0 15px 16px !important;
+  }
+
+  & .cell .el-button.btn-text-default {
+    margin: 0 0 0 auto;
+  }
+}
+
+.el-form-item {
+  margin-bottom: 0;
+}

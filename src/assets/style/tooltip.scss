@@ -1,0 +1,36 @@
+.tooltip {
+  &.el-popper.is-light {
+    width: 369px;
+    padding: 24px;
+    background: var(--bg-card);
+    box-shadow: var(--shadow-tooltip);
+    border-radius: 16px;
+    border: none;
+    box-sizing: border-box;
+
+    @extend %fv-med;
+  }
+
+  &.el-popper.is-light .el-popper__arrow::before {
+    top: -8px;
+    right: -3px;
+    width: 17px;
+    height: 23px;
+    border-bottom-right-radius: 8px;
+    border: none;
+  }
+
+  &.el-popper[data-popper-placement^="top"] > .el-popper__arrow {
+    display: block;
+  }
+
+  &.el-popper[data-popper-placement^="bottom"] > .el-popper__arrow {
+    display: block;
+
+    &::before {
+      top: -5px;
+      border-top-left-radius: 8px;
+      border-bottom-right-radius: 0;
+    }
+  }
+}

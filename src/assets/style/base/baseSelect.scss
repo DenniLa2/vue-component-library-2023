@@ -1,0 +1,87 @@
+.el-select {
+  $parent: &;
+
+  width: 100%;
+  border: none !important;
+  box-shadow: none !important;
+
+  &.c-field__input--focus .el-input .el-input__wrapper {
+    padding: 34px 40px 16px 24px;
+  }
+
+  &.c-field__input--focus:hover:not(.el-select--disabled) .el-input__wrapper,
+  .c-field__content &:hover:not(.el-select--disabled) .el-input__wrapper,
+  &.c-field__input--focus .el-input.is-focus .el-input__wrapper,
+  .c-field__content & .el-input.is-focus .el-input__wrapper,
+  &.c-field__input--focus .el-input__wrapper.is-focus,
+  .c-field__content & .el-input__wrapper.is-focus {
+    transition-property: background-color, box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    box-shadow: var(--shadows-border-active) !important;
+    border-radius: 12px;
+  }
+
+  & .el-input.is-disabled .el-input__wrapper:hover {
+    box-shadow: none;
+    border: var(--border-dashed);
+  }
+
+  &__popper.el-popper {
+    --el-popper-border-radius: 12px;
+    --el-border-color-light: var(--button-disabled);
+
+    box-shadow: none !important;
+    filter: drop-shadow(0 8px 16px rgb(0 0 0 / 5%));
+  }
+
+  &-dropdown__list {
+    padding: 0 !important;
+  }
+
+  &-dropdown__wrap {
+    border-radius: 12px;
+  }
+
+  &-dropdown__empty {
+    @extend %fv-min;
+
+    color: var(--text-secondary);
+  }
+
+  &-dropdown__item {
+    padding: 16px 24px !important;
+    height: 56px !important;
+    font-family: var(--font-family) !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-primary) !important;
+
+    &.selected {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      background: var(--ui-selected);
+    }
+  }
+
+  & .el-input .el-select__caret.el-icon {
+    right: 4px;
+    margin: 0;
+    padding: 10px 0;
+    background: url('/assets/icons/i-plus--down.svg') no-repeat center;
+  }
+}
+
+.el-popper[data-popper-placement^='right'] > .el-popper__arrow,
+.el-popper[data-popper-placement^='left'] > .el-popper__arrow,
+.el-popper[data-popper-placement^='top'] > .el-popper__arrow,
+.el-popper[data-popper-placement^='bottom'] > .el-popper__arrow {
+  display: none;
+}
+
+.popper-close {
+  display: none;
+}

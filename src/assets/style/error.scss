@@ -1,0 +1,30 @@
+.error {
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 48px;
+
+    & h2 {
+      font-weight: 700;
+      font-size: 84px;
+      line-height: 103px;
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 8px;
+
+    & p {
+      margin-bottom: 48px;
+    }
+
+    & .el-button.btn-main--large {
+      padding: 20px 38px;
+    }
+  }
+}
