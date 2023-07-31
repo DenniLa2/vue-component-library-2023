@@ -3,7 +3,6 @@
  * on 26.05.2023
  */
 import { EDirectionArrow, EIconColor, EIconSize } from '../../types.ts'
-
 interface Props {
   direction: EDirectionArrow;
   color?: EIconColor;
@@ -19,7 +18,7 @@ declare const _default: import('vue').DefineComponent<__VLS_WithDefaults<__VLS_T
 }>>>, {
   size: EIconSize;
   color: EIconColor;
-}, {}>
+}, {}>;
 export default _default
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
 type __VLS_TypePropsToRuntimeProps<T> = {

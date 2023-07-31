@@ -1,5 +1,4 @@
 import { EIconColor } from '../types.ts'
-
 interface Props {
   color?: EIconColor;
 }
@@ -10,7 +9,7 @@ declare const _default: import('vue').DefineComponent<__VLS_WithDefaults<__VLS_T
   color: EIconColor;
 }>>>, {
   color: EIconColor;
-}, {}>
+}, {}>;
 export default _default
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
 type __VLS_TypePropsToRuntimeProps<T> = {

@@ -3,7 +3,6 @@
  * on 21.05.2023
  */
 import { EDirection_x4, EIconColor } from '../types.ts'
-
 interface Props {
   direction?: EDirection_x4;
   color: EIconColor;
@@ -15,7 +14,7 @@ declare const _default: import('vue').DefineComponent<__VLS_WithDefaults<__VLS_T
   direction: EDirection_x4;
 }>>>, {
   direction: EDirection_x4;
-}, {}>
+}, {}>;
 export default _default
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
 type __VLS_TypePropsToRuntimeProps<T> = {

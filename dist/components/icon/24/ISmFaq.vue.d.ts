@@ -3,7 +3,6 @@
  * on 22.05.2023
  */
 import { EIconColor } from '../types.ts'
-
 interface Props {
   color: EIconColor;
 }

@@ -46,8 +46,6 @@
 
 <script setup lang="ts">
 import { EIconColor } from '../types.ts'
-import '@/assets/style/color.scss'
-import '@/assets/style/color-classes.scss'
 
 interface Props {
   color?: EIconColor

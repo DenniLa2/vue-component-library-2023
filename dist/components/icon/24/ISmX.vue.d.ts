@@ -3,7 +3,6 @@
  * on 21.05.2023
  */
 import { EIconColor, EXSize } from '../types.ts'
-
 interface Props {
   color: EIconColor;
   size: EXSize;
@@ -15,7 +14,7 @@ declare const _default: import('vue').DefineComponent<__VLS_WithDefaults<__VLS_T
   size: EXSize;
 }>>>, {
   size: EXSize;
-}, {}>
+}, {}>;
 export default _default
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
 type __VLS_TypePropsToRuntimeProps<T> = {

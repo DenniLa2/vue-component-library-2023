@@ -8,7 +8,6 @@ export declare enum EDirection_x4 {
   up = 'up',
   down = 'down'
 }
-
 export declare enum EIconSize {
   s24 = 's24',
   s32 = 's32'

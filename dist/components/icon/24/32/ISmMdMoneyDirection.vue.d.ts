@@ -1,6 +1,5 @@
 import { EMoneyDirection } from '@/types'
 import { EIconSize } from '../../types.ts'
-
 interface Props {
   direction: EMoneyDirection;
   size?: EIconSize;
@@ -12,7 +11,7 @@ declare const _default: import('vue').DefineComponent<__VLS_WithDefaults<__VLS_T
   size: EIconSize;
 }>>>, {
   size: EIconSize;
-}, {}>
+}, {}>;
 export default _default
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
 type __VLS_TypePropsToRuntimeProps<T> = {

@@ -78,7 +78,7 @@ const props = withDefaults(
   },
 )
 
-const iconSize = computed<string>(() => props.size.split('s')[0])
+const iconSize = computed<string>(() => props.size.split('s')[1])
 
 </script>
 

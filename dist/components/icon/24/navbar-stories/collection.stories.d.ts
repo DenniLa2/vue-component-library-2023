@@ -1,5 +1,4 @@
 import { EIconColor } from '@/components/icon/types.ts'
-
 declare const _default: {
   computed: {
     EIconColor(): typeof EIconColor;
@@ -14,7 +13,7 @@ declare const _default: {
       options: EIconColor[];
     };
   };
-}
+};
 export default _default
 export declare const NavBar: {
   render: (args: {
@@ -97,4 +96,4 @@ export declare const NavBar: {
   args: {
     color: EIconColor;
   };
-}
+};

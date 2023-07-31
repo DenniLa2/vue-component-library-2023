@@ -4,7 +4,6 @@
  */
 import { EIconColor } from '../types.ts'
 import { ESortDirection } from '@/components/table'
-
 interface Props {
   direction: ESortDirection;
   color: EIconColor;
