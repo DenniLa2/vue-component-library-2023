@@ -1,0 +1,186 @@
+// HELVETICA
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("/assets/fonts/Helvetica/helveticaneuecyr-black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('/assets/fonts/Helvetica/helveticaneuecyr-blackitalic.ttf') format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('/assets/fonts/Helvetica/helveticaneuecyr-heavy.ttf') format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('/assets/fonts/Helvetica/helveticaneuecyr-heavyitalic.ttf') format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('/assets/fonts/Helvetica/helveticaneuecyr-bold.ttf') format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('/assets/fonts/Helvetica/helveticaneuecyr-bolditalic.ttf') format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('/assets/fonts/Helvetica/helveticaneuecyr-medium1.ttf') format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('/assets/fonts/Helvetica/helveticaneuecyr-mediumitalic.ttf') format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('/assets/fonts/Helvetica/helveticaneuecyr-roman.ttf') format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('/assets/fonts/Helvetica/helveticaneuecyr-light.ttf') format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('/assets/fonts/Helvetica/helveticaneuecyr-lightitalic.ttf') format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('/assets/fonts/Helvetica/helveticaneuecyr-thin.ttf') format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('/assets/fonts/Helvetica/helveticaneuecyr-thinitalic.ttf') format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('/assets/fonts/Helvetica/helveticaneuecyr-lightitalic.ttf') format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('/assets/fonts/Helvetica/helveticaneuecyr-ultralight3.ttf') format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+h1 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 54px;
+  color: var(--text-primary);
+}
+
+h2 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: var(--text-primary);
+}
+
+h3 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text-primary);
+}
+
+.fv-bb, %fv-bb {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-primary);
+}
+
+.fv-b, %fv-b {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-primary);
+}
+
+.fv-medb, %fv-medb {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-primary);
+}
+
+.fv-med, %fv-med {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-primary);
+}
+
+.fv-minb, %fv-minb {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--text-primary);
+}
+
+.fv-min, %fv-min {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--text-primary);
+}

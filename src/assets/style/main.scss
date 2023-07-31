@@ -1,0 +1,55 @@
+html, body {
+  background-color: var(--bg-primary);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--ui-active);
+
+  &:focus {
+    color: var(--ui-focus);
+  }
+
+  &:disabled {
+    text-decoration: none;
+    color: var(--ui-disabled);
+  }
+}
+
+input,
+input:hover,
+input:focus {
+  outline: none;
+  border: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.page-wrapper h2 {
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+div.link__wrapper .count {
+  border: var(--border-navigational-number);
+}

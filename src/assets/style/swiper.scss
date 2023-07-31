@@ -1,0 +1,114 @@
+.recent-swiper {
+  width:100%;
+
+  &.swiper {
+    max-width: 1020px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 65px;
+    height: 115px;
+    background: linear-gradient(270deg, #F6F7F8 35.95%, rgb(246 247 248 / 0%) 100%);
+
+    @media (min-width: 1440px) {
+      right: -8px;
+    }
+  }
+
+  & .swiper-wrapper {
+    width: 1020px;
+    padding-top: 48px;
+  }
+
+  & .swiper-horizontal > .swiper-pagination-bullets,
+  & .swiper-pagination-bullets.swiper-pagination-horizontal,
+  & .swiper-pagination-custom, .swiper-pagination-fraction {
+    top: 3px;
+    left: 28px;
+    bottom: auto;
+    width: auto;
+  }
+
+  & .swiper-button-prev, & .swiper-rtl .swiper-button-next,
+  & .swiper-button-next, & .swiper-rtl .swiper-button-prev {
+    top: 24px;
+  }
+
+  & .swiper-button-prev, & .swiper-rtl .swiper-button-next {
+    left: 0;
+  }
+
+  & .swiper-button-next, & .swiper-rtl .swiper-button-prev {
+    right: -2px;
+  }
+
+  & .swiper-button-next, & .swiper-button-prev {
+    width: 24px;
+    height: 24px;
+
+    &:hover {
+      background: var(--bg-on-hover);
+      border-radius: 6px;
+    }
+
+    &:focus,
+    &:active {
+      background: var(--bg-on-hover);
+      border-radius: 6px;
+      filter: invert(22%) sepia(12%) saturate(1579%) hue-rotate(178deg) brightness(95%) contrast(82%);
+    }
+  }
+
+}
+
+.control-wrapper {
+  position: absolute;
+  top: 0;
+  min-width: 120px;
+  height: 24px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.swiper-button-prev::after {
+  content: '' !important;
+  width: 100%;
+  height: 100%;
+  background-size: auto;
+  background: url('/assets/icons/i-plus--left.svg') no-repeat center;
+  filter: invert(79%) sepia(17%) saturate(175%) hue-rotate(176deg) brightness(81%) contrast(85%);
+}
+
+.swiper-button-next::after {
+  content: '' !important;
+  width: 100%;
+  height: 100%;
+  background-size: auto;
+  background: url('/assets/icons/i-plus--right.svg') no-repeat center;
+  filter: invert(79%) sepia(17%) saturate(175%) hue-rotate(176deg) brightness(81%) contrast(85%);
+}
+
+.swiper-pagination-bullet {
+  opacity: 1 !important;
+  background-color: var(--bg-swiper-point) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--brand-color3) !important;
+}
+
+.swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: 14%;
+  left: 26px;
+}

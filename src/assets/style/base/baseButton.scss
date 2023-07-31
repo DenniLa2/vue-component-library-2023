@@ -1,0 +1,255 @@
+.el-button {
+  $parent: &;
+
+  &.btn {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family);
+    font-style: normal;
+    border-radius: 12px;
+    border: none;
+    background: none;
+
+    & [class*='el-icon'] + span {
+      margin-left: 8px;
+
+      & [class*='el-icon'] + span {
+        margin-right: 0;
+      }
+    }
+
+    &--left-between {
+      justify-content: space-between;
+    }
+
+    &--right-around {
+      flex-direction: row-reverse;
+
+      & [class*='el-icon'] + span {
+        margin-right: 8px;
+      }
+    }
+
+    &--right-between {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      & [class*='el-icon'] + span {
+        margin-left: 0;
+        margin-right: 8px;
+      }
+    }
+
+    &-text-default {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 24px;
+      margin-left: -4px;
+      padding: 8px 4px;
+      border-radius: 8px;
+      color: var(--text-primary);
+
+
+      &:hover [class*='el-icon'] svg path,
+      &:hover [class*='el-icon'] svg circle {
+        stroke: var(--icon-primary);
+      }
+
+      &:focus [class*='el-icon'] svg path,
+      &:focus [class*='el-icon'] svg circle {
+        stroke: var(--ui-active);
+      }
+
+      &:disabled,
+      &.is-disabled:hover [class*='el-icon'] svg path,
+      &.is-disabled:hover [class*='el-icon'] svg circle {
+        stroke: var(--icon-secondary);
+      }
+
+      &:disabled .el-icon {
+        & svg path,
+        & svg circle {
+          stroke: var(--icon-secondary);
+        }
+
+      }
+
+      & .el-icon {
+        width: 24px;
+        height: 24px;
+      }
+
+      &:hover {
+        background: var(--bg-on-hover);
+        color: var(--text-primary);
+      }
+
+      &:focus {
+        color: var(--ui-active);
+        background: var(--bg-on-hover);
+      }
+
+      &:disabled {
+        color: var(--text-secondary);
+      }
+
+      &:disabled,
+      &.is-disabled:hover {
+        background: none;
+        border: none;
+      }
+    }
+
+    &-rounded {
+      font-size: 16px;
+      line-height: 24px;
+
+      &--large {
+        min-width: 184px;
+        height: 64px;
+        padding: 20px 24px;
+      }
+
+      &--medium {
+        min-width: 184px;
+        height: 48px;
+        padding: 12px 24px;
+      }
+
+      &--mini {
+        height: 32px;
+        padding: 4px 24px;
+      }
+
+      &-main {
+        font-weight: 700;
+        border-radius: 16px;
+        background: var(--brand-gradient);
+        box-shadow: var(--shadows-main);
+        color: var(--bg-card);
+
+        &:hover {
+          background: var(--brand-gradient-hover);
+          box-shadow: var(--shadows-main);
+          color: var(--bg-card);
+        }
+
+        &:focus {
+          background: var(--brand-gradient-active);
+          box-shadow: var(--shadows-main);
+          color: var(--bg-card);
+        }
+
+        &:disabled,
+        &.is-disabled:hover {
+          background: var(--button-disabled);
+          box-shadow: none;
+          color: var(--bg-card);
+        }
+      }
+
+      &-icon-only {
+        min-width: auto;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        border-radius: 8px;
+
+        & .el-icon {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+
+        &:hover {
+          background-color: var(--bg-on-hover);
+        }
+
+        &:active [class*='el-icon'] svg path,
+        &:active [class*='el-icon'] svg circle {
+          stroke: var(--ui-active);
+        }
+
+        &:disabled,
+        &.is-disabled {
+          & [class*='el-icon'] svg path,
+          & [class*='el-icon'] svg circle {
+            stroke: var(--icon-secondary);
+          }
+
+          &:hover {
+            background: none;
+
+            & [class*='el-icon'] svg path,
+            & [class*='el-icon'] svg circle {
+              stroke: var(--icon-secondary);
+            }
+          }
+        }
+      }
+
+      &-secondary {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        background-color: var(--bg-card);
+        border: var(--border-default);
+        color: var(--text-primary);
+
+        &:hover {
+          border: var(--border-hover);
+          background-color: var(--bg-card);
+          color: var(--text-primary);
+        }
+
+        &:focus {
+          border: var(--border-hover);
+          background-color: var(--bg-btn-secondary-focus);
+          color: var(--text-primary);
+        }
+
+        &:disabled,
+        &.is-disabled:hover {
+          border: var(--border-default);
+          color: var(--text-disabled);
+        }
+      }
+
+      &-warning {
+        background: var(--bg-btn-warning);
+        box-shadow: var(--shadow-btn-warning);
+        color: var(--bg-card);
+
+        &:hover {
+          background: var(--gradient-btn-warning);
+          box-shadow: var(--shadow-btn-warning);
+          color: var(--bg-card);
+        }
+
+        &:focus {
+          background: var(--gradient-btn-warning-focus);
+          box-shadow: var(--shadow-btn-warning);
+          color: var(--bg-card);
+        }
+
+        &:disabled,
+        &.is-disabled:hover {
+          background: var(--bg-btn-warning-disabled);
+          box-shadow: none;
+          color: var(--bg-card);
+        }
+      }
+    }
+  }
+}
+
+.el-input__suffix-inner .btn + .btn::before {
+  content: '';
+  position: absolute;
+  right: 63px;
+  display: block;
+  width: 1px;
+  height: 37px;
+  background-color: var(--button-disabled);
+}

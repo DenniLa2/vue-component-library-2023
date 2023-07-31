@@ -1,0 +1,162 @@
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+// margins
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mt--32 {
+  margin-top: -32px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-18 {
+  margin-top: 18px;
+}
+
+.mt-22 {
+  margin-top: 22px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.my-8, %my-8 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.my-0, %my-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.mx-8 {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.mx-16 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.mx-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.ml-8 {
+  margin-left: 8px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-24 {
+  margin-left: 24px;
+}
+
+// paddings
+.px-32 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.pt-24 {
+  padding-top: 24px;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.w-224 {
+  width: 224px;
+}
+
+.pa-32 {
+  padding: 32px;
+}
+
+.pa-48 {
+  padding: 48px;
+}
+
+// size
+.size-24, .s-24 {
+  width: 24px;
+  height: 24px;
+}
+
+.w-100p {
+  width: 100%;
+}
+
+.w-30 {
+  width: 30px;
+}
+
+.br-24 {
+  border-radius: 24px;
+}
+
+.br-32 {
+  border-radius: 32px;
+}
