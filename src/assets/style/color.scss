@@ -14,6 +14,9 @@
   --bg-navbar-profile-tmp-003: rgb(7 24 50 / 3%);
   --bg-swiper-point: #E7E8EB;
   --bg-btn-warning: #D86462;
+  --bg-btn-info: rgb(57 70 91);
+  --bg-btn-info-hover: #47648E;
+  --bg-btn-info-focus: #6CA2F2;
   --bg-btn-warning-disabled: rgb(7 24 50 / 10%);
   --bg-btn-secondary-focus: rgb(7 24 50 / 5%);
   --bg-ui-warning: rgb(216 100 98 / 30%);
@@ -41,9 +44,11 @@
   --ui-attention: #F5B42F;
   --ui-success: #9AC777;
   --ui-active: #3834F1;
+  --ui-active-light: rgb(56 52 241 / 30%);
   --ui-focus: #0804BA;
   --ui-disabled: #AAA9FF;
   --ui-warning: #D86462;
+  --ui-warning-light: rgb(216 100 98 / 30%);
   --ui-kyb: #FF9B8D;
   --ui-completed: #B8F2C5;
   --ui-declined: #F4CACA;
@@ -55,6 +60,7 @@
   --ui-radio-hover: rgb(154 199 119 / 10%);
   --ui-pagination-focus: rgb(24 38 58 / 12%);
   --ui-dp-date-hover: #E7E7FF;
+  --ui-attention-light: rgb(245 180 47 / 30%);
 
   // ICON
   --icon-primary: #39465B;

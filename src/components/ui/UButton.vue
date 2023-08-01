@@ -39,6 +39,7 @@ interface Props {
   iconLocation?: EIconLocation
   // NB! only for EButtonDesign.Rounded{*}
   size?: undefined | EButtonSize
+  fullWidth?: boolean
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -56,6 +57,7 @@ const classes = computed<string[]>(() => [
   props.design ?? '',
   props.iconLocation ?? '',
   props.size ?? '',
+  props.fullWidth ? 'btn-full-width' : '',
 ])
 </script>
 

@@ -112,14 +112,16 @@
       }
 
       &--medium {
-        min-width: 184px;
-        height: 48px;
-        padding: 12px 24px;
+        min-width: 117px;
+        height: 56px;
+        padding: 16px;
       }
 
       &--mini {
-        height: 32px;
-        padding: 4px 24px;
+        min-width: 40px;
+        height: 40px;
+        padding: 8px;
+        border-radius: 12px;
       }
 
       &-main {
@@ -216,6 +218,14 @@
         }
       }
 
+      &--mini + &-secondary {
+        padding: 8px 16px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+      }
+
       &-warning {
         background: var(--bg-btn-warning);
         box-shadow: var(--shadow-btn-warning);
@@ -239,6 +249,122 @@
           box-shadow: none;
           color: var(--bg-card);
         }
+      }
+
+      &-info {
+        background: var(--bg-btn-info);
+        box-shadow: none;
+        color: var(--bg-card);
+
+        &:hover {
+          background: var(--bg-btn-info-hover);
+          box-shadow: none;
+          color: var(--bg-card);
+        }
+
+        &:focus {
+          background: var(--bg-btn-info-focus);
+          box-shadow: none;
+          color: var(--bg-card);
+        }
+
+        &:disabled,
+        &.is-disabled:hover {
+          background: var(--bg-btn-warning-disabled);
+          box-shadow: none;
+          color: var(--bg-card);
+        }
+      }
+    }
+
+    &-full-width {
+      width: 100%;
+    }
+
+    & .el-icon {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+
+    &-tag {
+      min-width: auto;
+      padding: 4px 12px;
+      height: 24px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+
+      &-required {
+        background-color: var(--ui-warning-light);
+
+        &:focus {
+          background: linear-gradient(0deg, rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)), rgb(216 100 98 / 30%);
+        }
+
+        &:disabled,
+        &.is-disabled:hover {
+          background-color: var(--ui-warning-light);
+          border: none;
+          box-shadow: none;
+        }
+      }
+
+      &-problem {
+        background-color: var(--ui-attention-light);
+
+        &:focus {
+          background: linear-gradient(0deg, rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)), rgb(245 180 47 / 30%);
+        }
+
+        &:disabled,
+        &.is-disabled:hover {
+          background-color: var(--ui-attention-light);
+          border: none;
+          box-shadow: none;
+        }
+      }
+
+      &-process {
+        background-color: var(--ui-active-light);
+
+        &:focus {
+          background: linear-gradient(0deg, rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)), rgb(56 52 241 / 30%);
+        }
+
+        &:disabled,
+        &.is-disabled:hover {
+          background-color: var(--ui-active-light);
+          border: none;
+          box-shadow: none;
+        }
+      }
+
+      &-default {
+        background-color: var(--bg-secondary);
+
+        &:focus {
+          background: linear-gradient(0deg, rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)), rgb(231 232 235 / 30%)
+        }
+
+        &:disabled,
+        &.is-disabled:hover {
+          background-color: var(--bg-secondary);
+          border: none;
+          box-shadow: none;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 0 1px rgb(7 24 50 / 30%);
+        color: var(--text-primary);
+      }
+
+      &:active,
+      &:disabled,
+      &.is-disabled:hover {
+        color: var(--text-primary);
       }
     }
   }
