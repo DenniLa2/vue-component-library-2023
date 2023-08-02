@@ -4,34 +4,24 @@ import { ETagColor } from '@/components/ui/types.ts'
 declare const _default: {
   title: string;
   component: import('vue').DefineComponent<{
-    label: {
-      type: import('vue').PropType<string>;
-      required: true;
-    };
     color: {
       type: import('vue').PropType<ETagColor>;
       required: true;
     };
-    clickable: {
-      type: import('vue').PropType<boolean>;
-      default: boolean;
+    label: {
+      type: import('vue').PropType<string>;
+      required: true;
     };
   }, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
-    label: {
-      type: import('vue').PropType<string>;
-      required: true;
-    };
     color: {
       type: import('vue').PropType<ETagColor>;
       required: true;
     };
-    clickable: {
-      type: import('vue').PropType<boolean>;
-      default: boolean;
+    label: {
+      type: import('vue').PropType<string>;
+      required: true;
     };
-  }>>, {
-    clickable: boolean;
-  }, {}>;
+  }>>, {}, {}>;
   tags: string[];
   argTypes: {
     color: {
@@ -44,5 +34,5 @@ declare const _default: {
 };
 export default _default
 type Story = StoryObj<typeof BaseTag>;
-export declare const Attention_Clickable: Story
-export declare const Warning_NotClickable: Story
+export declare const Attention: Story
+export declare const Warning: Story

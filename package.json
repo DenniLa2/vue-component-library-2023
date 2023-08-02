@@ -1,6 +1,6 @@
 {
   "name": "uluky-ui",
-  "version": "0.1.0-RC14",
+  "version": "0.1.0-RC15",
   "type": "module",
   "files": [
     "dist"

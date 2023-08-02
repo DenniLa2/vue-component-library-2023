@@ -1,5 +1,5 @@
 export * from './components/ui'
-export { EButtonDesign, EButtonSize } from './components/ui/types.ts'
+export { EButtonDesign, EButtonSize, EIconLocation, EVerificationTagStatus, ETagColor } from './components/ui/types.ts'
 export * from './components/icon'
 export * from './components/icon/24'
 export * from './components/icon/24/32'

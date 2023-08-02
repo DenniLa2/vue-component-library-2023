@@ -1,29 +1,16 @@
-import 'element-plus/dist/index.css'
-import { EButtonDesign, EButtonSize, EIconLocation } from './types.ts'
 interface Props {
-  design?: EButtonDesign;
   label?: string;
-  disabled?: boolean;
-  iconLocation?: EIconLocation;
-  size?: undefined | EButtonSize;
-  fullWidth?: boolean;
+  tooltip?: string;
+  asHtml?: boolean;
 }
 
-declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
-  disabled: boolean;
-  design: EButtonDesign;
-  size: (rawProps: any) => EButtonSize | undefined;
+declare const _default: import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
+  asHtml: boolean;
 }>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
-  disabled: boolean;
-  design: EButtonDesign;
-  size: (rawProps: any) => EButtonSize | undefined;
+  asHtml: boolean;
 }>>>, {
-  size: EButtonSize;
-  design: EButtonDesign;
-  disabled: boolean;
-}, {}>, {
-  icon?(_: {}): any;
-}>;
+  asHtml: boolean;
+}, {}>
 export default _default
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
 type __VLS_TypePropsToRuntimeProps<T> = {
@@ -38,11 +25,6 @@ type __VLS_WithDefaults<P, D> = {
   [K in keyof Pick<P, keyof P>]: K extends keyof D ? __VLS_Prettify<P[K] & {
     default: D[K];
   }> : P[K];
-};
-type __VLS_WithTemplateSlots<T, S> = T & {
-  new(): {
-    $slots: S;
-  };
 };
 type __VLS_Prettify<T> = {
   [K in keyof T]: T[K];

@@ -1,6 +1,7 @@
 import { StoryObj } from '@storybook/vue3'
-import UButton from './UButton.vue'
-import { EButtonDesign, EButtonSize, EIconLocation } from './types.ts'
+import UButton from './../UButton.vue'
+import { EButtonDesign, EButtonSize, EIconLocation } from './../types.ts'
+
 declare const _default: {
   title: string;
   component: {
@@ -57,6 +58,7 @@ declare const _default: {
         style?: unknown;
         readonly label?: string | undefined;
         readonly iconLocation?: EIconLocation | undefined;
+        readonly fullWidth?: boolean | undefined;
       };
       $attrs: {
         [x: string]: unknown;
@@ -89,6 +91,9 @@ declare const _default: {
         };
         iconLocation: {
           type: import('vue').PropType<EIconLocation>;
+        };
+        fullWidth: {
+          type: import('vue').PropType<boolean>;
         };
       }>>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, {
         size: EButtonSize;
@@ -133,6 +138,9 @@ declare const _default: {
       iconLocation: {
         type: import('vue').PropType<EIconLocation>;
       };
+      fullWidth: {
+        type: import('vue').PropType<boolean>;
+      };
     }>> & import('vue').ShallowUnwrapRef<{}> & {} & import('vue').ComponentCustomProperties & {};
     __isFragment?: undefined;
     __isTeleport?: undefined;
@@ -155,6 +163,9 @@ declare const _default: {
     };
     iconLocation: {
       type: import('vue').PropType<EIconLocation>;
+    };
+    fullWidth: {
+      type: import('vue').PropType<boolean>;
     };
   }>>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, {
     size: EButtonSize;
@@ -180,10 +191,14 @@ declare const _default: {
       control: string;
       options: (EButtonSize | undefined)[];
     };
+    fullWidth: {
+      control: string;
+      options: boolean[];
+      defaultValue: boolean;
+    };
   };
-};
+}
 export default _default
 type Story = StoryObj<typeof UButton>;
 export declare const DefaultButton: Story
-export declare const RoundedSecondary_Large: Story
-export declare const RoundedSecondary_Medium: Story
+export declare const DefaultButton_FullWidth: Story
