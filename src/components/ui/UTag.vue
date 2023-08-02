@@ -1,43 +1,23 @@
 <template>
-  <component
-    :is="clickable ? 'button' : 'span'"
-    class="base-tag"
-    :class="classes"
-    @click="onClick"
-  >{{ label }}
-  </component>
+ <span
+   class="base-tag"
+   :class="`base-tag${color}`"
+   v-text="label"
+ />
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
 import { ETagColor } from '@/components/ui/types'
 
 interface Props {
   color: ETagColor
   label: string
-  clickable?: boolean
 }
 
-const props = withDefaults(defineProps<Props>(), { clickable: false })
-const classes = computed(() => {
-  return [
-    props.clickable ? 'base-tag-button' : 'base-tag-span',
-    `base-tag${props.color}`,
-  ]
-})
-
-const emit = defineEmits<{
-  tag: []
-}>()
-
-const onClick = () => {
-  if (props.clickable) emit('tag')
-}
-
+defineProps<Props>()
 </script>
 
 <style lang="scss">
-
 .base-tag {
   display: inline-block;
   padding: 4px 12px;
@@ -49,6 +29,7 @@ const onClick = () => {
   font-size: 12px;
   line-height: 16px;
   color: var(--text-primary);
+  border: none;
 
   &--ui-active {
     background: var(--bg-active);
@@ -68,24 +49,6 @@ const onClick = () => {
 
   &--ui-tretiary {
     background: var(--bg-tretiary);
-  }
-
-  &-button {
-    border: none;
-    cursor: pointer;
-
-    &:hover {
-      box-shadow: var(--shadows-border-hover);
-    }
-
-    &:active {
-      box-shadow: var(--shadows-border-hover);
-      background: linear-gradient(0deg, rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)), rgb(216 100 98 / 30%);;
-    }
-  }
-
-  &-span {
-    border: none;
   }
 }
 </style>
