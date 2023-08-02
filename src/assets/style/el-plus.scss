@@ -165,3 +165,8 @@ input.el-select__input:focus {
 .el-form-item {
   margin-bottom: 0;
 }
+
+.el-tooltip__trigger:hover {
+  border-radius: 50%;
+  background-color: var(--bg-on-click);
+}
