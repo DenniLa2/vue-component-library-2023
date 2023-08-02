@@ -21,18 +21,16 @@ export default {
 type Story = StoryObj<typeof BaseTag>;
 
 // More on writing stories with args: https://storybook.js.org/docs/vue/writing-stories/args
-export const Attention_Clickable: Story = {
+export const Attention: Story = {
   args: {
     color: ETagColor.attention,
-    clickable: true,
     label: 'Attention',
   },
 }
 
-export const Warning_NotClickable: Story = {
+export const Warning: Story = {
   args: {
     color: ETagColor.warning,
-    clickable: false,
     label: 'Warning',
   },
 }

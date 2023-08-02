@@ -1,7 +1,7 @@
 import { StoryObj } from '@storybook/vue3'
-import UButton from './UButton.vue'
-import { EButtonDesign, EButtonSize, EIconLocation } from './types.ts'
-// import '~/assets/style/base/baseButton.scss'
+import UButton from './../UButton.vue'
+import { EButtonDesign, EButtonSize, EIconLocation } from './../types.ts'
+// import '../../../assets/style/base/baseButton.scss'
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 
@@ -25,6 +25,11 @@ export default {
       control: 'select',
       options: [undefined, EButtonSize.large, EButtonSize.medium, EButtonSize.mini],
     },
+    fullWidth: {
+      control: 'select',
+      options: [true, false],
+      defaultValue: false,
+    },
   },
 }
 
@@ -37,20 +42,23 @@ export const DefaultButton: Story = {
     size: EButtonSize.large,
     label: 'Default',
   },
-}
-
-export const RoundedSecondary_Large: Story = {
-  args: {
-    design: EButtonDesign.RoundedSecondary,
-    size: EButtonSize.large,
-    label: 'Rounded secondary - large',
+  parameters: {
+    controls: {
+      exclude: /(?:\b|')(icon)/g,
+    },
   },
 }
 
-export const RoundedSecondary_Medium: Story = {
+export const DefaultButton_FullWidth: Story = {
   args: {
-    design: EButtonDesign.RoundedSecondary,
-    size: EButtonSize.medium,
-    label: 'Rounded secondary - medium',
+    design: EButtonDesign.RoundedMain,
+    size: EButtonSize.large,
+    label: 'Default',
+    fullWidth: true,
+  },
+  parameters: {
+    controls: {
+      exclude: /(?:\b|')(icon)/g,
+    },
   },
 }
