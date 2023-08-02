@@ -24,7 +24,6 @@ type Story = StoryObj<typeof BaseTag>;
 export const Attention_Clickable: Story = {
   args: {
     color: ETagColor.attention,
-    clickable: true,
     label: 'Attention',
   },
 }
@@ -32,7 +31,6 @@ export const Attention_Clickable: Story = {
 export const Warning_NotClickable: Story = {
   args: {
     color: ETagColor.warning,
-    clickable: false,
     label: 'Warning',
   },
 }
