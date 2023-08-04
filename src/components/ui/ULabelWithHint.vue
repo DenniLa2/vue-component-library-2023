@@ -7,7 +7,7 @@
     />
 
     <el-tooltip
-      v-if="tooltip"
+      v-if="isClient && tooltip"
       popper-class="tooltip"
       effect="light"
       placement="top"
@@ -22,6 +22,7 @@
 
 
 <script setup lang="ts">
+import { onMounted, ref } from 'vue'
 import { ElTooltip } from 'element-plus'
 /**
  * Created by Denis Abramyan (dennila2@gmail.com)
@@ -34,9 +35,16 @@ interface Props {
   tooltip?: string
   asHtml?: boolean
 }
-
+// @ts-ignore
 const props = withDefaults(defineProps<Props>(), { asHtml: false })
 
+// https://element-plus.org/en-US/guide/ssr.html#inject-the-teleport-markup
+
+const isClient = ref(false)
+
+onMounted(() => {
+  isClient.value = true
+})
 </script>
 
 
