@@ -8,7 +8,7 @@
   >
     <path
       d="M6 14V16C6 17.6569 7.34315 19 9 19H15C16.6569 19 18 17.6569 18 16V14"
-      class="stroke-primary"
+      :class="`stroke--${color}`"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
@@ -16,7 +16,7 @@
 
     <path
       d="M12 14V4"
-      class="stroke-primary"
+      :class="`stroke--${color}`"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
@@ -24,14 +24,22 @@
 
     <path
       d="M9.17188 6.41408L12.0003 3.58569L14.8287 6.41412"
-      class="stroke-primary"
+      :class="`stroke--${color}`"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
   </svg>
 </template>
+<script setup lang="ts">
+import { EIconColor } from '../types.ts'
 
+interface Props {
+  color?: EIconColor
+}
+// @ts-ignore
+withDefaults(defineProps<Props>(), { color: EIconColor.secondary })
+</script>
 
 <style scoped lang="scss">
 .stroke-primary {
