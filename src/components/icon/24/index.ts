@@ -73,6 +73,5 @@ export {
   ISmTrash,
   ISmTriplet,
   ISmX,
-  ISmExit
-
+  ISmExit,
 }
