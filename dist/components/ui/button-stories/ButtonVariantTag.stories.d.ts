@@ -1,5 +1,4 @@
 import { EButtonDesign, EButtonSize, EIconLocation } from '@/components/ui/types'
-
 interface Props {
   design?: EButtonDesign;
   label?: string;
@@ -7,10 +6,9 @@ interface Props {
   iconLocation?: EIconLocation;
   size?: undefined | EButtonSize;
 }
-
 declare const _default: {
   title: string;
-}
+};
 export default _default
 export declare const Tag: {
   render: (args: {
@@ -211,4 +209,4 @@ export declare const Tag: {
   args: {
     sets: Props[];
   };
-}
+};

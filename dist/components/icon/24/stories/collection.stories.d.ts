@@ -365,6 +365,19 @@ export declare const Collection: {
       }>>, {
         size: import('@/components/icon/types.ts').EXSize;
       }, {}>;
+      Exit: import('vue').DefineComponent<{
+        color: {
+          type: import('vue').PropType<EIconColor>;
+          default: EIconColor;
+        };
+      }, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+        color: {
+          type: import('vue').PropType<EIconColor>;
+          default: EIconColor;
+        };
+      }>>, {
+        color: EIconColor;
+      }, {}>;
     };
     setup(): {
       color: EIconColor;

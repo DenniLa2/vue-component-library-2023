@@ -1,7 +1,6 @@
 import { StoryObj } from '@storybook/vue3'
 import UButton from './../UButton.vue'
 import { EButtonDesign, EButtonSize, EIconLocation } from './../types.ts'
-
 declare const _default: {
   title: string;
   component: {
@@ -197,7 +196,7 @@ declare const _default: {
       defaultValue: boolean;
     };
   };
-}
+};
 export default _default
 type Story = StoryObj<typeof UButton>;
 export declare const DefaultButton: Story

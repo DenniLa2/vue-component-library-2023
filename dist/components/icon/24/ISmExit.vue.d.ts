@@ -1,16 +1,16 @@
+import { EIconColor } from '../types.ts'
+
 interface Props {
-  label?: string;
-  tooltip?: string;
-  asHtml?: boolean;
+  color?: EIconColor;
 }
 
 declare const _default: import('vue').DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
-  asHtml: boolean;
+  color: EIconColor;
 }>, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
-  asHtml: boolean;
+  color: EIconColor;
 }>>>, {
-  asHtml: boolean;
-}, {}>;
+  color: EIconColor;
+}, {}>
 export default _default
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
 type __VLS_TypePropsToRuntimeProps<T> = {
