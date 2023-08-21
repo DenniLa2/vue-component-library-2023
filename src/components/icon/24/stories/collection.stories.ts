@@ -28,6 +28,7 @@ import TransactionSend from '@/components/icon/24/32/ISmMdTransactionSend.vue'
 import Trash from '@/components/icon/24/ISmTrash.vue'
 import Triplet from '@/components/icon/24/ISmTriplet.vue'
 import X from '@/components/icon/24/ISmX.vue'
+import Exit from '@/components/icon/24/ISmExit.vue'
 
 import { colors } from '@/components/icon/constants.storybook'
 import { EMoneyDirection } from '@/types'
@@ -84,6 +85,7 @@ export const Collection = {
       Trash,
       Triplet,
       X,
+      Exit,
     },
     setup() {
       return args
@@ -210,6 +212,10 @@ export const Collection = {
       <div>
         <X :color="color" size="s10"/>
         - X | s10
+      </div>
+      <div>
+        <Exit :color="color"/>
+         - Exit
       </div>
       </div>
     `,
