@@ -35,6 +35,7 @@ import ISmSortArrow from './ISmSortArrow.vue'
 import ISmTrash from './ISmTrash.vue'
 import ISmTriplet from './ISmTriplet.vue'
 import ISmX from './ISmX.vue'
+import ISmExit from './ISmExit.vue'
 
 export {
   // NB! for navigation
@@ -72,6 +73,6 @@ export {
   ISmTrash,
   ISmTriplet,
   ISmX,
-
+  ISmExit
 
 }
