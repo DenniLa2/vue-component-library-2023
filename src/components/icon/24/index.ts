@@ -15,6 +15,7 @@ import ISmChevron from './ISmChevron.vue'
 import ISmCircleEmpty from './ISmCircleEmpty.vue'
 import ISmCircleError from './ISmCircleError.vue'
 import ISmCircleSuccess from './ISmCircleSuccess.vue'
+import ISmCopy from './ISmCopy.vue'
 import ISmDownload from './ISmDownload.vue'
 import ISmExclamation from './ISmExclamation.vue'
 import ISmEyeClosed from './ISmEyeClosed.vue'
@@ -53,6 +54,7 @@ export {
   ISmCircleEmpty,
   ISmCircleError,
   ISmCircleSuccess,
+  ISmCopy,
   ISmDownload,
   ISmExclamation,
   ISmEyeClosed,
