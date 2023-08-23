@@ -4,6 +4,7 @@
  */
 import { EDirectionArrow, EIconColor } from '@/components/icon/types.ts'
 import Calendar from '@/components/icon/24/ISmCalendar.vue'
+import Copy from '@/components/icon/24/ISmCopy.vue'
 import DirectionArrow from '@/components/icon/24/32/ISmMdDirectionArrow.vue'
 import Download from '@/components/icon/24/ISmDownload.vue'
 import EyeClosed from '@/components/icon/24/ISmEyeClosed.vue'
@@ -61,6 +62,7 @@ export const Collection = {
   render: (args: { color: EIconColor }) => ({
     components: {
       Calendar,
+      Copy,
       DirectionArrow,
       Download,
       EyeClosed,
@@ -96,6 +98,10 @@ export const Collection = {
         <div>
           <Calendar :color="color"/>
           - Calendar
+        </div>
+        <div>
+          <Copy :color="color"/>
+          - Copy
         </div>
         <div style="display: flex">
           <DirectionArrow :color="color" direction="Back"/>
