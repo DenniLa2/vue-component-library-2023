@@ -46,7 +46,7 @@ export default {
       return EDirectionArrow;
     },
     EIconColor() {
-      return EIconColo;
+      return EIconColor;
     },
   },
   title: "Icons/24x24/Icons",
