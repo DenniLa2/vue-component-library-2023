@@ -33,27 +33,28 @@ import TransactionSend from "@/components/icon/24/32/ISmMdTransactionSend.vue";
 import Trash from "@/components/icon/24/ISmTrash.vue";
 import Triplet from "@/components/icon/24/ISmTriplet.vue";
 import X from "@/components/icon/24/ISmX.vue";
-import Exit from "@/components/icon/24/ISmExi'@/components/icon/constants.storybook'nents/icon/constants.storybook";
-'@/types'MoneyDirection } from "@/types";
+import Exit from "@/components/icon/24/ISmExit.vue";
+import { EMoneyDirection } from "@/types";
+import { colors } from "@/components/icon/constants.storybook.ts";
 
 export default {
   computed: {
     EMoneyDirection() {
-      return EMoneyDirection
+      return EMoneyDirecton;
     },
     EDirectionArrow() {
-      return EDirectionArrow
+      return EDirectionArrow;
     },
     EIconColor() {
-      return EIconColor
+      return EIconColo;
     },
   },
-  title: 'Icons/24x24/Icons',
-  tags: ['autodocs'],
+  title: "Icons/24x24/Icons",
+  tags: ["autodocs"],
   argTypes: {
     color: {
       control: {
-        type: 'select',
+        type: "select",
       },
       options: colors,
     },
@@ -96,7 +97,7 @@ export const Collection = {
       Exit,
     },
     setup() {
-      return args
+      return args;
     },
     template: `
       <div class="icon-list">

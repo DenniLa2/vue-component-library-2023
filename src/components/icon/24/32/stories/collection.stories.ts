@@ -10,13 +10,9 @@ import Payments from "@/components/icon/24/32/ISmMdPayments.vue";
 
 import { colors } from "@/components/icon/constants.storybook";
 import { EMoneyDirection } from "@/types";
-import { components } from "@storybook/components";
 
 export default {
   computed: {
-    components() {
-      return components;
-    },
     EMoneyDirection() {
       return EMoneyDirection;
     },

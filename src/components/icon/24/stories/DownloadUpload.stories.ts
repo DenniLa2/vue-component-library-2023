@@ -5,19 +5,19 @@ import { EIconColor } from "@/components/icon/types.ts";
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 export default {
-  tit'Icons/24x24/Download_Upload'oad",
-  tag'autodocs'ocs"],
+  title: "Icons/24x24/Download_Upload",
+  tags: ["autodocs"],
   argTypes: {
     color: {
       control: {
-        type: 'inline-radio',
+        type: "inline-radio",
       },
       options: colors,
     },
   },
   computed: {
     EIconColor() {
-      return EIconColor
+      return EIconColor;
     },
   },
 };
@@ -26,7 +26,7 @@ export default {
 export const Default = {
   render: (args: { color: EIconColor }) => ({
     setup() {
-      return args
+      return arg;
     },
     components: { Download, Upload },
     template: `
@@ -43,6 +43,6 @@ export const Default = {
     `,
   }),
   args: {
-    color: 'primary',
+    color: "primary",
   },
-}
+};

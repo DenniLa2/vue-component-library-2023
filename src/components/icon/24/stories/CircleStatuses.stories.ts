@@ -6,7 +6,7 @@ import CircleError from "../ISmCircleError.vue";
 
 export default {
   title: "Icons/24x24/Circle",
-  tags: "autodocs",
+  tags: ["autodocs"],
   argTypes: {},
 };
 
