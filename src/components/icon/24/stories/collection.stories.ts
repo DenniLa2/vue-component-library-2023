@@ -40,7 +40,7 @@ import { colors } from "@/components/icon/constants.storybook.ts";
 export default {
   computed: {
     EMoneyDirection() {
-      return EMoneyDirecton;
+      return EMoneyDirection;
     },
     EDirectionArrow() {
       return EDirectionArrow;

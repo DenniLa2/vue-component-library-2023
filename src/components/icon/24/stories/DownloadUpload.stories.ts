@@ -26,7 +26,7 @@ export default {
 export const Default = {
   render: (args: { color: EIconColor }) => ({
     setup() {
-      return arg;
+      return args;
     },
     components: { Download, Upload },
     template: `
