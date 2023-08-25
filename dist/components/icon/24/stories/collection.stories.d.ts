@@ -40,6 +40,19 @@ export declare const Collection: {
       }>>, {
         color: EIconColor;
       }, {}>;
+      Copy: import('vue').DefineComponent<{
+        color: {
+          type: import('vue').PropType<EIconColor>;
+          default: EIconColor;
+        };
+      }, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+        color: {
+          type: import('vue').PropType<EIconColor>;
+          default: EIconColor;
+        };
+      }>>, {
+        color: EIconColor;
+      }, {}>;
       DirectionArrow: import('vue').DefineComponent<{
         size: {
           type: import('vue').PropType<import('@/components/icon/types.ts').EIconSize>;
