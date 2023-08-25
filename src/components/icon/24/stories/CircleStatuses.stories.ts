@@ -5,8 +5,8 @@ import CircleError from "../ISmCircleError.vue";
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 
 export default {
-  titl'Icons/24x24/Circle'le",
-  tags'autodocs'cs"],
+  title: "Icons/24x24/Circle",
+  tags: "autodocs",
   argTypes: {},
 };
 

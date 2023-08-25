@@ -93,11 +93,11 @@ export const Text = {
           >
             <template v-if="d.iconLocation" #icon>
               <ISmX v-if="d.label === 'Skip'" :color="'primary'"/>
-              <ISmMdDirectionArrow v-else :color="'primary'" direction="Back"/>
+              <ISmMdDirectionArrow v-else :color="'primary'"/>
             </template>
 
             <template v-if="!d.label" #icon>
-              <ISmMdDirectionArrow :color="'primary'" direction="Back"/>
+              <ISmMdDirectionArrow :color="'primary'"/>
             </template>
           </UButton>
 
