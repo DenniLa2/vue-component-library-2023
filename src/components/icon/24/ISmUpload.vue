@@ -15,14 +15,14 @@
     />
     <path
       :class="`stroke--${color}`"
-      d="M12 3.99994V12.9999"
+      d="M12 14V4"
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="2"
     />
     <path
       :class="`stroke--${color}`"
-      d="M9.17139 11.5857L11.9998 14.4141L14.8282 11.5856"
+      d="M9.17151 6.41408L11.9999 3.58569L14.8284 6.41412"
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="2"
@@ -31,10 +31,6 @@
 </template>
 
 <script lang="ts" setup>
-/**
- * Created by Denis Abramyan (dennila2@gmail.com)
- * on 1.07.2023
- */
 import { EIconColor } from "../types.ts";
 
 interface Props {

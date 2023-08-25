@@ -31,10 +31,6 @@
 </template>
 
 <script lang="ts" setup>
-/**
- * Created by Denis Abramyan (dennila2@gmail.com)
- * on 1.07.2023
- */
 import { EIconColor } from "../types.ts";
 
 interface Props {

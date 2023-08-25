@@ -1,52 +1,47 @@
 <template>
   <svg
-    width="24"
+    fill="none"
     height="24"
     viewBox="0 0 24 24"
-    fill="none"
+    width="24"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
+      :class="`stroke--${color}`"
       d="M6 7H18"
-      :class="`stroke--${color}`"
-      stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
+      stroke-width="2"
     />
     <path
+      :class="`stroke--${color}`"
       d="M8 12H16"
-      :class="`stroke--${color}`"
-      stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
+      stroke-width="2"
     />
     <path
-      d="M10 17H14"
       :class="`stroke--${color}`"
-      stroke-width="2"
+      d="M10 17H14"
       stroke-linecap="round"
       stroke-linejoin="round"
+      stroke-width="2"
     />
   </svg>
-
 </template>
 
-
-<script setup lang="ts">
+<script lang="ts" setup>
 /**
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 06.06.2023
  */
-import { EIconColor } from '../types.ts'
+import { EIconColor } from "../types.ts";
 
 interface Props {
-  color: EIconColor
+  color: EIconColor;
 }
 
-defineProps<Props>()
+withDefaults(defineProps<Props>(), { color: EIconColor.primary });
 </script>
 
-
-<style scoped lang="scss">
-
-</style>
+<style lang="scss" scoped></style>

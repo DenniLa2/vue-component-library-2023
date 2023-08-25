@@ -8,21 +8,35 @@
   >
     <path
       :class="`stroke--${color}`"
-      d="M6 14V16C6 17.6569 7.34315 19 9 19H15C16.6569 19 18 17.6569 18 16V14"
+      d="M6 7H13"
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="2"
     />
     <path
       :class="`stroke--${color}`"
-      d="M12 3.99994V12.9999"
+      d="M8 12H16"
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="2"
     />
     <path
       :class="`stroke--${color}`"
-      d="M9.17139 11.5857L11.9998 14.4141L14.8282 11.5856"
+      d="M10 17H14"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+    />
+    <path
+      d="M17 7L21 3"
+      stroke="#D86462"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+    />
+    <path
+      d="M21 7L17 3"
+      stroke="#D86462"
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="2"
@@ -31,15 +45,13 @@
 </template>
 
 <script lang="ts" setup>
-/**
- * Created by Denis Abramyan (dennila2@gmail.com)
- * on 1.07.2023
- */
 import { EIconColor } from "../types.ts";
 
 interface Props {
-  color?: EIconColor;
+  color: EIconColor;
 }
 
 withDefaults(defineProps<Props>(), { color: EIconColor.primary });
 </script>
+
+<style lang="scss" scoped></style>
