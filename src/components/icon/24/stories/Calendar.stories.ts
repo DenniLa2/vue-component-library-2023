@@ -1,8 +1,6 @@
 import { StoryObj } from '@storybook/vue3'
 import Calendar from '@/components/icon/24/ISmCalendar.vue'
 import { colors } from '@/components/icon/constants.storybook.ts'
-import '@/assets/style/color.scss'
-import '@/assets/style/color-classes.scss'
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 

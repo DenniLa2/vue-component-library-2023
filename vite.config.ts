@@ -8,13 +8,6 @@ import { fileURLToPath } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@import "${pathSrc}/assets/style/index";`,
-      },
-    },
-  },
   plugins: [vue()],
   resolve: {
     alias: {
