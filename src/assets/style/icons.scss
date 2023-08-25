@@ -22,6 +22,14 @@
   fill: var(--bg-secondary);
 }
 
+.stroke--tertiary {
+  stroke: var(--icon-tretiary);
+}
+
+.fill--tertiary {
+  fill: var(--icon-tretiary);
+}
+
 .stroke--contrast {
   stroke: var(--text-contrast);
 }

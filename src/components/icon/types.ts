@@ -33,6 +33,7 @@ export enum EIconColor {
   success = 'success',
   hint = 'hint',
   search = 'search',
+  tertiary = 'tertiary',
 }
 
 export enum EXSize {
