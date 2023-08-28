@@ -38,11 +38,11 @@
 </template>
 
 <script lang="ts" setup>
-import { EIconColor } from "../types.ts";
+import { EIconColor } from '../types.ts'
 
 interface Props {
-  color?: EIconColor;
+  color?: EIconColor
 }
 
-withDefaults(defineProps<Props>(), { color: EIconColor.primary });
+withDefaults(defineProps<Props>(), { color: EIconColor.primary })
 </script>

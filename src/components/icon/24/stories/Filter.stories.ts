@@ -1,32 +1,32 @@
-import { colors } from "@/components/icon/constants.storybook";
-import { EIconColor } from "@/components/icon/types.ts";
-import Filter from "@/components/icon/24/ISmFilter.vue";
-import FilterActive from "@/components/icon/24/ISmFilterActive.vue";
-import FilterClear from "@/components/icon/24/ISmFilterClear.vue";
+import { colors } from '@/components/icon/constants.storybook'
+import { EIconColor } from '@/components/icon/types.ts'
+import Filter from '@/components/icon/24/ISmFilter.vue'
+import FilterActive from '@/components/icon/24/ISmFilterActive.vue'
+import FilterClear from '@/components/icon/24/ISmFilterClear.vue'
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 export default {
-  title: "Icons/24x24/Filter",
-  tags: ["autodocs"],
+  title: 'Icons/24x24/Filter',
+  tags: ['autodocs'],
   argTypes: {
     color: {
       control: {
-        type: "inline-radio",
+        type: 'inline-radio',
       },
       options: colors,
     },
   },
   computed: {
     EIconColor() {
-      return EIconColor;
+      return EIconColor
     },
   },
-};
+}
 
 export const Default = {
   render: (args: { color: EIconColor }) => ({
     setup() {
-      return args;
+      return args
     },
     components: { Filter, FilterActive, FilterClear },
     template: `
@@ -49,4 +49,4 @@ export const Default = {
   args: {
     color: "primary",
   },
-};
+}

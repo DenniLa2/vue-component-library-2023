@@ -1,16 +1,16 @@
-import CircleEmpty from "../ISmCircleEmpty.vue";
-import CircleSuccess from "../ISmCircleSuccess.vue";
-import CircleError from "../ISmCircleError.vue";
+import CircleEmpty from '../ISmCircleEmpty.vue'
+import CircleSuccess from '../ISmCircleSuccess.vue'
+import CircleError from '../ISmCircleError.vue'
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 
 export default {
-  title: "Icons/24x24/Circle",
-  tags: ["autodocs"],
+  title: 'Icons/24x24/Circle',
+  tags: ['autodocs'],
   argTypes: {},
-};
+}
 
-// type Story = StoryObj<typeof Icon>;
+// type Story = StoryObj<typeof Icon>
 
 // More on writing stories with args: https://storybook.js.org/docs/vue/writing-stories/args
 export const Circles = () => ({
@@ -31,4 +31,4 @@ export const Circles = () => ({
       </div>
     </div>
   `,
-});
+})

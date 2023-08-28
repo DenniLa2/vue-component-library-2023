@@ -2,39 +2,41 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 01.07.2023
  */
-import { EDirectionArrow, EIconColor } from "@/components/icon/types.ts";
-import Calendar from "@/components/icon/24/ISmCalendar.vue";
-import Copy from "@/components/icon/24/ISmCopy.vue";
-import DirectionArrow from "@/components/icon/24/32/ISmMdDirectionArrow.vue";
-import Download from "@/components/icon/24/ISmDownload.vue";
-import Upload from "@/components/icon/24/ISmUpload.vue";
-import Import from "@/components/icon/24/ISmImport.vue";
-import Export from "@/components/icon/24/ISmExport.vue";
-import EyeClosed from "@/components/icon/24/ISmEyeClosed.vue";
-import EyeOpened from "@/components/icon/24/ISmEyeOpened.vue";
-import Exclamation from "@/components/icon/24/ISmExclamation.vue";
-import File from "@/components/icon/24/ISmFile.vue";
-import Filter from "@/components/icon/24/ISmFilter.vue";
-import FilterActive from "@/components/icon/24/ISmFilterActive.vue";
-import FilterClear from "@/components/icon/24/ISmFilterClear.vue";
-import HintSuccess from "@/components/icon/24/ISmHintSuccess.vue";
-import Info from "@/components/icon/24/ISmInfo.vue";
-import List from "@/components/icon/24/ISmList.vue";
-import Mail from "@/components/icon/24/ISmList.vue";
-import Minus from "@/components/icon/24/ISmMinus.vue";
-import MoneyDirection from "@/components/icon/24/32/ISmMdMoneyDirection.vue";
-import Plus from "@/components/icon/24/ISmPlus.vue";
-import Printer from "@/components/icon/24/ISmPrinter.vue";
-import Refresh from "@/components/icon/24/ISmRefresh.vue";
-import Search from "@/components/icon/24/ISmSearch.vue";
-import SortArrow from "@/components/icon/24/ISmSortArrow.vue";
-import TransactionReceive from "@/components/icon/24/32/ISmMdTransactionReceive.vue";
-import TransactionSend from "@/components/icon/24/32/ISmMdTransactionSend.vue";
-import Trash from "@/components/icon/24/ISmTrash.vue";
-import Triplet from "@/components/icon/24/ISmTriplet.vue";
-import X from "@/components/icon/24/ISmX.vue";
-import Exit from "@/components/icon/24/ISmExi'@/components/icon/constants.storybook'nents/icon/constants.storybook";
-'@/types'MoneyDirection } from "@/types";
+import { EDirectionArrow, EIconColor } from '@/components/icon/types.ts'
+import Calendar from '@/components/icon/24/ISmCalendar.vue'
+import Copy from '@/components/icon/24/ISmCopy.vue'
+import DirectionArrow from '@/components/icon/24/32/ISmMdDirectionArrow.vue'
+import Download from '@/components/icon/24/ISmDownload.vue'
+import Upload from '@/components/icon/24/ISmUpload.vue'
+import Import from '@/components/icon/24/ISmImport.vue'
+import Export from '@/components/icon/24/ISmExport.vue'
+import EyeClosed from '@/components/icon/24/ISmEyeClosed.vue'
+import EyeOpened from '@/components/icon/24/ISmEyeOpened.vue'
+import Exclamation from '@/components/icon/24/ISmExclamation.vue'
+import File from '@/components/icon/24/ISmFile.vue'
+import Filter from '@/components/icon/24/ISmFilter.vue'
+import FilterActive from '@/components/icon/24/ISmFilterActive.vue'
+import FilterClear from '@/components/icon/24/ISmFilterClear.vue'
+import HintSuccess from '@/components/icon/24/ISmHintSuccess.vue'
+import Info from '@/components/icon/24/ISmInfo.vue'
+import List from '@/components/icon/24/ISmList.vue'
+import Mail from '@/components/icon/24/ISmList.vue'
+import Minus from '@/components/icon/24/ISmMinus.vue'
+import MoneyDirection from '@/components/icon/24/32/ISmMdMoneyDirection.vue'
+import Plus from '@/components/icon/24/ISmPlus.vue'
+import Printer from '@/components/icon/24/ISmPrinter.vue'
+import Refresh from '@/components/icon/24/ISmRefresh.vue'
+import Search from '@/components/icon/24/ISmSearch.vue'
+import SortArrow from '@/components/icon/24/ISmSortArrow.vue'
+import TransactionReceive from '@/components/icon/24/32/ISmMdTransactionReceive.vue'
+import TransactionSend from '@/components/icon/24/32/ISmMdTransactionSend.vue'
+import Trash from '@/components/icon/24/ISmTrash.vue'
+import Triplet from '@/components/icon/24/ISmTriplet.vue'
+import X from '@/components/icon/24/ISmX.vue'
+import Exit from '@/components/icon/24/ISmExit.vue'
+
+import { colors } from '@/components/icon/constants.storybook'
+import { EMoneyDirection } from '@/types'
 
 export default {
   computed: {
@@ -58,7 +60,7 @@ export default {
       options: colors,
     },
   },
-};
+}
 
 export const Collection = {
   render: (args: { color: EIconColor }) => ({
@@ -245,4 +247,4 @@ export const Collection = {
   args: {
     color: EIconColor.primary,
   },
-};
+}

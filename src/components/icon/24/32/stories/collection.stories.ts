@@ -2,38 +2,38 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 01.07.2023
  */
-import { EDirectionArrow, EIconColor } from "@/components/icon/types.ts";
-import Details from "@/components/icon/24/32/ISmMdDetails.vue";
-import DirectionArrow from "@/components/icon/24/32/ISmMdDirectionArrow.vue";
-import MoneyDirection from "@/components/icon/24/32/ISmMdMoneyDirection.vue";
-import Payments from "@/components/icon/24/32/ISmMdPayments.vue";
+import { EDirectionArrow, EIconColor } from '@/components/icon/types.ts'
+import Details from '@/components/icon/24/32/ISmMdDetails.vue'
+import DirectionArrow from '@/components/icon/24/32/ISmMdDirectionArrow.vue'
+import MoneyDirection from '@/components/icon/24/32/ISmMdMoneyDirection.vue'
+import Payments from '@/components/icon/24/32/ISmMdPayments.vue'
 
-import { colors } from "@/components/icon/constants.storybook";
-import { EMoneyDirection } from "@/types";
+import { colors } from '@/components/icon/constants.storybook'
+import { EMoneyDirection } from '@/types'
 
 export default {
   computed: {
     EMoneyDirection() {
-      return EMoneyDirection;
+      return EMoneyDirection
     },
     EDirectionArrow() {
-      return EDirectionArrow;
+      return EDirectionArrow
     },
     EIconColor() {
-      return EIconColor;
+      return EIconColor
     },
   },
-  title: "Icons/32x32/Icons",
-  tags: ["autodocs"],
+  title: 'Icons/32x32/Icons',
+  tags: ['autodocs'],
   argTypes: {
     color: {
       control: {
-        type: "select",
+        type: 'select',
       },
       options: colors,
     },
   },
-};
+}
 
 export const Collection = {
   render: (args: { color: EIconColor }) => ({
@@ -44,7 +44,7 @@ export const Collection = {
       Payments,
     },
     setup() {
-      return args;
+      return args
     },
     template: `
       <div class="icon-list">
@@ -78,4 +78,4 @@ export const Collection = {
   args: {
     color: EIconColor.primary,
   },
-};
+}

@@ -28,20 +28,25 @@
       stroke-linejoin="round"
     />
   </svg>
+
 </template>
+
 
 <script setup lang="ts">
 /**
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 06.06.2023
  */
-import { EIconColor } from "../types.ts";
+import { EIconColor } from '../types.ts'
 
 interface Props {
-  color: EIconColor;
+  color: EIconColor
 }
 
-withDefaults(defineProps<Props>(), { color: EIconColor.primary });
+withDefaults(defineProps<Props>(), { color: EIconColor.primary })
 </script>
 
-<style scoped lang="scss"></style>
+
+<style scoped lang="scss">
+
+</style>

@@ -1,18 +1,23 @@
-import CreatePayment from "@/components/icon/24/ISmCreatePayment.vue";
-import Profile from "@/components/icon/24/ISmPeople.vue";
-import Home from "@/components/icon/24/ISmHome.vue";
-import Payments from "@/components/icon/24/ISmPayments.vue";
-import Drafts from "@/components/icon/24/ISmDrafts.vue";
-import Support from "@/components/icon/24/ISmSupport.vue";
-import Faq from "@/components/icon/24/ISmFaq.vue";
-import { EIconColor } from "@/components/icon/types.ts";
-import { colors } from "@/components/icon/constants.storybook.ts";
+import CreatePayment from '@/components/icon/24/ISmCreatePayment.vue'
+import Profile from '@/components/icon/24/ISmPeople.vue'
+import Home from '@/components/icon/24/ISmHome.vue'
+import Payments from '@/components/icon/24/ISmPayments.vue'
+import Drafts from '@/components/icon/24/ISmDrafts.vue'
+import Support from '@/components/icon/24/ISmSupport.vue'
+import Faq from '@/components/icon/24/ISmFaq.vue'
+import { EIconColor } from '@/components/icon/types.ts'
+import { colors } from '@/components/icon/constants.storybook.ts'
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 
 export default {
-'Icons/Navbar/Icons'ar/Icons",
-'autodocs'autodocs"],
+  computed: {
+    EIconColor() {
+      return EIconColor
+    },
+  },
+  title: 'Icons/Navbar/NavBar',
+  tags: ['autodocs'],
   argTypes: {
     color: {
       control: {
@@ -21,7 +26,7 @@ export default {
       options: colors,
     },
   },
-};
+}
 
 // More on writing stories with args: https://storybook.js.org/docs/vue/writing-stories/args
 export const NavBar = {
@@ -74,4 +79,4 @@ export const NavBar = {
   args: {
     color: EIconColor.primary,
   },
-};
+}

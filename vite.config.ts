@@ -1,11 +1,10 @@
-import path from "path";
-
-const pathSrc = path.resolve(__dirname, "./src");
-import { defineConfig } from "vite";
-import { resolve } from "path";
-import vue from "@vitejs/plugin-vue";
+import path from 'path'
+const pathSrc = path.resolve(__dirname, './src')
+import { defineConfig } from 'vite'
+import { resolve } from 'path'
+import vue from '@vitejs/plugin-vue'
 // import path from 'path'
-import { fileURLToPath } 'node:url'url";
+import { fileURLToPath } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -44,4 +43,4 @@ export default defineConfig({
       },
     },
   },
-});
+})
