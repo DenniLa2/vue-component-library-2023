@@ -27,33 +27,22 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     />
-    <circle
-      class="fill--warning"
-      cx="18.5"
-      cy="5.5"
-      r="2.5"
-    />
+    <circle class="fill--warning" cx="18.5" cy="5.5" r="2.5" />
   </svg>
-
 </template>
-
 
 <script setup lang="ts">
 /**
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 08.06.2023
  */
-import { EIconColor } from '../types.ts'
+import { EIconColor } from "../types.ts";
 
 interface Props {
-  color: EIconColor
+  color: EIconColor;
 }
 
-defineProps<Props>()
-
+withDefaults(defineProps<Props>(), { color: EIconColor.primary });
 </script>
 
-
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

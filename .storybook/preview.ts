@@ -1,9 +1,9 @@
-import type { Preview } from '@storybook/vue3'
-import { setup } from '@storybook/vue3'
+import type { Preview } from "@storybook/vue3";
+import { setup } from "@storybook/vue3";
 // import { createI18n } from 'vue-i18n'
-import ElementPlus from 'element-plus'
-// import '../assets/style/index.scss'
-import 'element-plus/dist/index.css'
+import ElementPlus fro'element-plus'";
+impor'@/assets/style/index.scss'";
+impor'element-plus/dist/index.css'";
 
 // const i18n = createI18n({
 //   langDir: "lang",
@@ -27,8 +27,8 @@ const preview: Preview = {
       },
     },
   },
-}
+};
 
-setup(app => app.use(ElementPlus))
+setup((app) => app.use(ElementPlus))
 
 export default preview
