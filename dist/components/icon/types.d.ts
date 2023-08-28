@@ -28,7 +28,8 @@ export declare enum EIconColor {
   warning = 'warning',
   success = 'success',
   hint = 'hint',
-  search = 'search'
+  search = 'search',
+  tertiary = 'tertiary'
 }
 export declare enum EXSize {
   s10 = 's10',

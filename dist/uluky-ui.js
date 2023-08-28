@@ -3322,7 +3322,7 @@ var Zo = /* @__PURE__ */ ((e) => (e.left = 'left', e.right = 'right', e.up = 'up
   Oe = /* @__PURE__ */ ((e) => (e.s24 = 's24', e.s32 = 's32', e))(Oe || {}),
   qo = /* @__PURE__ */ ((e) => (e.s_32_27 = 's_32_27', e.s_42_36 = 's_42_36', e))(qo || {}),
   nl = /* @__PURE__ */ ((e) => (e.Back = 'Back', e.Forward = 'Forward', e))(nl || {}),
-  D = /* @__PURE__ */ ((e) => (e.primary = 'primary', e.secondary = 'secondary', e.allusion = 'allusion', e.contrast = 'contrast', e.warning = 'warning', e.success = 'success', e.hint = 'hint', e.search = 'search', e))(D || {}),
+  D = /* @__PURE__ */ ((e) => (e.primary = 'primary', e.secondary = 'secondary', e.allusion = 'allusion', e.contrast = 'contrast', e.warning = 'warning', e.success = 'success', e.hint = 'hint', e.search = 'search', e.tertiary = 'tertiary', e))(D || {}),
   ht = /* @__PURE__ */ ((e) => (e.s10 = 's10', e.s6 = 's6', e))(ht || {})
 const ol = (e) => (Ye('data-v-af3106f2'), e = e(), Xe(), e), rl = {
   width: '24',
