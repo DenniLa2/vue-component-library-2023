@@ -28,7 +28,7 @@
 import { computed, useSlots } from 'vue'
 import { ElButton } from 'element-plus'
 import 'element-plus/dist/index.css'
-import { EButtonDesign, EButtonSize, EIconLocation } from './types.ts'
+import { EButtonDesign, EButtonSize, EIconLocation } from '@/types/ui.types.ts'
 
 const slots = useSlots()
 

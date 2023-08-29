@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import { ETagColor } from '@/components/ui/types'
+import { ETagColor } from '@/types/ui.types.ts'
 
 interface Props {
   color: ETagColor

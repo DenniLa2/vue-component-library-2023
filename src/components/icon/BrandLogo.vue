@@ -58,7 +58,7 @@
  * on 23.05.2023
  */
 import { ComputedRef, computed } from 'vue'
-import { ELogoSize } from './types.ts'
+import { ELogoSize } from '@/types/icon.types.ts'
 
 interface Props {
   size?: ELogoSize

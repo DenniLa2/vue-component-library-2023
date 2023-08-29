@@ -1,15 +1,15 @@
 <template>
   <svg
     :class="`chevron-direction--${direction}`"
-    width="25"
-    height="24"
-    viewBox="0 0 25 24"
+    :width="width ?? size"
+    :height="height ?? size"
+    viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
       d="M14.5 8L10.5 12L14.5 16"
-      :class="`stroke--${color}`"
+      :class="`stroke--${computedColor}`"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
@@ -19,21 +19,17 @@
 
 
 <script setup lang="ts">
-/**
- * Created by Denis Abramyan (dennila2@gmail.com)
- * on 21.05.2023
- */
-import { EDirection_x4, EIconColor } from '../types.ts'
 
-interface Props {
-  direction?: EDirection_x4
-  color?: EIconColor
-}
+import { EDirection_x4, EIconColor, EIconSize, IDefaultIconProps } from '@/types/icon.types.ts'
+import { computed } from 'vue'
 
-withDefaults(defineProps<Props>(), {
-  direction: EDirection_x4.left,
+const props = withDefaults(defineProps<IDefaultIconProps>(), {
   color: EIconColor.primary,
+  size: EIconSize.sm,
+  direction: EDirection_x4.left,
 })
+
+const computedColor = computed(() => props.disabled ? EIconColor.disabled : props.color)
 
 </script>
 

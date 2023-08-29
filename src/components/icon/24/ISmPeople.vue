@@ -1,27 +1,27 @@
 <template>
   <svg
-    width="24"
-    height="24"
+    :width="width ?? size"
+    :height="height ?? size"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      :class="`stroke--${color}`"
+      :class="`stroke--${computedColor}`"
       d="M9.84209 14.3243C7.51809 15.0423 5.69009 16.8903 5.00009 19.2273"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
     <path
-      :class="`stroke--${color}`"
+      :class="`stroke--${computedColor}`"
       d="M18.9998 19.2306C18.3378 16.9856 16.6258 15.1906 14.4328 14.4156"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
     <path
-      :class="`stroke--${color}`"
+      :class="`stroke--${computedColor}`"
       fill-rule="evenodd"
       clip-rule="evenodd"
       d="M12.2142 15.0001C14.6992 15.0001 16.7142 12.9851 16.7142 10.5001C16.7142 8.01512 14.6992 6.00012 12.2142 6.00012C9.7292 6.00012 7.7142 8.01512 7.7142 10.5001C7.7142 12.9851 9.7292 15.0001 12.2142 15.0001Z"
@@ -34,19 +34,22 @@
 
 
 <script setup lang="ts">
+
 /**
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 22.05.2023
  */
-import { EIconColor } from '../types.ts'
+import { EIconColor, EIconSize, IDefaultIconProps } from '@/types/icon.types.ts'
+import { computed } from 'vue'
 
-interface Props {
-  color?: EIconColor
-}
+const props = withDefaults(
+  defineProps<IDefaultIconProps>(), {
+    color: EIconColor.primary,
+    size: EIconSize.sm,
+  }
+)
 
-withDefaults(defineProps<Props>(), {
-  color: EIconColor.primary
-})
+const computedColor = computed(() => props.disabled ? EIconColor.disabled : props.color)
 
 </script>
 

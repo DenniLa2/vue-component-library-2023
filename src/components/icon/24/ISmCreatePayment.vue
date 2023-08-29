@@ -1,7 +1,7 @@
 <template>
   <svg
-    width="24"
-    height="24"
+    :width="width ?? size"
+    :height="height ?? size"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -10,6 +10,7 @@
       width="24"
       height="24"
       rx="8"
+      :class="disabled ? 'fill--disabled' : ''"
       fill="url(#paint0_linear_1275_3639)"
     />
     <path
@@ -59,10 +60,17 @@
 
 
 <script setup lang="ts">
+
 /**
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 24.05.2023
  */
+import { EIconColor, EIconSize, IDefaultIconProps } from '@/types/icon.types.ts'
+
+withDefaults(defineProps<IDefaultIconProps>(), {
+  color: EIconColor.primary,
+  size: EIconSize.sm,
+})
 
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <svg
-    width="24"
-    height="24"
+    :width="width ?? size"
+    :height="height ?? size"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -20,10 +20,12 @@
 
 
 <script setup lang="ts">
-/**
- * Created by Denis Abramyan (dennila2@gmail.com)
- * on 29.06.2023
- */
+
+import { EIconSize, IDefaultIconProps } from '@/types/icon.types.ts'
+
+withDefaults(defineProps<IDefaultIconProps>(), {
+  size: EIconSize.sm,
+})
 
 </script>
 

@@ -1,14 +1,14 @@
 <template>
   <svg
-    width="24"
-    height="24"
+    :width="width ?? size"
+    :height="height ?? size"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
       d="M6 11.3333L10.7273 16L19 9"
-      :class="`stroke--${color}`"
+      :class="`stroke--${computedColor}`"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
@@ -17,19 +17,22 @@
 </template>
 
 <script setup lang="ts">
+
 /**
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 22.05.2023
  */
-import { EIconColor } from '../types.ts'
+import { EIconColor, EIconSize, IDefaultIconProps } from '@/types/icon.types.ts'
+import { computed } from 'vue'
 
-interface Props {
-  color?: EIconColor
-}
+const props = withDefaults(
+  defineProps<IDefaultIconProps>(), {
+    color: EIconColor.success,
+    size: EIconSize.sm,
+  }
+)
 
-withDefaults(defineProps<Props>(), {
-  color: EIconColor.success
-})
+const computedColor = computed(() => props.disabled ? EIconColor.disabled : props.color)
 
 </script>
 
