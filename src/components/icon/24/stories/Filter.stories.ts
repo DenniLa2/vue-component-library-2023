@@ -28,7 +28,11 @@ export const Default = {
     setup() {
       return args
     },
-    components: { Filter, FilterActive, FilterClear },
+    components: {
+      Filter,
+      FilterActive,
+      FilterClear
+    },
     template: `
       <div class="icon-list">
         <div>
@@ -47,6 +51,6 @@ export const Default = {
     `,
   }),
   args: {
-    color: "primary",
+    color: EIconColor.primary,
   },
 }

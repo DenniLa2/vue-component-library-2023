@@ -35,7 +35,9 @@ interface Props {
   color?: EIconColor
 }
 // @ts-ignore
-withDefaults(defineProps<Props>(), { color: EIconColor.primary })
+withDefaults(defineProps<Props>(), {
+  color: EIconColor.primary
+})
 </script>
 
 <style scoped lang="scss">

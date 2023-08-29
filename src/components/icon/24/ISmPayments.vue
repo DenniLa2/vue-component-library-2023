@@ -35,7 +35,6 @@
       stroke-linejoin="round"
     />
   </svg>
-
 </template>
 
 
@@ -47,10 +46,12 @@
 import { EIconColor } from '../types.ts'
 
 interface Props {
-  color: EIconColor
+  color?: EIconColor
 }
 
-defineProps<Props>()
+withDefaults(defineProps<Props>(), {
+  color: EIconColor.primary
+})
 
 </script>
 

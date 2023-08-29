@@ -50,7 +50,9 @@ interface Props {
   size?: EIconSize
 }
 
-const props = withDefaults(defineProps<Props>(), { size: EIconSize.s24 })
+const props = withDefaults(defineProps<Props>(), {
+  size: EIconSize.s24
+})
 
 const s = computed<number>(() => {
   switch (props.size) {

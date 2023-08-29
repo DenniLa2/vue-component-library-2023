@@ -44,7 +44,9 @@ interface Props {
   color?: EIconColor
 }
 
-withDefaults(defineProps<Props>(), { color: EIconColor.warning })
+withDefaults(defineProps<Props>(), {
+  color: EIconColor.warning
+})
 
 </script>
 

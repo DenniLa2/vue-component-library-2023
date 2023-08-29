@@ -13,7 +13,11 @@ export default {
       control: {
         type: 'select',
       },
-      options: [ETagColor.active, ETagColor.attention, ETagColor.warning],
+      options: [
+        ETagColor.active,
+        ETagColor.attention,
+        ETagColor.warning
+      ],
     },
   },
 }

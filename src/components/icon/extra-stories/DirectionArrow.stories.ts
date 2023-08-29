@@ -14,7 +14,10 @@ export default {
       control: {
         type: 'select',
       },
-      options: [EDirectionArrow.Forward, EDirectionArrow.Back],
+      options: [
+        EDirectionArrow.forward,
+        EDirectionArrow.back
+      ],
     },
     color: {
       control: {
@@ -26,7 +29,11 @@ export default {
       control: {
         type: 'select',
       },
-      options: [undefined, EIconSize.s24, EIconSize.s32],
+      options: [
+        undefined,
+        EIconSize.s24,
+        EIconSize.s32
+      ],
       defaultValue: undefined,
     },
   },
@@ -37,14 +44,14 @@ type Story = StoryObj<typeof Icon>;
 // More on writing stories with args: https://storybook.js.org/docs/vue/writing-stories/args
 export const DirectionArrow_24: Story = {
   args: {
-    direction: EDirectionArrow.Back,
+    direction: EDirectionArrow.back,
     color: EIconColor.secondary,
   },
 }
 // More on writing stories with args: https://storybook.js.org/docs/vue/writing-stories/args
 export const DirectionArrow_32: Story = {
   args: {
-    direction: EDirectionArrow.Back,
+    direction: EDirectionArrow.back,
     color: EIconColor.secondary,
     size: EIconSize.s32,
   },

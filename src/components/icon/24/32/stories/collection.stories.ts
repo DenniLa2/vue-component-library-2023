@@ -57,19 +57,31 @@ export const Collection = {
           <span>Payments</span>
         </div>
         <div>
-          <DirectionArrow :color="color" direction="send"/>
+          <DirectionArrow
+            :color="color"
+            :direction="EMoneyDirection.send"
+          />
           <span>DirectionArrow | send</span>
         </div>
         <div>
-          <DirectionArrow :color="color" direction="receive"/>
+          <DirectionArrow
+            :color="color"
+            :direction="EMoneyDirection.receive"
+          />
           <span>DirectionArrow | receive</span>
         </div>
         <div>
-          <MoneyDirection :color="color" direction="send"/>
+          <MoneyDirection
+            :color="color"
+            :direction="EMoneyDirection.send"
+          />
           <span>MoneyDirection | send</span>
         </div>
         <div>
-          <MoneyDirection :color="color" direction="receive"/>
+          <MoneyDirection
+            :color="color"
+            :direction="EMoneyDirection.receive"
+          />
           <span>MoneyDirection | receive</span>
         </div>
       </div>

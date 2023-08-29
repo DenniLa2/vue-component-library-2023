@@ -52,7 +52,13 @@ const options: Props[] = [
     disabled: true,
   },
 ]
-  .map(({ title, label, design, disabled, iconLocation }) => ({
+  .map(({
+    title,
+    label,
+    design,
+    disabled,
+    iconLocation
+  }) => ({
     name: `${label}`,
     title,
     label,
@@ -81,30 +87,38 @@ export const Text = {
     },
     template: `
       <div>
-      <div
-        v-for="(d, idx) in sets"
-        :key="idx + '-' + d.label"
-      >
-        <h2 v-if="d.title">{{ d.title }}</h2>
-
-        <UButton
-          :label="d.label"
-          :design="d.design"
-          :disabled="d.disabled"
-          :icon-location="d.iconLocation"
+        <div
+          v-for="(d, idx) in sets"
+          :key="idx + '-' + d.label"
         >
-          <template v-if="d.iconLocation" #icon>
-            <ISmX v-if="d.label === 'Skip'" :color="'primary'"/>
-            <ISmMdDirectionArrow v-else :color="'primary'"/>
-          </template>
+          <h2 v-if="d.title">
+            {{ d.title }}
+          </h2>
 
-          <template v-if="!d.label" #icon>
-            <ISmMdDirectionArrow :color="'primary'"/>
-          </template>
-        </UButton>
+          <UButton
+            :label="d.label"
+            :design="d.design"
+            :disabled="d.disabled"
+            :icon-location="d.iconLocation"
+          >
+            <template v-if="d.iconLocation" #icon>
+              <ISmX 
+                v-if="d.label === 'Skip'" 
+                :color="'primary'"
+              />
+              <ISmMdDirectionArrow 
+                v-else 
+                :color="'primary'"
+              />
+            </template>
 
-        <div style="padding: 8px;"/>
-      </div>
+            <template v-if="!d.label" #icon>
+              <ISmMdDirectionArrow :color="'primary'"/>
+            </template>
+          </UButton>
+
+          <div style="padding: 8px;"/>
+        </div>
       </div>
     `,
   }),

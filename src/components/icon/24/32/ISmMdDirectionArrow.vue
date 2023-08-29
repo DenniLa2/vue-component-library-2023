@@ -65,20 +65,22 @@ import { EDirectionArrow, EIconColor, EIconSize } from '../../types.ts'
 import { computed } from 'vue'
 
 interface Props {
-  direction: EDirectionArrow
+  direction?: EDirectionArrow
   color?: EIconColor
   size?: EIconSize
 }
 
 const props = withDefaults(
-  defineProps<Props>(),
-  {
+  defineProps<Props>(), {
+    direction: EDirectionArrow.forward,
     color: EIconColor.secondary,
     size: EIconSize.s24,
   },
 )
 
-const iconSize = computed<string>(() => props.size.split('s')[1])
+const iconSize = computed<string>(
+  () => props.size.split('s')[1]
+)
 
 </script>
 

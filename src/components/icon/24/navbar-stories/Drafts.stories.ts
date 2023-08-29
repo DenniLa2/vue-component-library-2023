@@ -24,6 +24,6 @@ type Story = StoryObj<typeof Icon>;
 // More on writing stories with args: https://storybook.js.org/docs/vue/writing-stories/args
 export const Default: Story = {
   args: {
-    color: EIconColor.secondary,
+    color: EIconColor.primary,
   },
 }

@@ -35,7 +35,9 @@ interface Props {
   asHtml?: boolean
 }
 
-const props = withDefaults(defineProps<Props>(), { asHtml: false })
+const props = withDefaults(defineProps<Props>(), {
+  asHtml: false
+})
 
 </script>
 

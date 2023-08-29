@@ -42,7 +42,12 @@ const options: Props[] = [
     disabled: true,
   },
 ]
-  .map(({ title, label, design, disabled }) => ({
+  .map(({
+    title,
+    label,
+    design,
+    disabled
+  }) => ({
     name: `${label}`,
     title,
     label,
@@ -67,23 +72,25 @@ export const Tag = {
     },
     template: `
       <div>
-      <div
-        v-for="(d, idx) in sets"
-        :key="idx + '-' + d.label"
-      >
-        <h2 v-if="d.title">{{ d.title }}</h2>
-
-        <UButton
-          :label="d.label"
-          :design="d.design"
-          :size="d.size"
-          :disabled="d.disabled"
-          :icon-location="d.iconLocation"
+        <div
+          v-for="(d, idx) in sets"
+          :key="idx + '-' + d.label"
         >
-        </UButton>
+          <h2 v-if="d.title">
+            {{ d.title }}
+          </h2>
 
-        <div style="padding: 8px;"/>
-      </div>
+          <UButton
+            :label="d.label"
+            :design="d.design"
+            :size="d.size"
+            :disabled="d.disabled"
+            :icon-location="d.iconLocation"
+          >
+          </UButton>
+
+          <div style="padding: 8px;"/>
+        </div>
       </div>
     `,
   }),

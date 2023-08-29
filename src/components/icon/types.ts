@@ -20,8 +20,8 @@ export enum ELogoSize {
 }
 
 export enum EDirectionArrow {
-  Back = 'Back',
-  Forward = 'Forward',
+  back = 'back',
+  forward = 'forward',
 }
 
 export enum EIconColor {

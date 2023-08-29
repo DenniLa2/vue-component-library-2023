@@ -14,7 +14,12 @@ export default {
       control: {
         type: 'select',
       },
-      options: [EDirection_x4.left, EDirection_x4.right, EDirection_x4.up, EDirection_x4.down],
+      options: [
+        EDirection_x4.left,
+        EDirection_x4.right,
+        EDirection_x4.up,
+        EDirection_x4.down
+      ],
     },
     color: {
       control: {

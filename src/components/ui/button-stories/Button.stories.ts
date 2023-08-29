@@ -12,22 +12,41 @@ export default {
   argTypes: {
     design: {
       control: 'select',
-      options: [EButtonDesign.RoundedMain, EButtonDesign.RoundedSecondary, EButtonDesign.RoundedWarning, EButtonDesign.TextDefault],
+      options: [
+        EButtonDesign.RoundedMain,
+        EButtonDesign.RoundedSecondary,
+        EButtonDesign.RoundedWarning,
+        EButtonDesign.TextDefault
+      ],
       defaultValue: EButtonDesign.RoundedMain,
     },
 
     iconLocation: {
       control: 'select',
-      options: [undefined, EIconLocation.leftAround, EIconLocation.leftBetween, EIconLocation.rightAround, EIconLocation.rightBetween],
+      options: [
+        undefined,
+        EIconLocation.leftAround,
+        EIconLocation.leftBetween,
+        EIconLocation.rightAround,
+        EIconLocation.rightBetween
+      ],
     },
 
     size: {
       control: 'select',
-      options: [undefined, EButtonSize.large, EButtonSize.medium, EButtonSize.mini],
+      options: [
+        undefined,
+        EButtonSize.large,
+        EButtonSize.medium,
+        EButtonSize.mini
+      ],
     },
     fullWidth: {
       control: 'select',
-      options: [true, false],
+      options: [
+        true,
+        false
+      ],
       defaultValue: false,
     },
   },

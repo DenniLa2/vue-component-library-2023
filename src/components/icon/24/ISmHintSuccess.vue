@@ -27,7 +27,9 @@ interface Props {
   color?: EIconColor
 }
 
-withDefaults(defineProps<Props>(), { color: EIconColor.success })
+withDefaults(defineProps<Props>(), {
+  color: EIconColor.success
+})
 
 </script>
 

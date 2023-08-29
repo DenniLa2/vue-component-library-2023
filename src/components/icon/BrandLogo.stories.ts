@@ -13,7 +13,10 @@ export default {
       control: {
         type: 'select',
       },
-      options: [ELogoSize.s_32_27, ELogoSize.s_42_36],
+      options: [
+        ELogoSize.s_32_27,
+        ELogoSize.s_42_36
+      ],
     },
   },
 }

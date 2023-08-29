@@ -57,11 +57,14 @@
 import { EIconColor, EXSize } from '../types.ts'
 
 interface Props {
-  color: EIconColor
-  size: EXSize
+  color?: EIconColor
+  size?: EXSize
 }
 
-withDefaults(defineProps<Props>(), { size: EXSize.s6 })
+withDefaults(defineProps<Props>(), {
+  color: EIconColor.primary,
+  size: EXSize.s6
+})
 
 </script>
 

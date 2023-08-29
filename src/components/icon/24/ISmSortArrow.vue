@@ -39,12 +39,14 @@ import { EIconColor } from '../types.ts'
 import { ESortDirection } from '@/components/table'
 
 interface Props {
-  direction: ESortDirection
-  color: EIconColor
+  direction?: ESortDirection
+  color?: EIconColor
 }
 
-
-defineProps<Props>()
+withDefaults(defineProps<Props>(), {
+  direction: ESortDirection.ASC,
+  color: EIconColor.primary
+})
 
 </script>
 

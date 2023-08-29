@@ -51,7 +51,9 @@ interface Props {
   color?: EIconColor
 }
 
-withDefaults(defineProps<Props>(), { color: EIconColor.secondary })
+withDefaults(defineProps<Props>(), {
+  color: EIconColor.primary
+})
 </script>
 
 <style scoped>

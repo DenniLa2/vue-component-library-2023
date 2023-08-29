@@ -43,6 +43,6 @@ export const Default = {
     `,
   }),
   args: {
-    color: "primary",
+    color: EIconColor.primary,
   },
 }

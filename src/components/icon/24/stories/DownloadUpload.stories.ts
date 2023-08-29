@@ -28,7 +28,10 @@ export const Default = {
     setup() {
       return args
     },
-    components: { Download, Upload },
+    components: {
+      Download,
+      Upload
+    },
     template: `
       <div class="icon-list">
         <div>
@@ -43,6 +46,6 @@ export const Default = {
     `,
   }),
   args: {
-    color: "primary",
+    color: EIconColor.primary,
   },
 }

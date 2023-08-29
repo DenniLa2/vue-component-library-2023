@@ -128,7 +128,14 @@ const options: Props[] = [
     size: EButtonSize.mini,
   },
 ]
-  .map(({ title, label, design, size, disabled, iconLocation }) => ({
+  .map(({
+    title,
+    label,
+    design,
+    size,
+    disabled,
+    iconLocation
+  }) => ({
     name: `${label}`,
     title,
     label,

@@ -2,7 +2,7 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 01.07.2023
  */
-import { EDirectionArrow, EIconColor } from '@/components/icon/types.ts'
+import { EDirectionArrow, EIconColor, EXSize } from '@/components/icon/types.ts'
 import Calendar from '@/components/icon/24/ISmCalendar.vue'
 import Copy from '@/components/icon/24/ISmCopy.vue'
 import DirectionArrow from '@/components/icon/24/32/ISmMdDirectionArrow.vue'
@@ -37,9 +37,16 @@ import Exit from '@/components/icon/24/ISmExit.vue'
 
 import { colors } from '@/components/icon/constants.storybook'
 import { EMoneyDirection } from '@/types'
+import { ESortDirection } from '../../../table'
 
 export default {
   computed: {
+    EXSize() {
+      return EXSize
+    },
+    ESortDirection() {
+      return ESortDirection
+    },
     EMoneyDirection() {
       return EMoneyDirection
     },
@@ -111,13 +118,19 @@ export const Collection = {
           <span>Copy</span>
         </div>
         <div>
-          <DirectionArrow :color="color" direction="Back"/>
-          <span>DirectionArrow | Back | 24</span>
+          <DirectionArrow
+            :color="color"
+            :direction="EDirectionArrow.forward"
+          />
+          <span>DirectionArrow | forward | 24</span>
         </div>
 
         <div>
-          <DirectionArrow :color="color" direction="Back"/>
-          <span>DirectionArrow | Back | 32</span>
+          <DirectionArrow
+            :color="color"
+            :direction="EDirectionArrow.back"
+          />
+          <span>DirectionArrow | back | 32</span>
         </div>
         <div>
           <Download :color="color"/>
@@ -193,11 +206,17 @@ export const Collection = {
         </div>
 
         <div>
-          <MoneyDirection :color="color" direction="send"/>
+          <MoneyDirection
+            :color="color"
+            :direction="EMoneyDirection.send"
+          />
           <span>MoneyDirection | send</span>
         </div>
         <div>
-          <MoneyDirection :color="color" direction="receive"/>
+          <MoneyDirection 
+            :color="color"
+            :direction="EMoneyDirection.receive"
+          />
           <span>MoneyDirection | receive</span>
         </div>
 
@@ -218,8 +237,18 @@ export const Collection = {
           <span>Search</span>
         </div>
         <div>
-          <SortArrow :color="color" direction="ASC"/>
+          <SortArrow 
+            :color="color"
+            :direction="ESortDirection.ASC"
+          />
           <span>SortArrow | ASC</span>
+        </div>
+        <div>
+          <SortArrow 
+            :color="color"
+            :direction="ESortDirection.DESC"
+          />
+          <span>SortArrow | DESC</span>
         </div>
         <div>
           <Trash :color="color"/>
@@ -230,11 +259,17 @@ export const Collection = {
           <span>Triplet</span>
         </div>
         <div>
-          <X :color="color" size="s6"/>
+          <X 
+            :color="color"
+            :size="EXSize.s6"
+          />
           <span>X | s6</span>
         </div>
         <div>
-          <X :color="color" size="s10"/>
+          <X
+            :color="color"
+            :size="EXSize.s10"
+          />
           <span>X | s10</span>
         </div>
         <div>

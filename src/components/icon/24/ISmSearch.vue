@@ -35,14 +35,15 @@
 </template>
 
 <script setup lang="ts">
-
 import { EIconColor } from '../types.ts'
 
 interface Props {
   color?: EIconColor
 }
 
-withDefaults(defineProps<Props>(), { color: EIconColor.search })
+withDefaults(defineProps<Props>(), {
+  color: EIconColor.search
+})
 </script>
 
 <style scoped lang="scss">

@@ -21,7 +21,10 @@ export default {
       control: {
         type: 'select',
       },
-      options: [ESortDirection.ASC, ESortDirection.DESC],
+      options: [
+        ESortDirection.ASC,
+        ESortDirection.DESC
+      ],
     },
   },
 }

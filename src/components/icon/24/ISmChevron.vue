@@ -27,11 +27,12 @@ import { EDirection_x4, EIconColor } from '../types.ts'
 
 interface Props {
   direction?: EDirection_x4
-  color: EIconColor
+  color?: EIconColor
 }
 
 withDefaults(defineProps<Props>(), {
   direction: EDirection_x4.left,
+  color: EIconColor.primary,
 })
 
 </script>
