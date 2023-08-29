@@ -104,7 +104,7 @@ export const defaultIconArgs = {
 export const defaultBgIconArgs = {
   color: EIconColor.primary,
   badgeColor: EIconColor.success,
-  bgColor: undefined,
+  bgColor: EIconColor.selected,
   size: EIconSize.mega,
   disabled: false
 }

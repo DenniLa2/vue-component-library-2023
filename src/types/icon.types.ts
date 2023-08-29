@@ -44,6 +44,8 @@ export enum EIconColor {
   search = 'search',
   tertiary = 'tertiary',
   disabled = 'disabled',
+  // todo we need to agree on colors and their names
+  selected = 'selected',
 }
 
 export enum EXSize {

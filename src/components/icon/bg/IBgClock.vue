@@ -50,8 +50,7 @@ import { computed } from 'vue'
 
 const props = withDefaults(defineProps<IDefaultBgIconProps>(), {
   color: EIconColor.primary,
-  // todo decide on a color, add the color to EIconColor
-  bgColor: 'selected',
+  bgColor: EIconColor.selected,
   badgeColor: EIconColor.success,
   size: EIconSize.mega,
 })
@@ -62,13 +61,5 @@ const computedColor = computed(() => props.disabled ? EIconColor.disabled : prop
 
 
 <style scoped lang="scss">
-
-.fill--selected {
-  fill: var(--ui-selected)
-}
-
-.icon-stroke {
-  stroke: var(--icon-primary)
-}
 
 </style>

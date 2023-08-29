@@ -95,8 +95,7 @@ import { computed } from 'vue'
 
 const props = withDefaults(defineProps<IDefaultBgIconProps>(), {
   color: EIconColor.primary,
-  // todo decide on a color, add the color to EIconColor
-  bgColor: 'selected',
+  bgColor: EIconColor.selected,
   badgeColor: EIconColor.success,
   size: EIconSize.mega,
 })
@@ -108,10 +107,6 @@ const computedBadgeColor = computed(() => props.disabled ? EIconColor.disabled :
 
 
 <style scoped lang="scss">
-
-.fill--selected {
-  fill: var(--ui-selected);
-}
 
 .badge-circle {
   stroke: var(--icon-contrast);
