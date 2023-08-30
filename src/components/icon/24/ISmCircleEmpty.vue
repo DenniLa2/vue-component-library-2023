@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
 
-import { EIconSize, IDefaultIconProps } from '@/types/icon.types.ts'
+import { EIconSize, IDefaultIconProps } from '@/components/icon/types/icon.types.ts'
 
 withDefaults(defineProps<IDefaultIconProps>(), {
   size: EIconSize.sm,

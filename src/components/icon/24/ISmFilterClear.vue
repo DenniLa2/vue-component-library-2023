@@ -29,14 +29,14 @@
     />
     <path
       d="M17 7L21 3"
-      stroke="#D86462"
+      :class="disabled ? `stroke--${computedColor}` : `stroke--${EIconColor.warning}`"
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="2"
     />
     <path
       d="M21 7L17 3"
-      stroke="#D86462"
+      :class="disabled ? `stroke--${computedColor}` : `stroke--${EIconColor.warning}`"
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="2"
@@ -46,7 +46,7 @@
 
 <script lang="ts" setup>
 
-import { EIconColor, EIconSize, IDefaultIconProps } from '@/types/icon.types.ts'
+import { EIconColor, EIconSize, IDefaultIconProps } from '@/components/icon/types/icon.types.ts'
 import { computed } from 'vue'
 
 const props = withDefaults(

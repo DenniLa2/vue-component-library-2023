@@ -20,7 +20,7 @@
 
 <script setup lang="ts">
 
-import { EDirection_x4, EIconColor, EIconSize, IDefaultIconProps } from '@/types/icon.types.ts'
+import { EDirection_x4, EIconColor, EIconSize, IDefaultIconProps } from '@/components/icon/types/icon.types.ts'
 import { computed } from 'vue'
 
 const props = withDefaults(defineProps<IDefaultIconProps>(), {

@@ -55,7 +55,7 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 21.05.2023
  */
-import { EIconColor, EIconSize, EXSize, IDefaultIconProps } from '@/types/icon.types.ts'
+import { EIconColor, EIconSize, EXSize, IDefaultIconProps } from '@/components/icon/types/icon.types.ts'
 import { computed } from 'vue'
 
 const props = withDefaults(

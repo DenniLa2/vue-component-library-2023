@@ -12,9 +12,9 @@ export {
   EIconLocation,
   EVerificationTagStatus,
   ETagColor
-} from '@/types/ui.types.ts'
+} from '@/components/ui/types'
 
-export * from './components/ui'
+export * from '@/components/ui'
 // NB! reexport types
 
 // NB! ICONS
@@ -32,4 +32,4 @@ export {
   EDirectionArrow,
   EIconColor,
   EXSize,
-} from './types/icon.types.ts'
+} from '@/components/icon/types/icon.types.ts'
