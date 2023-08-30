@@ -28,7 +28,7 @@
       stroke-linejoin="round"
     />
     <circle
-      class="fill--warning"
+      :class="disabled ? `fill--${computedColor}` : `fill--${EIconColor.warning}`"
       cx="18.5"
       cy="5.5"
       r="2.5"
@@ -44,7 +44,7 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 08.06.2023
  */
-import { EIconColor, EIconSize, IDefaultIconProps } from '@/types/icon.types.ts'
+import { EIconColor, EIconSize, IDefaultIconProps } from '@/components/icon/types/icon.types.ts'
 import { computed } from 'vue'
 
 const props = withDefaults(

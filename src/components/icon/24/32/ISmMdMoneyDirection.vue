@@ -45,8 +45,8 @@
  * on 23.05.2023
  */
 import { computed } from 'vue'
-import { EMoneyDirection } from '@/types'
-import { EIconColor, EIconSize, IDefaultIconProps } from '@/types/icon.types.ts'
+import { EMoneyDirection } from '@/components/icon/types'
+import { EIconColor, EIconSize, IDefaultIconProps } from '@/components/icon/types/icon.types.ts'
 
 const props = withDefaults(defineProps<IDefaultIconProps>(), {
   direction: EMoneyDirection.send,

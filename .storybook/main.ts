@@ -12,8 +12,9 @@ const config: StorybookConfig = {
     })
   },
   stories: [
-    // '../src/components/**/*.linear.@(js|jsx|mjs|ts|tsx)',
-    '../src/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)',
+    // '../src/components/**/stories/*.linear.@(js|jsx|mjs|ts|tsx)',
+    '../src/components/**/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)',
+    // '../src/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)',
   ],
   addons: [
     // '@nuxtjs/storybook',

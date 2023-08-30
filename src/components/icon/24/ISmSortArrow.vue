@@ -32,13 +32,13 @@
 
 
 <script setup lang="ts">
-import { ESortDirection } from '@/types/table.types.ts'
+import { ESortDirection } from '@/components/table/types/table.types.ts'
 
 /**
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 05.06.2023
  */
-import { EIconColor, EIconSize, IDefaultIconProps } from '@/types/icon.types.ts'
+import { EIconColor, EIconSize, IDefaultIconProps } from '@/components/icon/types/icon.types.ts'
 import { computed } from 'vue'
 
 const props = withDefaults(

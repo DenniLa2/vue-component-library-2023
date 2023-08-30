@@ -39,7 +39,7 @@
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 22.05.2023
  */
-import { EIconColor, EIconSize, IDefaultIconProps } from '@/types/icon.types.ts'
+import { EIconColor, EIconSize, IDefaultIconProps } from '@/components/icon/types/icon.types.ts'
 import { computed } from 'vue'
 
 const props = withDefaults(

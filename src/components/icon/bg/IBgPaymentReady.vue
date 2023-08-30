@@ -73,7 +73,7 @@
 
 <script lang="ts" setup>
 
-import { EIconColor, EIconSize, IDefaultBgIconProps } from '@/types/icon.types.ts'
+import { EIconColor, EIconSize, IDefaultBgIconProps } from '@/components/icon/types/icon.types.ts'
 import { computed } from 'vue'
 
 const props = withDefaults(defineProps<IDefaultBgIconProps>(), {
