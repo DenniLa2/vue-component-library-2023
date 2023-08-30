@@ -1,0 +1,41 @@
+<svg
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+
+    <symbol id="my-first-icon" viewBox="0 0 32 32" width="32" height="32" fill="none">
+        <title>my-first-icon</title>
+        <path
+                d="M8 18.6667V21.3333C8 23.5425 9.79086 25.3333 12 25.3333H20C22.2091 25.3333 24 23.5425 24 21.3333V18.6667"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="var(--cup-color, red)"
+        />
+        <path
+                d="M16 5.33334V17.3333"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="var(--cup-color)"
+        />
+        <path
+                d="M12.2287 15.4476L15.9999 19.2188L19.7712 15.4475"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="var(--ui-warning)"
+        />
+    </symbol>
+
+</svg>
+
+<svg class="first-icon" width="32" height="32"
+     viewBox="0 0 32 32"
+     fill="none"
+>
+    <use href="#my-first-icon" />
+</svg>

@@ -2,6 +2,16 @@
   color: var(--text-primary) !important;
 }
 
+.second-color--primary #second-color {
+  color: red !important;
+  stroke: red !important;
+}
+
+:root {
+  --ui-warning: #92f18c;
+  --cup-color: #92f18c;
+}
+
 .text-secondary {
   color: var(--text-secondary) !important;
 }
