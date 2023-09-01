@@ -1,44 +1,39 @@
 <script setup lang="ts">
-import { computed, defineAsyncComponent, onMounted } from "vue";
+import { computed } from 'vue'
 import {
   EIconColor,
   EIconSize,
   IDefaultIconProps,
-} from "@/types/icon.types.ts";
-import Ic from "./icon/Ic.vue";
+} from '@/components/icon/types/icon.types.ts';
+
+import * as components from '@/components/icon/linear'
 
 interface Props extends IDefaultIconProps {
   name: string;
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  color: EIconColor.primary,
-  size: EIconSize.md,
+  color: EIconColor.warning,
+  size: EIconSize.mega,
 });
 
 const computedColor = computed(() =>
   props.disabled ? EIconColor.disabled : props.color
 );
-
-const dynamicComponent = computed(() =>
-  defineAsyncComponent(() => import(`../../assets/svg/${props.name}.svg`))
-);
 </script>
 
 <template>
-  <!-- <Component
-    :is="dynamicComponent"
+  <Component
+    :is="components[name]"
     :width="width ?? size"
     :height="height ?? size"
-    :class="`text--${computedColor} second-color--${computedColor}`"
-  /> -->
+    :class="`color-first--${computedColor} color-second--${computedColor}`"
+  />
 
-  <Ic />
-
-  <svg class="icon icon--color" aria-hidden="true">
-    <use href="#icon-coffee" />
-  </svg>
-  <!--  <object type="image/svg+xml" data="/src/assets/svg/check.svg?color=red"></object>-->
+  <!--  <svg class="icon icon&#45;&#45;color" aria-hidden="true">
+      <use href="#icon-coffee" />
+    </svg>-->
+  <!--  <object type="image/svg+xml" data="/src/assets/svg/details.svg?color=red"></object>-->
 
   <!-- <svg class="icon" aria-hidden="true">
     <use xlink:href="#icon-coffee" href="#icon-coffee" />
@@ -89,44 +84,15 @@ const dynamicComponent = computed(() =>
 </template>
 
 <style scoped lang="scss">
-.text--primary {
-  color: green;
-}
-
-.second-color--primary #second-color {
-  color: red;
-  stroke: red;
-}
-
-@mixin icon-colors($fallback: black) {
-  fill: $fallback;
-  @content;
-}
-
-.icon {
-  width: 100px;
-  height: 100px;
-  margin-right: 10px;
-  &--fill {
-    @include icon-colors(grey);
-  }
-  &--color {
-    @include icon-colors(#ef5b49) {
-      --handle-color: #c13127;
-      --cup-color: #ef5b49;
-      --smoke-color: #cacaea;
-    }
-  }
-  &--color-alt {
-    @include icon-colors(#2f3fff) {
-      --handle-color: #1f2bac;
-      --cup-color: #2f3fff;
-      --smoke-color: #a5acbd;
-    }
+.color-first--warning {
+  .color--first {
+    stroke: var(--ui-warning)
   }
 }
 
-.hidden {
-  display: none;
+.color-second--warning {
+  .color--second {
+    stroke: var(--ui-success)
+  }
 }
 </style>

@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { computed, defineAsyncComponent, onMounted } from "vue";
+import { computed, defineAsyncComponent } from 'vue'
 import {
   EIconColor,
   EIconSize,
   IDefaultIconProps,
 } from "@/types/icon.types.ts";
-import Ic from "./icon/Ic.vue";
 
 interface Props extends IDefaultIconProps {
   name: string;
@@ -33,12 +32,10 @@ const dynamicComponent = computed(() =>
     :class="`text--${computedColor} second-color--${computedColor}`"
   /> -->
 
-  <Ic />
-
   <svg class="icon icon--color" aria-hidden="true">
     <use href="#icon-coffee" />
   </svg>
-  <!--  <object type="image/svg+xml" data="/src/assets/svg/check.svg?color=red"></object>-->
+  <!--  <object type="image/svg+xml" data="/src/assets/svg/details.svg?color=red"></object>-->
 
   <!-- <svg class="icon" aria-hidden="true">
     <use xlink:href="#icon-coffee" href="#icon-coffee" />

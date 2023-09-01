@@ -2,44 +2,41 @@
   <svg
     :width="width ?? size"
     :height="height ?? size"
-    viewBox="0 0 32 32"
+    viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
+      d="M6 14V16C6 17.6569 7.34315 19 9 19H15C16.6569 19 18 17.6569 18 16V14"
       :class="`stroke--${computedColor}`"
-      d="M9.33337 7.99998H22.6667"
+      stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="2.66667"
     />
     <path
+      d="M12 3.99994V12.9999"
       :class="`stroke--${computedColor}`"
-      d="M9.33337 13.3334H18.6667"
+      stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="2.66667"
     />
     <path
+      d="M9.17139 11.5857L11.9998 14.4141L14.8282 11.5856"
       :class="`stroke--${computedColor}`"
-      d="M9.33337 18.6667H22.6667"
+      stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="2.66667"
-    />
-    <path
-      :class="`stroke--${computedColor}`"
-      d="M9.33337 24H22.6667"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2.66667"
     />
   </svg>
 </template>
 
 
-<script lang="ts" setup>
+<script setup lang="ts">
 
+/**
+ * Created by Denis Abramyan (dennila2@gmail.com)
+ * on 1.07.2023
+ */
 import { EIconColor, EIconSize, IDefaultIconProps } from '@/components/icon/types/icon.types.ts'
 import { computed } from 'vue'
 
@@ -47,9 +44,18 @@ const props = withDefaults(
   defineProps<IDefaultIconProps>(), {
     color: EIconColor.primary,
     size: EIconSize.sm,
-  }
+  },
 )
 
 const computedColor = computed(() => props.disabled ? EIconColor.disabled : props.color)
 
 </script>
+
+
+<style scoped lang="scss">
+
+.stroke--circle {
+  stroke: var(--icon-info);
+}
+
+</style>

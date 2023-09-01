@@ -28,7 +28,6 @@
       stroke-linejoin="round"
     />
   </svg>
-
 </template>
 
 

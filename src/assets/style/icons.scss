@@ -1,9 +1,14 @@
+// todo do auto-generate styles
 .stroke--primary {
   stroke: var(--icon-primary);
 }
 
 .fill--primary {
   fill: var(--icon-primary);
+}
+
+.text--primary {
+  color: var(--icon-primary);
 }
 
 .stroke--secondary {
@@ -14,12 +19,20 @@
   fill: var(--icon-secondary);
 }
 
+.text--secondary {
+  color: var(--icon-secondary);
+}
+
 .stroke--allusion {
   stroke: var(--bg-secondary);
 }
 
 .fill--allusion {
   fill: var(--bg-secondary);
+}
+
+.text--allusion {
+  color: var(--bg-secondary);
 }
 
 .stroke--tertiary {
@@ -30,12 +43,20 @@
   fill: var(--icon-tretiary);
 }
 
+.text--tertiary {
+  color: var(--icon-tretiary);
+}
+
 .stroke--contrast {
   stroke: var(--text-contrast);
 }
 
 .fill--contrast {
   fill: var(--text-contrast);
+}
+
+.text--contrast {
+  color: var(--text-contrast);
 }
 
 .stroke--warning {
@@ -46,12 +67,20 @@
   fill: var(--ui-warning);
 }
 
+.text--warning {
+  color: var(--ui-warning) !important;
+}
+
 .stroke--success {
   stroke: var(--ui-success);
 }
 
 .fill--success {
   fill: var(--ui-success);
+}
+
+.text--success {
+  color: var(--ui-success);
 }
 
 .stroke--hint {
@@ -62,12 +91,20 @@
   fill: var(--ui-hint);
 }
 
+.text--hint {
+  color: var(--ui-hint);
+}
+
 .stroke--search {
   stroke: var(--icon-search);
 }
 
 .fill--disabled {
   fill: var(--icon-secondary);
+}
+
+.text--disabled {
+  color: var(--icon-secondary);
 }
 
 .stroke--disabled {
@@ -80,4 +117,8 @@
 
 .fill--selected {
   fill: var(--ui-selected);
+}
+
+.text--selected {
+  color: var(--ui-selected);
 }

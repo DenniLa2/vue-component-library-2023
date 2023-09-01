@@ -11,7 +11,11 @@ import { fileURLToPath } from 'node:url'
 export default defineConfig({
   plugins: [
     vue(),
-    svgLoader(),
+    svgLoader({
+      svgoConfig: {
+        multipass: true,
+      },
+    }),
   ],
   resolve: {
     alias: {
