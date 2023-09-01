@@ -5,5 +5,7 @@
 import IBgAccountReady from './IBgAccountReady.vue'
 import IBgClock from './IBgClock.vue'
 import IBgExclamation from './IBgExclamation.vue'
+import IBgPaymentReady from './IBgPaymentReady.vue'
+import IBgExit from './IBgExit.vue'
 
-export { IBgAccountReady, IBgClock, IBgExclamation }
+export { IBgAccountReady, IBgClock, IBgExclamation, IBgPaymentReady, IBgExit }
