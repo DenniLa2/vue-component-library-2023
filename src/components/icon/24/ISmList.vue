@@ -1,49 +1,49 @@
 <template>
   <svg
-    width="24"
-    height="24"
+    :width="width ?? size"
+    :height="height ?? size"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
       d="M5 7H7"
-      :class="`stroke--${color}`"
+      :class="`stroke--${computedColor}`"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
     <path
       d="M5 12H7"
-      :class="`stroke--${color}`"
+      :class="`stroke--${computedColor}`"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
     <path
       d="M5 17H7"
-      :class="`stroke--${color}`"
+      :class="`stroke--${computedColor}`"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
     <path
       d="M11 7H19"
-      :class="`stroke--${color}`"
+      :class="`stroke--${computedColor}`"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
     <path
       d="M11 12H17"
-      :class="`stroke--${color}`"
+      :class="`stroke--${computedColor}`"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
     <path
       d="M11 17H19"
-      :class="`stroke--${color}`"
+      :class="`stroke--${computedColor}`"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
@@ -54,17 +54,22 @@
 
 
 <script setup lang="ts">
+
 /**
  * Created by Denis Abramyan (dennila2@gmail.com)
  * on 01.06.2023
  */
-import { EIconColor } from '../types.ts'
+import { EIconColor, EIconSize, IDefaultIconProps } from '@/components/icon/types/icon.types.ts'
+import { computed } from 'vue'
 
-interface Props {
-  color?: EIconColor
-}
+const props = withDefaults(
+  defineProps<IDefaultIconProps>(), {
+    color: EIconColor.primary,
+    size: EIconSize.sm,
+  }
+)
 
-withDefaults(defineProps<Props>(), { color: EIconColor.primary })
+const computedColor = computed(() => props.disabled ? EIconColor.disabled : props.color)
 
 </script>
 

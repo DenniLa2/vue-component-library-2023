@@ -10,6 +10,7 @@ import ISmPayments from './ISmPayments.vue'
 import ISmPeople from './ISmPeople.vue'
 import ISmSupport from './ISmSupport.vue'
 
+import ISmDetails from './ISmDetails.vue'
 import ISmCalendar from './ISmCalendar.vue'
 import ISmChevron from './ISmChevron.vue'
 import ISmCircleEmpty from './ISmCircleEmpty.vue'
@@ -17,12 +18,16 @@ import ISmCircleError from './ISmCircleError.vue'
 import ISmCircleSuccess from './ISmCircleSuccess.vue'
 import ISmCopy from './ISmCopy.vue'
 import ISmDownload from './ISmDownload.vue'
+import ISmUpload from './ISmUpload.vue'
 import ISmExclamation from './ISmExclamation.vue'
+import ISmImport from './ISmImport.vue'
+import ISmExport from './ISmExport.vue'
 import ISmEyeClosed from './ISmEyeClosed.vue'
 import ISmEyeOpened from './ISmEyeOpened.vue'
 import ISmFile from './ISmFile.vue'
 import ISmFilter from './ISmFilter.vue'
 import ISmFilterActive from './ISmFilterActive.vue'
+import ISmFilterClear from './ISmFilterClear.vue'
 import ISmHintSuccess from './ISmHintSuccess.vue'
 import ISmInfo from './ISmInfo.vue'
 import ISmList from './ISmList.vue'
@@ -49,6 +54,7 @@ export {
   ISmSupport,
 
   // NB! rest
+  ISmDetails,
   ISmCalendar,
   ISmChevron,
   ISmCircleEmpty,
@@ -56,12 +62,16 @@ export {
   ISmCircleSuccess,
   ISmCopy,
   ISmDownload,
+  ISmUpload,
   ISmExclamation,
+  ISmImport,
+  ISmExport,
   ISmEyeClosed,
   ISmEyeOpened,
   ISmFile,
   ISmFilter,
   ISmFilterActive,
+  ISmFilterClear,
   ISmHintSuccess,
   ISmInfo,
   ISmList,

@@ -54,6 +54,28 @@ input[type=number] {
   margin-bottom: 24px;
 }
 
+.icon-list {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    & > svg {
+      min-width: 32px;
+    }
+
+    & > span::before {
+      display: inline-block;
+      content: "-";
+      margin-right: 10px;
+    }
+  }
+}
+
 div.link__wrapper .count {
   border: var(--border-navigational-number);
 }

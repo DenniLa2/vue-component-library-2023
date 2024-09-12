@@ -6,16 +6,16 @@
 
 // NB! UI
 // NB! reexport components
-export * from './components/ui'
-
-// NB! reexport types
 export {
   EButtonDesign,
   EButtonSize,
   EIconLocation,
   EVerificationTagStatus,
   ETagColor
-} from './components/ui/types.ts'
+} from '@/components/ui/types'
+
+export * from '@/components/ui'
+// NB! reexport types
 
 // NB! ICONS
 // NB! components
@@ -32,4 +32,4 @@ export {
   EDirectionArrow,
   EIconColor,
   EXSize,
-} from './components/icon/types.ts'
+} from '@/components/icon/types/icon.types.ts'

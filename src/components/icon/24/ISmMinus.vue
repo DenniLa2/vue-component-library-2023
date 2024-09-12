@@ -1,7 +1,7 @@
 <template>
   <svg
-    width="14"
-    height="14"
+    :width="width ?? size"
+    :height="height ?? size"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -10,12 +10,12 @@
       fill-rule="evenodd"
       clip-rule="evenodd"
       d="M8 12H16H8Z"
-      :class="`fill--${color}`"
+      :class="`fill--${computedColor}`"
     />
 
     <path
       d="M8 12H16"
-      :class="`stroke--${color}`"
+      :class="`stroke--${computedColor}`"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
@@ -24,13 +24,18 @@
 </template>
 
 <script setup lang="ts">
-import { EIconColor } from '../types.ts'
 
-interface Props {
-  color?: EIconColor
-}
+import { EIconColor, EIconSize, IDefaultIconProps } from '@/components/icon/types/icon.types.ts'
+import { computed } from 'vue'
 
-withDefaults(defineProps<Props>(), { color: EIconColor.warning })
+const props = withDefaults(
+  defineProps<IDefaultIconProps>(), {
+    color: EIconColor.primary,
+    size: EIconSize.xxs,
+  }
+)
+
+const computedColor = computed(() => props.disabled ? EIconColor.disabled : props.color)
 
 </script>
 

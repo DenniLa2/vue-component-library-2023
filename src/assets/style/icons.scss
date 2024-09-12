@@ -65,3 +65,19 @@
 .stroke--search {
   stroke: var(--icon-search);
 }
+
+.fill--disabled {
+  fill: var(--icon-secondary);
+}
+
+.stroke--disabled {
+  stroke: var(--icon-secondary);
+}
+
+.stroke--selected {
+  stroke: var(--ui-selected);
+}
+
+.fill--selected {
+  fill: var(--ui-selected);
+}
